@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="white">#ffff</color>
+    <color name="black">#000</color>
+
+
+    <color name="background">#fbece5</color>
+    <color name="bottom_color">#FFFFFF</color>
+    <color name="navigation_default">#898989</color>
+    <color name="navigation_checked">#ff9063</color>
+    <color name="card_bg">#FFFFFF</color>
+    <color name="loading_progress">#ff9063</color>
+    <color name="card_bg_again">#FFFFFF</color>
+
+    <color name="icon_bg">#ff9063</color>
+    <color name="icon_bg2">#fbece5</color>
+
+
+    <color name="border_line">#ff9063</color>
+    <color name="shadow_line">#898989</color>
+    <color name="gray">#595959</color>
+    <color name="cat_text">#0A0A0A</color>
+    <color name="gray2">#989898</color>
+    <color name="story_desc">#787878</color>
+    <color name="tool_bar_text">#ff9063</color>
+    <color name="tool_bar_icon">#ff9063</color>
+    <color name="divider_list">#ff9063</color>
+    <color name="details_view">#FF0000</color>
+    <color name="child_bg">#ede7f6</color>
+
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_50">#b2ebf2</color>
+    <color name="purple_100">#4dd0e1</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+
+    <color name="transparent">#00000000</color>
+
+    <color name="txt_color">#ffffff</color>
+    <color name="right_dark">#ed2a2a</color>
+    <color name="right_light">#e9605f</color>
+    <color name="wrong_dark">#22af4a</color>
+    <color name="wrong_light">#22e357</color>
+    <color name="bottom_bg_color">#42b2ea</color>
+
+    <color name="dark_color">#1688c1</color>
+    <color name="light_black">#191919</color>
+</resources>
