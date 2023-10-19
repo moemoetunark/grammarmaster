@@ -1,21 +1,21 @@
 package kup.moemoetun.shwegrammaroffline;
-
 import android.content.Intent;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.PopupMenu;
 import android.widget.Toast;
-
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.android.material.navigation.NavigationView;
 import com.google.android.material.tabs.TabLayout;
 import com.google.firebase.remoteconfig.FirebaseRemoteConfig;
 import com.google.firebase.remoteconfig.FirebaseRemoteConfigSettings;
-
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AlertDialog;
@@ -24,20 +24,18 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.viewpager.widget.ViewPager;
-
 import java.util.HashMap;
-
 import kup.moemoetun.shwegrammaroffline.ui.ViewPagerAdapter;
-
+import kup.moemoetun.shwegrammaroffline.utility.GoogleMobileAdsConsentManager;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener{
-
     private ViewPager viewPager;
     private DrawerLayout drawer;
     private TabLayout tabLayout;
     private String[] pageTitle = {"Basic Grammar", "Basic Speaking", "Listening Level 1","Listening Level 2",
             " Listening Level 3","Listening Level 4"};
     private FirebaseRemoteConfig mFirebaseRemoteConfig;
+    GoogleMobileAdsConsentManager googleMobileAdsConsentManager;
 
 
     @Override
@@ -71,6 +69,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         Toolbar toolbar = findViewById(R.id.toolbar);
         drawer = findViewById(R.id.drawerLayout);
         setSupportActionBar(toolbar);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         //create default navigation drawer toggle
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, drawer, toolbar,
@@ -142,14 +141,46 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         } catch (PackageManager.NameNotFoundException e) {
             Log.i("mylog","NameNotFoundExcepton"+e.getMessage());
         }
-        return packageInfo != null ? packageInfo.versionCode : 32;
+        return packageInfo != null ? packageInfo.versionCode : 40;
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.action_menu, menu);
+        MenuItem moreMenu = menu.findItem(R.id.action_more);
+//        moreMenu.setVisible(googleMobileAdsConsentManager.isPrivacyOptionsRequired());
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        View menuItemView = findViewById(item.getItemId());
+        PopupMenu popup = new PopupMenu(this, menuItemView);
+        popup.getMenuInflater().inflate(R.menu.popup_menu, popup.getMenu());
+        popup.show();
+        popup.setOnMenuItemClickListener(
+                popupMenuItem -> {
+                    if (popupMenuItem.getItemId() == R.id.privacy_settings) {
+                        // Handle changes to user consent.
+                        googleMobileAdsConsentManager.showPrivacyOptionsForm(
+                                this,
+                                formError -> {
+                                    if (formError != null) {
+                                        Toast.makeText(this, formError.getMessage(), Toast.LENGTH_SHORT).show();
+                                    }
+                                });
+                        return true;
+                    }
+                    return false;
+                });
+        return super.onOptionsItemSelected(item);
     }
 
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
         int id = item.getItemId();
         if (id == R.id.download) {
-            Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.moemoetun.me/download-free-myanmarbook.html"));
+            Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://englishlearning4mm.blogspot.com/2023/03/blog-post.html"));
             startActivity(browserIntent);
         }
         if (id == R.id.rating) {

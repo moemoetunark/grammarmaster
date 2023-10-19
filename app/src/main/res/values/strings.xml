@@ -5,9 +5,26 @@
     <string name="rate">Rate this App</string>
     <string name="privacy_policy">Privacy Policy</string>
     <string name="exit">Exit App</string>
-    <string name="banner_under_webview">ca-app-pub-4137439985376631/4189931024</string>
+    <string name="banner_under_webview">ca-app-pub-3940256099942544/6300978111</string>
     <string name="offfline_interstitials">ca-app-pub-4137439985376631/2591615182</string>
     <string name="offline_onback">ca-app-pub-4137439985376631/3220216862</string>
     <string name="download">Download ယူရန်များ</string>
     <string name="app_open">ca-app-pub-4137439985376631/1650742998</string>
+    <string name="splash_description">Please wait..</string>
+    <string name="splah_text">App is loading..</string>
+    <string name="more_menu">more</string>
+    <string name="concent">Ad Consent</string>
+    <string name="ads_consent">Privacy</string>
 </resources>
+
+
+<!--    Ad format	Sample ad unit ID-->
+<!--    App Open	ca-app-pub-3940256099942544/3419835294-->
+<!--    Adaptive Banner	ca-app-pub-3940256099942544/9214589741-->
+<!--    Banner	ca-app-pub-3940256099942544/6300978111-->
+<!--    Interstitial	ca-app-pub-3940256099942544/1033173712-->
+<!--    Interstitial Video	ca-app-pub-3940256099942544/8691691433-->
+<!--    Rewarded	ca-app-pub-3940256099942544/5224354917-->
+<!--    Rewarded Interstitial	ca-app-pub-3940256099942544/5354046379-->
+<!--    Native Advanced	ca-app-pub-3940256099942544/2247696110-->
+<!--    Native Advanced Video	ca-app-pub-3940256099942544/1044960115-->

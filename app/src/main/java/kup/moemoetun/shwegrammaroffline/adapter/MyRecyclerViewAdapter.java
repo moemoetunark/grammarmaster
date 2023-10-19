@@ -1,5 +1,4 @@
 package kup.moemoetun.shwegrammaroffline.adapter;
-
 import android.content.Context;
 import android.graphics.Typeface;
 import android.view.LayoutInflater;
@@ -40,7 +39,7 @@ public class MyRecyclerViewAdapter extends RecyclerView.Adapter<MyRecyclerViewAd
         String animal = mData.get(position);
         holder.myTextView.setText(animal);
 
-        holder.myTextView.setTypeface(Typeface.createFromAsset(MyRecyclerViewAdapter.this.mInflater.getContext().getAssets(), "font/notommsemibold.ttf"));
+        holder.myTextView.setTypeface(Typeface.createFromAsset(MyRecyclerViewAdapter.this.mInflater.getContext().getAssets(), "font/tharlon.ttf"));
     }
 
     // total number of rows

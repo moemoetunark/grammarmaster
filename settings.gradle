@@ -1,7 +1,2 @@
 include ':app'
 rootProject.name='Grammar Master'
-setBinding(new Binding([gradle: this]))
-evaluate(new File(
-        settingsDir.parentFile,
-        'myflutterapp/.android/include_flutter.groovy'
-))
