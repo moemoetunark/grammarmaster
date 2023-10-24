@@ -7,6 +7,43 @@
     <color name="black">#000</color>
 
 
+    <color name="textColorPrimary">#FFFFFF</color>
+    <color name="windowBackground">#FFFFFF</color>
+    <color name="navigationBarColor">#000000</color>
+    <color name="blue">#03A9F4</color>
+    <color name="colorGrey">#e7e7e7</color>
+    <color name="purple">#ee82ee</color>
+
+
+    <color name="border">#d3f1eded</color>
+
+    <color name="colorPrimary1">#D32F2F</color>
+    <color name="colorPrimaryDark1">#F44336</color>
+    <color name="textColorPrimary2">#FFFFFF</color>
+
+
+    <color name="cursor_handle_color">#9a0b0b</color>
+    <color name="selected_blue">#909a0b0b</color>
+    <color name="radio_button_1">#64FFDA</color>
+    <color name="radio_button_2">#AA00FF</color>
+    <color name="radio_button_3">#76FF03</color>
+    <color name="radio_button_4">#FFD600</color>
+
+    <color name="checked_background_color">#D50000</color>
+    <color name="unchecked_background_color">#AA00FF</color>
+
+    <color name="progressBarBackground">#2962FF</color>
+    <color name="progressBarIndicator">#FF6D00</color>
+
+
+
+    <color name="correctAnswerColor">#00FF00</color> <!-- Green color -->
+    <color name="incorrectAnswerColor">#FF0000</color> <!-- Red color -->
+
+
+    <color name="red">#FF0000</color>
+
+
     <color name="background">#fbece5</color>
     <color name="bottom_color">#FFFFFF</color>
     <color name="navigation_default">#898989</color>

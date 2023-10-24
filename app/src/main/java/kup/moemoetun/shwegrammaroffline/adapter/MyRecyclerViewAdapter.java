@@ -1,9 +1,12 @@
 package kup.moemoetun.shwegrammaroffline.adapter;
 import android.content.Context;
 import android.graphics.Typeface;
+import android.graphics.drawable.Drawable;
+import android.util.TypedValue;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.recyclerview.widget.RecyclerView;
@@ -11,6 +14,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.List;
 
 import kup.moemoetun.shwegrammaroffline.R;
+import kup.moemoetun.shwegrammaroffline.utility.IconUtility;
 
 
 public class MyRecyclerViewAdapter extends RecyclerView.Adapter<MyRecyclerViewAdapter.ViewHolder> {
@@ -37,9 +41,21 @@ public class MyRecyclerViewAdapter extends RecyclerView.Adapter<MyRecyclerViewAd
     @Override
     public void onBindViewHolder(ViewHolder holder, int position) {
         String animal = mData.get(position);
+        int number = position + 1;
         holder.myTextView.setText(animal);
-
         holder.myTextView.setTypeface(Typeface.createFromAsset(MyRecyclerViewAdapter.this.mInflater.getContext().getAssets(), "font/tharlon.ttf"));
+
+
+
+        // Generate the number icon for the current position
+        Context context = holder.itemView.getContext();
+        int iconSize = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 30, context.getResources().getDisplayMetrics());
+        int backgroundColor = R.color.colorPrimary;
+        int textColor = android.R.color.white;
+        Drawable numberIcon = IconUtility.generateNumberIcon(context, number, iconSize, backgroundColor, textColor);
+
+        // Set the number icon to the ImageView
+        holder.iconImageView.setImageDrawable(numberIcon);
     }
 
     // total number of rows
@@ -52,11 +68,12 @@ public class MyRecyclerViewAdapter extends RecyclerView.Adapter<MyRecyclerViewAd
     // stores and recycles views as they are scrolled off screen
     public class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
         TextView myTextView;
+        ImageView iconImageView;
 
         ViewHolder(View itemView) {
             super(itemView);
             myTextView = itemView.findViewById(R.id.cardTitle2);
-
+            iconImageView = itemView.findViewById(R.id.iconImageView);
             itemView.setOnClickListener(this);
         }
 

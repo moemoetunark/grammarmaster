@@ -1,35 +1,29 @@
 package kup.moemoetun.shwegrammaroffline.ui;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import com.google.android.gms.ads.AdListener;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.FullScreenContentCallback;
 import com.google.android.gms.ads.LoadAdError;
 import com.google.android.gms.ads.interstitial.InterstitialAd;
 import com.google.android.gms.ads.interstitial.InterstitialAdLoadCallback;
-
 import java.util.ArrayList;
-import java.util.List;
-
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-
 import kup.moemoetun.shwegrammaroffline.R;
 import kup.moemoetun.shwegrammaroffline.adapter.MyRecyclerViewAdapter;
-import kup.moemoetun.shwegrammaroffline.webview.GrammarWebView;
-
+import kup.moemoetun.shwegrammaroffline.quiz.QuizMain;
 public class Fragment1 extends Fragment implements MyRecyclerViewAdapter.ItemClickListener {
-
     private InterstitialAd mInterstitialAd;
     MyRecyclerViewAdapter adapter;
     private AdRequest adRequest;
+    ArrayList<String> animalNames = new ArrayList<>();
+
 
     @Nullable
     @Override
@@ -42,17 +36,18 @@ public class Fragment1 extends Fragment implements MyRecyclerViewAdapter.ItemCli
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        ArrayList<String> animalNames = new ArrayList<>();
+
         animalNames.add("အခန်း (၁) am/is/are ကိုသုံးပုံ");
         animalNames.add("အခန်း (၂) am/is/are သုံးပုံ ၂");
         animalNames.add("Present Continuous -(I'm doing)-ပစ္စုပ္ပန်ဆက်လက်ကါလ");
-        animalNames.add("Present Continuous-(Are you doing..?)\n-ပစ္စုပ္ပန်ဆက်လက်ကါလမေးခွန်း");
+        animalNames.add("Present Continuous-(Are you doing..?)-ပစ္စုပ္ပန်ဆက်လက်ကါလမေးခွန်း");
         animalNames.add("Present Simple -(I do/she does)ရိုးရိုးပစ္စုပ္ပန်ကါလ");
         animalNames.add("Present Simple Negative-(I don't/she doesn't");
         animalNames.add("Present Simple Question- ရိုးရိုးပစ္စပ္ပန်ကါလမေးခွန်း");
         animalNames.add("Present Simple and Continuous");
         animalNames.add("Have got/has got တို့ကို အသုံးပြုပုံစံများ");
-        animalNames.add("Was, Were-ရှိခဲ့သည်၊ဖြစ်ခဲ့သည် ");
+        animalNames.add("Was, Were-ရှိခဲ့သည်၊ဖြစ်ခဲ့သည်");
+
         animalNames.add("Past Simple (I did) - ရိုးရိုးအတိတ်ကါလ");
         animalNames.add("past Simple မေးခွန်း (Did you do...?");
         animalNames.add("Past Continuous-အတိတ်ဆက်လက်ကါလ (I was doing)");
@@ -109,6 +104,16 @@ public class Fragment1 extends Fragment implements MyRecyclerViewAdapter.ItemCli
         animalNames.add("The ကိုသုံးပုံစံများ");
         animalNames.add("go and the ကိုမှန်အောင် သုံးပုံ");
 
+        animalNames.add("The မသုံးရပုံစံများ");
+        animalNames.add("နေရာများပြပုဒ်နှင့် The သုံးပုံစံများ");
+        animalNames.add("This, That, Those and These စသည်ကိုသုံးပုံ");
+        animalNames.add("One and Ones သုံးပုံ");
+        animalNames.add("Some/any စသည်သုံးပုံစံများ");
+        animalNames.add("Not one, not ..any သုံးပုံစံများ");
+        animalNames.add("not anybody, anyone စသည်သုံးပုံ");
+        animalNames.add("somebody/anybody စသည်သုံးပုံ");
+
+
         adRequest = new AdRequest.Builder().build();
         InterstitialAd.load(requireContext(), getString(R.string.offfline_interstitials),
                 adRequest, new InterstitialAdLoadCallback() {
@@ -142,8 +147,9 @@ public class Fragment1 extends Fragment implements MyRecyclerViewAdapter.ItemCli
             mInterstitialAd.setFullScreenContentCallback(new FullScreenContentCallback(){
                 @Override
                 public void onAdDismissedFullScreenContent() {
-                    Intent intent = new Intent(requireContext(), GrammarWebView.class);
-                    intent.putExtra("position", position);
+                    Intent intent = new Intent(requireContext(), QuizMain.class);
+                    String clickedItemName = animalNames.get(position);
+                    intent.putExtra("selectedCategory", clickedItemName);
                     startActivity(intent);
                     // Called when fullscreen content is dismissed.
                 }
@@ -159,8 +165,9 @@ public class Fragment1 extends Fragment implements MyRecyclerViewAdapter.ItemCli
         }
 
         else {
-            Intent intent = new Intent(requireContext(), GrammarWebView.class);
-            intent.putExtra("key", position);
+            Intent intent = new Intent(requireContext(), QuizMain.class);
+            String clickedItemName = animalNames.get(position);
+            intent.putExtra("selectedCategory", clickedItemName);
             startActivity(intent);
         }
     }

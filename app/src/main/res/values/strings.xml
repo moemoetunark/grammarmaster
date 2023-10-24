@@ -15,16 +15,28 @@
     <string name="more_menu">more</string>
     <string name="concent">Ad Consent</string>
     <string name="ads_consent">Privacy</string>
+    <string name="icon_description">icon descriptions</string>
+    <string name="card_title">title</string>
+    <string name="charttext">sample text</string>
+    <string name="status">Status</string>
+    <string name="right_and_wrong_indicator">Right and Wrong Indicator\n</string>
+    <string name="question_goes_here">Quiz Questions</string>
+    <string name="option_a">option A</string>
+    <string name="option_b">Option B\n</string>
+    <string name="option_c">Option C</string>
+    <string name="option_d">Option D</string>
+    <string name="next">Next</string>
+    <string name="explanations">ရှင်းလင်းချက်</string>
 </resources>
 
 
-<!--    Ad format	Sample ad unit ID-->
-<!--    App Open	ca-app-pub-3940256099942544/3419835294-->
-<!--    Adaptive Banner	ca-app-pub-3940256099942544/9214589741-->
-<!--    Banner	ca-app-pub-3940256099942544/6300978111-->
-<!--    Interstitial	ca-app-pub-3940256099942544/1033173712-->
-<!--    Interstitial Video	ca-app-pub-3940256099942544/8691691433-->
-<!--    Rewarded	ca-app-pub-3940256099942544/5224354917-->
-<!--    Rewarded Interstitial	ca-app-pub-3940256099942544/5354046379-->
-<!--    Native Advanced	ca-app-pub-3940256099942544/2247696110-->
-<!--    Native Advanced Video	ca-app-pub-3940256099942544/1044960115-->
+    <!--    Ad format	Sample ad unit ID-->
+    <!--    App Open	ca-app-pub-3940256099942544/3419835294-->
+    <!--    Adaptive Banner	ca-app-pub-3940256099942544/9214589741-->
+    <!--    Banner	ca-app-pub-3940256099942544/6300978111-->
+    <!--    Interstitial	ca-app-pub-3940256099942544/1033173712-->
+    <!--    Interstitial Video	ca-app-pub-3940256099942544/8691691433-->
+    <!--    Rewarded	ca-app-pub-3940256099942544/5224354917-->
+    <!--    Rewarded Interstitial	ca-app-pub-3940256099942544/5354046379-->
+    <!--    Native Advanced	ca-app-pub-3940256099942544/2247696110-->
+    <!--    Native Advanced Video	ca-app-pub-3940256099942544/1044960115-->

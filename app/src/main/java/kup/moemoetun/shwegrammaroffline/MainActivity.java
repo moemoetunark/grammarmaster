@@ -25,6 +25,8 @@ import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.viewpager.widget.ViewPager;
 import java.util.HashMap;
+
+import kup.moemoetun.shwegrammaroffline.adv.AdvEntry;
 import kup.moemoetun.shwegrammaroffline.ui.ViewPagerAdapter;
 import kup.moemoetun.shwegrammaroffline.utility.GoogleMobileAdsConsentManager;
 
@@ -42,11 +44,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-
         HashMap<String, Object> defaultRate = new HashMap<>();
         defaultRate.put("new_version_code",String.valueOf(getVersionCode()));
-
         mFirebaseRemoteConfig = FirebaseRemoteConfig.getInstance();
         FirebaseRemoteConfigSettings configSettings = new FirebaseRemoteConfigSettings.Builder()
                 .setMinimumFetchIntervalInSeconds(10)
@@ -200,7 +199,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.moemoetun.me/privacy-policy-2/"));
             startActivity(browserIntent);
         } else if (id == R.id.close) {
-            finish();
+            Intent intent = new Intent(MainActivity.this, AdvEntry.class);
+            startActivity(intent);
         }
 
         drawer.closeDrawer(GravityCompat.START);
