@@ -32,7 +32,6 @@ import kup.moemoetun.shwegrammaroffline.activity.Dating_Act;
 import kup.moemoetun.shwegrammaroffline.activity.Job_Act;
 import kup.moemoetun.shwegrammaroffline.activity.ShoppingAct;
 import kup.moemoetun.shwegrammaroffline.adapter.MyRecyclerViewAdapter;
-import kup.moemoetun.shwegrammaroffline.webview.GrammarWebView;
 import kup.moemoetun.shwegrammaroffline.webview.Shopping_web;
 
 public class Fragment2 extends Fragment implements MyRecyclerViewAdapter.ItemClickListener {

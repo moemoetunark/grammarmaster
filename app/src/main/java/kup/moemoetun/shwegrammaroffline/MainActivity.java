@@ -1,15 +1,21 @@
 package kup.moemoetun.shwegrammaroffline;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.PopupMenu;
 import android.widget.Toast;
+
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.android.material.navigation.NavigationView;
@@ -25,8 +31,6 @@ import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.viewpager.widget.ViewPager;
 import java.util.HashMap;
-
-import kup.moemoetun.shwegrammaroffline.adv.AdvEntry;
 import kup.moemoetun.shwegrammaroffline.ui.ViewPagerAdapter;
 import kup.moemoetun.shwegrammaroffline.utility.GoogleMobileAdsConsentManager;
 
@@ -37,7 +41,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     private String[] pageTitle = {"Basic Grammar", "Basic Speaking", "Listening Level 1","Listening Level 2",
             " Listening Level 3","Listening Level 4"};
     private FirebaseRemoteConfig mFirebaseRemoteConfig;
-    GoogleMobileAdsConsentManager googleMobileAdsConsentManager;
+    private AlertDialog alertDialog;
 
 
     @Override
@@ -69,7 +73,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         drawer = findViewById(R.id.drawerLayout);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-
         //create default navigation drawer toggle
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, drawer, toolbar,
                 R.string.navigation_drawer_open, R.string.navigation_drawer_close);
@@ -112,6 +115,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
             }
         });
+       loadDialog();
 
         //change ViewPager page when tab selected
 
@@ -143,36 +147,36 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         return packageInfo != null ? packageInfo.versionCode : 40;
     }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.action_menu, menu);
-        MenuItem moreMenu = menu.findItem(R.id.action_more);
-//        moreMenu.setVisible(googleMobileAdsConsentManager.isPrivacyOptionsRequired());
-        return true;
-    }
+    public void loadDialog(){
+        AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(this, R.style.fullScreenDialog);
+        LayoutInflater inflater = getLayoutInflater();
+        View dialogView = inflater.inflate(R.layout.full_screen_dialog, null);
+        // Set the custom view for the AlertDialog
+        alertDialogBuilder.setView(dialogView);
+        AdView mAdView = dialogView.findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mAdView.loadAd(adRequest);
+        mAdView = new AdView(this);
+        mAdView.setAdUnitId(getString(R.string.exit_banner));
+        Button positiveButton = dialogView.findViewById(R.id.positiveButton);
+        positiveButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
+        Button negativeButton = dialogView.findViewById(R.id.negativeButton);
+        negativeButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                alertDialog.dismiss();
+            }
+        });
 
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        View menuItemView = findViewById(item.getItemId());
-        PopupMenu popup = new PopupMenu(this, menuItemView);
-        popup.getMenuInflater().inflate(R.menu.popup_menu, popup.getMenu());
-        popup.show();
-        popup.setOnMenuItemClickListener(
-                popupMenuItem -> {
-                    if (popupMenuItem.getItemId() == R.id.privacy_settings) {
-                        // Handle changes to user consent.
-                        googleMobileAdsConsentManager.showPrivacyOptionsForm(
-                                this,
-                                formError -> {
-                                    if (formError != null) {
-                                        Toast.makeText(this, formError.getMessage(), Toast.LENGTH_SHORT).show();
-                                    }
-                                });
-                        return true;
-                    }
-                    return false;
-                });
-        return super.onOptionsItemSelected(item);
+        // Customize the AlertDialog
+
+        // Create and show the AlertDialog
+        alertDialog = alertDialogBuilder.create();
     }
 
     @Override
@@ -196,22 +200,19 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             //viewPager.setCurrentItem(2);
         //}
         if (id == R.id.go) {
-            Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.moemoetun.me/privacy-policy-2/"));
-            startActivity(browserIntent);
+            startActivity(new Intent("android.intent.action.VIEW", Uri.parse("https://www.moemoetun.me/p/privacy-policy.html")));
         } else if (id == R.id.close) {
-            Intent intent = new Intent(MainActivity.this, AdvEntry.class);
-            startActivity(intent);
+            alertDialog.show();
         }
 
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }
-
     @Override
     public void onBackPressed() {
-        assert drawer != null;
-        if (drawer.isDrawerOpen(GravityCompat.START)) {
-            drawer.closeDrawer(GravityCompat.START);
+        // Show the dialog when the user presses the back button
+        if (alertDialog != null && !alertDialog.isShowing()) {
+            alertDialog.show();
         } else {
             super.onBackPressed();
         }
@@ -219,7 +220,12 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
     @Override
     protected void onDestroy() {
+        // Dismiss the dialog when the activity is being destroyed
+        if (alertDialog != null && alertDialog.isShowing()) {
+            alertDialog.dismiss();
+        }
         super.onDestroy();
     }
+
 
 }

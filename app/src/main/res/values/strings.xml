@@ -1,13 +1,18 @@
 <resources>
+
     <string name="app_name">Grammar Master</string>
     <string name="navigation_drawer_open">Open</string>
     <string name="navigation_drawer_close">Close</string>
     <string name="rate">Rate this App</string>
     <string name="privacy_policy">Privacy Policy</string>
     <string name="exit">Exit App</string>
-    <string name="banner_under_webview">ca-app-pub-3940256099942544/6300978111</string>
+
+    <string name="banner_under_webview">ca-app-pub-4137439985376631/9576350619</string>
     <string name="offfline_interstitials">ca-app-pub-4137439985376631/2591615182</string>
-    <string name="offline_onback">ca-app-pub-4137439985376631/3220216862</string>
+    <string name="offline_onback">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="exit_banner">ca-app-pub-4137439985376631/3323015026</string>
+    <string name="quiz_complete">ca-app-pub-4137439985376631/7124327531</string>
+
     <string name="download">Download ယူရန်များ</string>
     <string name="app_open">ca-app-pub-4137439985376631/1650742998</string>
     <string name="splash_description">Please wait..</string>
@@ -27,6 +32,12 @@
     <string name="option_d">Option D</string>
     <string name="next">Next</string>
     <string name="explanations">ရှင်းလင်းချက်</string>
+    <string name="viewPager">Swipe Left or Right</string>
+    <string name="tab_descs">Move One Tabs to another</string>
+
+    <string name="do_you_want_to_exit">You want to exit?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
 </resources>
 
 

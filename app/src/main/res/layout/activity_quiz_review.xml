@@ -5,14 +5,16 @@
     android:background="@color/white"
     android:orientation="vertical">
 
-    <com.google.android.material.appbar.MaterialToolbar
+    <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/colorPrimary"
+        android:background="?attr/colorPrimary"
         app:title="Quiz Review"
-        android:theme="@style/ToolbarTheme"
-        app:titleTextAppearance="@style/ToolbarTitleStyle" />
+        android:minHeight="?attr/actionBarSize"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark"
+        app:titleTextColor="@android:color/white"/>
 
     <LinearLayout
         android:layout_width="match_parent"

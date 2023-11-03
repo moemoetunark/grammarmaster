@@ -29,15 +29,16 @@
                 android:id="@+id/tab_layout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/toolbar"
                 app:tabMode="scrollable"
                 android:background="@color/colorPrimary"
+                android:contentDescription="@string/tab_descs"
                 android:minHeight="?attr/actionBarSize"
                 android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
 
             <androidx.viewpager.widget.ViewPager
                 android:id="@+id/view_pager"
                 android:layout_width="match_parent"
+                android:contentDescription="@string/viewPager"
                 android:layout_height="wrap_content" />
         </LinearLayout>
 

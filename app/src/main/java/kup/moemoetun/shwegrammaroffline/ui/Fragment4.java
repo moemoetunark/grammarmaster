@@ -5,13 +5,6 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
-import android.widget.Button;
-import android.widget.ListView;
-import android.widget.TextView;
-
-import com.google.android.gms.ads.AdListener;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.FullScreenContentCallback;
 import com.google.android.gms.ads.LoadAdError;
@@ -28,8 +21,6 @@ import java.util.ArrayList;
 
 import kup.moemoetun.shwegrammaroffline.R;
 import kup.moemoetun.shwegrammaroffline.adapter.MyRecyclerViewAdapter;
-import kup.moemoetun.shwegrammaroffline.webview.GrammarWebView;
-import kup.moemoetun.shwegrammaroffline.webview.Level_One_WebView;
 import kup.moemoetun.shwegrammaroffline.webview.Level_Two_WebView;
 
 

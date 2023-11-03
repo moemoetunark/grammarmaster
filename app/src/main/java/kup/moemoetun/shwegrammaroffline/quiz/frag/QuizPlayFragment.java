@@ -18,6 +18,12 @@ import androidx.annotation.Nullable;
 import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
 
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.FullScreenContentCallback;
+import com.google.android.gms.ads.LoadAdError;
+import com.google.android.gms.ads.interstitial.InterstitialAd;
+import com.google.android.gms.ads.interstitial.InterstitialAdLoadCallback;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -47,6 +53,8 @@ public class QuizPlayFragment extends Fragment {
 
     private int totalQuestions;
     private int progress;
+    private InterstitialAd mInterstitialAd;
+    private String statusText;
 
     public QuizPlayFragment() {
     }
@@ -72,7 +80,7 @@ public class QuizPlayFragment extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_quiz_player_tab, container, false);
-
+        loadInterstitialAds();
         optionsContainer = view.findViewById(R.id.optionsContainer);
         nextButton = view.findViewById(R.id.showNext);
         questionTextView = view.findViewById(R.id.questionTextView);
@@ -231,13 +239,12 @@ public class QuizPlayFragment extends Fragment {
             nextButton.setEnabled(true);
             explanationTextView.setVisibility(View.GONE);
         } else {
-            handleEndOfQuiz();
+                handleEndOfQuiz();
         }
     }
 
     private void handleEndOfQuiz() {
         double percentage = (double) correctCount / filteredQuestions.size() * 100;
-        String statusText;
 
         if (percentage >= 90) {
             statusText = "A";
@@ -252,14 +259,18 @@ public class QuizPlayFragment extends Fragment {
         }
 
         if (!filteredQuestions.isEmpty() && selectedCategoryHasQuestions()) {
-            // Start the ReviewActivity and pass the filteredQuestions as an extra
-            Intent intent = new Intent(requireContext(), QuizReviewActivity.class);
-            intent.putParcelableArrayListExtra("filteredQuestions", new ArrayList<>(filteredQuestions));
-            intent.putExtra("correctCount", correctCount);
-            intent.putExtra("incorrectCount", incorrectCount);
-            intent.putExtra("statusText", statusText);
-            startActivity(intent);
-            requireActivity().finish();
+            if(mInterstitialAd !=null){
+                showInterstitialAds();
+            }else {
+                // Start the ReviewActivity and pass the filteredQuestions as an extra
+                Intent intent = new Intent(requireContext(), QuizReviewActivity.class);
+                intent.putParcelableArrayListExtra("filteredQuestions", new ArrayList<>(filteredQuestions));
+                intent.putExtra("correctCount", correctCount);
+                intent.putExtra("incorrectCount", incorrectCount);
+                intent.putExtra("statusText", statusText);
+                startActivity(intent);
+                requireActivity().finish();
+            }
         } else {
             // Handle the case when filteredQuestions is empty
             Toast.makeText(requireContext(), "No questions available for review", Toast.LENGTH_SHORT).show();
@@ -290,5 +301,43 @@ public class QuizPlayFragment extends Fragment {
     private void updateProgressBar() {
         progress = (selectedButtonPositions.size() * 100) / totalQuestions;
         progressBar.setProgress(progress);
+    }
+
+
+    private void loadInterstitialAds(){
+        AdRequest adRequest = new AdRequest.Builder().build();
+        InterstitialAd.load(requireContext(), getString(R.string.quiz_complete), adRequest,
+                new InterstitialAdLoadCallback() {
+                    @Override
+                    public void onAdLoaded(@NonNull InterstitialAd interstitialAd) {
+                        // The mInterstitialAd reference will be null until
+                        // an ad is loaded.
+                        mInterstitialAd = interstitialAd;
+                        mInterstitialAd.setFullScreenContentCallback(new FullScreenContentCallback() {
+                            @Override
+                            public void onAdDismissedFullScreenContent() {
+                                Intent intent = new Intent(requireContext(), QuizReviewActivity.class);
+                                intent.putParcelableArrayListExtra("filteredQuestions", new ArrayList<>(filteredQuestions));
+                                intent.putExtra("correctCount", correctCount);
+                                intent.putExtra("incorrectCount", incorrectCount);
+                                intent.putExtra("statusText", statusText);
+                                startActivity(intent);
+                                //requireActivity().finish();
+
+                            }
+                        });
+                    }
+
+                    @Override
+                    public void onAdFailedToLoad(@NonNull LoadAdError loadAdError) {
+                        // Handle the error
+                        mInterstitialAd = null;
+                    }
+                });
+    }
+    private void showInterstitialAds(){
+        if (mInterstitialAd != null) {
+            mInterstitialAd.show(requireActivity());
+        }
     }
 }

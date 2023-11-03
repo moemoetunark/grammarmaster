@@ -22,6 +22,7 @@
         android:background="@color/white"
         android:elevation="4dp"
         app:tabMode="fixed"
+        android:contentDescription="@string/appbar_scrolling_view_behavior"
         android:minHeight="?attr/actionBarSize"
         app:tabIndicatorGravity="bottom"
         app:tabSelectedTextColor="#AA00FF"

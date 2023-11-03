@@ -37,8 +37,6 @@ public class QuizReviewActivity extends AppCompatActivity {
 
         TextView textView = findViewById(R.id.statusText);
         TextView textView1 = findViewById(R.id.chartCenterText);
-        Button buttonStatus = findViewById(R.id.btnStatus);
-
 
         Button statusButton = findViewById(R.id.btnStatus);
         statusButton.setBackgroundResource(R.drawable.tranperrant_bg);
@@ -59,9 +57,9 @@ public class QuizReviewActivity extends AppCompatActivity {
         }else if(statusText.equals("D")){
             statusButton.setText("Poor");
         }else {
-                statusButton.setText("Failed. Try again.");
-                statusButton.setBackgroundResource(R.drawable.options_button_bg);
-            }
+            statusButton.setText("Failed. Try again.");
+            statusButton.setBackgroundResource(R.drawable.options_button_bg);
+        }
 
 
         // Set up the PieChart
@@ -69,7 +67,6 @@ public class QuizReviewActivity extends AppCompatActivity {
         List<PieEntry> entries = new ArrayList<>();
         entries.add(new PieEntry(correctCount, "Correct " + correctCount));
         entries.add(new PieEntry(incorrectCount, "Incorrect " + incorrectCount));
-
         PieDataSet dataSet = new PieDataSet(entries, "Quiz Result " + statusText);
         dataSet.setColors(Color.GREEN, Color.RED);
 
