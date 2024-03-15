@@ -1,0 +1,126 @@
+{
+  "project_info": {
+    "project_number": "396863613038",
+    "project_id": "thadar-book",
+    "storage_bucket": "thadar-book.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:396863613038:android:55c61c23e4203b65bd5e7f",
+        "android_client_info": {
+          "package_name": "com.moemoetun.thadarbook"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "396863613038-m45a6kvnefegl3tkisv4dp0as5r71kfp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDelth2xxsU-e6cfA6n1-YdO4jOHHS6Wsk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "396863613038-m45a6kvnefegl3tkisv4dp0as5r71kfp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:396863613038:android:21dc405905e4244ebd5e7f",
+        "android_client_info": {
+          "package_name": "com.techhub.thardarbook"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "396863613038-m45a6kvnefegl3tkisv4dp0as5r71kfp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDelth2xxsU-e6cfA6n1-YdO4jOHHS6Wsk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "396863613038-m45a6kvnefegl3tkisv4dp0as5r71kfp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:396863613038:android:849e3bf59671a2fdbd5e7f",
+        "android_client_info": {
+          "package_name": "com.thadar.book"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "396863613038-m45a6kvnefegl3tkisv4dp0as5r71kfp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDelth2xxsU-e6cfA6n1-YdO4jOHHS6Wsk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "396863613038-m45a6kvnefegl3tkisv4dp0as5r71kfp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:396863613038:android:5bd248ee8d6fea74bd5e7f",
+        "android_client_info": {
+          "package_name": "kup.moemoetun.shwegrammaroffline"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "396863613038-m45a6kvnefegl3tkisv4dp0as5r71kfp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDelth2xxsU-e6cfA6n1-YdO4jOHHS6Wsk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "396863613038-m45a6kvnefegl3tkisv4dp0as5r71kfp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

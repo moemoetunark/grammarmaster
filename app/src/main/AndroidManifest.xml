@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/graduate"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-3940256099942544~3347511713" />
+        <meta-data
+            android:name="com.google.android.gms.ads.flag.OPTIMIZE_INITIALIZATION"
+            android:value="true" />
+        <meta-data
+            android:name="com.google.android.gms.ads.flag.OPTIMIZE_AD_LOADING"
+            android:value="true" />
+
+        <activity
+            android:name=".activity.ShoppingAct"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name=".activity.Dating_Act"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name=".activity.Job_Act"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name=".activity.DailyLife"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name=".webview.GrammarWebView"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="Basic Grammar Section" />
+        <activity
+            android:name=".webview.Shopping_web"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="Shopping" />
+        <activity
+            android:name=".webview.Daile_Web"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="Daily Life" />
+        <activity
+            android:name=".webview.Job_Web"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="Job" />
+        <activity
+            android:name=".webview.Dating_Web"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="Speaking for Dating" />
+        <activity
+            android:name=".webview.Level_One_WebView"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="Listening Level One" />
+        <activity
+            android:name=".webview.Level_Two_WebView"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="Listening Level Two" />
+        <activity
+            android:name=".quiz.QuizMain"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name=".quiz.QuizReviewActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name=".MainActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+
+        <activity
+            android:name=".webview.Level_Three_WebView"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="Listening Level Three" />
+        <activity
+            android:name=".webview.Level_Four_WebView"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="Listening Level Four" />
+        <activity
+            android:name=".SplashActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="true"
+            android:noHistory="true"
+            android:screenOrientation="fullSensor">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>
