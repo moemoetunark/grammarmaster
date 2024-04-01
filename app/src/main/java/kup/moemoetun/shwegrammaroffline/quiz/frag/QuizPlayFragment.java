@@ -129,6 +129,11 @@ public class QuizPlayFragment extends Fragment {
             return;
         }
 
+        if (currentQuestionIndex < 0 || currentQuestionIndex >= filteredQuestions.size()) {
+            // Ensure currentQuestionIndex is within bounds
+            return;
+        }
+
         QuizQuestion question = filteredQuestions.get(currentQuestionIndex);
         Button selectedButton = (Button) optionsContainer.getChildAt(selectedPosition);
         String selectedOption = selectedButton.getText().toString();
@@ -166,10 +171,10 @@ public class QuizPlayFragment extends Fragment {
 
         nextButton.setEnabled(true);
         selectedButtonPositions.add(selectedPosition);
-
         // Enable the Next button if there are more questions
         updateProgressBar();
     }
+
 
     private int getSelectedButtonPosition() {
         for (int i = 0; i < optionsContainer.getChildCount(); i++) {

@@ -144,7 +144,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         } catch (PackageManager.NameNotFoundException e) {
             Log.i("mylog","NameNotFoundExcepton"+e.getMessage());
         }
-        return packageInfo != null ? packageInfo.versionCode : 40;
+        return packageInfo != null ? packageInfo.versionCode : 41;
     }
 
     public void loadDialog(){

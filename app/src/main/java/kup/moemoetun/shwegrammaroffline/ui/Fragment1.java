@@ -46,7 +46,7 @@ public class Fragment1 extends Fragment implements MyRecyclerViewAdapter.ItemCli
         animalNames.add("Present Simple Question- ရိုးရိုးပစ္စပ္ပန်ကါလမေးခွန်း");
         animalNames.add("Present Simple and Continuous");
         animalNames.add("Have got/has got တို့ကို အသုံးပြုပုံစံများ");
-        animalNames.add("Was, Were-ရှိခဲ့သည်၊ဖြစ်ခဲ့သည်");
+        animalNames.add("Was,Were-ရှိခဲ့သည်၊ဖြစ်ခဲ့သည်");
 
         animalNames.add("Past Simple (I did) - ရိုးရိုးအတိတ်ကါလ");
         animalNames.add("past Simple မေးခွန်း (Did you do...?");

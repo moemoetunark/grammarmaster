@@ -72,7 +72,7 @@ public class ContentFragment extends Fragment {
         categoryHtmlMapping.put("Present Simple Question- ရိုးရိုးပစ္စပ္ပန်ကါလမေးခွန်း", "unit_7_present_simple_question.html");
         categoryHtmlMapping.put("Present Simple and Continuous","unit_8_present_continuous_and_present_simple.html");
         categoryHtmlMapping.put("Have got/has got တို့ကို အသုံးပြုပုံစံများ","unit_9_i_have_got.html");
-        categoryHtmlMapping.put("Was, Were-ရှိခဲ့သည်၊ဖြစ်ခဲ့သည်","unit_10_was_were.html");
+        categoryHtmlMapping.put("Was,Were-ရှိခဲ့သည်၊ဖြစ်ခဲ့သည်","unit_10_was_were.html");
         categoryHtmlMapping.put("Past Simple (I did) - ရိုးရိုးအတိတ်ကါလ","unit_11_past_Simple.html");
         categoryHtmlMapping.put("past Simple မေးခွန်း (Did you do...?","unit_12_past_simple.html");
         categoryHtmlMapping.put("Past Continuous-အတိတ်ဆက်လက်ကါလ (I was doing)","unit_13_I_was_doing_past_continuous.html");
