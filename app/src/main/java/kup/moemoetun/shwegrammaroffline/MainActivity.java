@@ -1,5 +1,4 @@
 package kup.moemoetun.shwegrammaroffline;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
@@ -7,15 +6,16 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
-import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.PopupMenu;
 import android.widget.Toast;
 
-import com.google.android.gms.ads.AdRequest;
-import com.google.android.gms.ads.AdView;
+import com.appodeal.ads.Appodeal;
+import com.appodeal.ads.BannerCallbacks;
+import com.appodeal.ads.initializing.ApdInitializationCallback;
+import com.appodeal.ads.initializing.ApdInitializationError;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.android.material.navigation.NavigationView;
@@ -23,6 +23,7 @@ import com.google.android.material.tabs.TabLayout;
 import com.google.firebase.remoteconfig.FirebaseRemoteConfig;
 import com.google.firebase.remoteconfig.FirebaseRemoteConfigSettings;
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
@@ -31,8 +32,9 @@ import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.viewpager.widget.ViewPager;
 import java.util.HashMap;
+import java.util.List;
+
 import kup.moemoetun.shwegrammaroffline.ui.ViewPagerAdapter;
-import kup.moemoetun.shwegrammaroffline.utility.GoogleMobileAdsConsentManager;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener{
     private ViewPager viewPager;
@@ -48,6 +50,12 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        Appodeal.initialize(MainActivity.this, getString(R.string.apiKey), Appodeal.BANNER_BOTTOM|Appodeal.INTERSTITIAL, new ApdInitializationCallback() {
+            @Override
+            public void onInitializationFinished(@Nullable List<ApdInitializationError> errors) {
+                // Appodeal initialization finished
+            }
+        });
         HashMap<String, Object> defaultRate = new HashMap<>();
         defaultRate.put("new_version_code",String.valueOf(getVersionCode()));
         mFirebaseRemoteConfig = FirebaseRemoteConfig.getInstance();
@@ -65,9 +73,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 }
             }
         });
-
-
-
         viewPager = findViewById(R.id.view_pager);
         Toolbar toolbar = findViewById(R.id.toolbar);
         drawer = findViewById(R.id.drawerLayout);
@@ -117,6 +122,9 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         });
        loadDialog();
 
+       if(Appodeal.isLoaded(Appodeal.BANNER_BOTTOM)){
+           Appodeal.show(MainActivity.this, Appodeal.BANNER_BOTTOM);
+       }
         //change ViewPager page when tab selected
 
     }
@@ -144,7 +152,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         } catch (PackageManager.NameNotFoundException e) {
             Log.i("mylog","NameNotFoundExcepton"+e.getMessage());
         }
-        return packageInfo != null ? packageInfo.versionCode : 40;
+        return packageInfo != null ? packageInfo.versionCode : 45;
     }
 
     public void loadDialog(){
@@ -153,11 +161,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         View dialogView = inflater.inflate(R.layout.full_screen_dialog, null);
         // Set the custom view for the AlertDialog
         alertDialogBuilder.setView(dialogView);
-        AdView mAdView = dialogView.findViewById(R.id.adView);
-        AdRequest adRequest = new AdRequest.Builder().build();
-        mAdView.loadAd(adRequest);
-        mAdView = new AdView(this);
-        mAdView.setAdUnitId(getString(R.string.exit_banner));
         Button positiveButton = dialogView.findViewById(R.id.positiveButton);
         positiveButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -226,6 +229,14 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         }
         super.onDestroy();
     }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        Appodeal.show(this, Appodeal.BANNER_BOTTOM);
+    }
+
+
 
 
 }

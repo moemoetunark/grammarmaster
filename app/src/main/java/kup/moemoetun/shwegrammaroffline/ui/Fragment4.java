@@ -5,11 +5,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import com.google.android.gms.ads.AdRequest;
-import com.google.android.gms.ads.FullScreenContentCallback;
-import com.google.android.gms.ads.LoadAdError;
-import com.google.android.gms.ads.interstitial.InterstitialAd;
-import com.google.android.gms.ads.interstitial.InterstitialAdLoadCallback;
+
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -17,18 +13,21 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.appodeal.ads.Appodeal;
+import com.appodeal.ads.InterstitialCallbacks;
+
 import java.util.ArrayList;
 
 import kup.moemoetun.shwegrammaroffline.R;
 import kup.moemoetun.shwegrammaroffline.adapter.MyRecyclerViewAdapter;
+import kup.moemoetun.shwegrammaroffline.webview.Level_One_WebView;
 import kup.moemoetun.shwegrammaroffline.webview.Level_Two_WebView;
 
 
 public class Fragment4 extends Fragment implements MyRecyclerViewAdapter.ItemClickListener {
 
-    private InterstitialAd mInterstitialAd;
     MyRecyclerViewAdapter adapter;
-    private AdRequest adRequest;
+    private int itemPosition;
 
     @Nullable
     @Override
@@ -52,28 +51,46 @@ public class Fragment4 extends Fragment implements MyRecyclerViewAdapter.ItemCli
         animalNames.add("John loves to read books");
         animalNames.add("Sam loves watching TV");
 
-        adRequest = new AdRequest.Builder().build();
-        InterstitialAd.load(requireContext(), getString(R.string.offfline_interstitials),
-                adRequest, new InterstitialAdLoadCallback() {
-                    @Override
-                    public void onAdLoaded(@NonNull InterstitialAd interstitialAd) {
-                        // The mInterstitialAd reference will be null until
-                        // an ad is loaded.
-                        mInterstitialAd = interstitialAd;
-                    }
-
-                    @Override
-                    public void onAdFailedToLoad(@NonNull LoadAdError loadAdError) {
-                        // Handle the error
-                    }
-                });
-
 
         RecyclerView recyclerView = view.findViewById(R.id.recyclerView_1);
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
         adapter = new MyRecyclerViewAdapter(getContext(), animalNames);
         adapter.setClickListener(this);
         recyclerView.setAdapter(adapter);
+
+        Appodeal.setInterstitialCallbacks(new InterstitialCallbacks() {
+            @Override
+            public void onInterstitialLoaded(boolean isPrecache) {
+                // Called when interstitial is loaded
+            }
+            @Override
+            public void onInterstitialFailedToLoad() {
+                // Called when interstitial failed to load
+            }
+            @Override
+            public void onInterstitialShown() {
+                // Called when interstitial is shown
+            }
+            @Override
+            public void onInterstitialShowFailed() {
+                // Called when interstitial show failed
+            }
+            @Override
+            public void onInterstitialClicked() {
+                // Called when interstitial is clicked
+            }
+            @Override
+            public void onInterstitialClosed() {
+                // Called when interstitial is closed
+                Intent intent = new Intent(requireContext(), Level_Two_WebView.class);
+                intent.putExtra("key",itemPosition);
+                startActivity(intent);
+            }
+            @Override
+            public void onInterstitialExpired() {
+                // Called when interstitial is expired
+            }
+        });
 
 
 
@@ -82,30 +99,12 @@ public class Fragment4 extends Fragment implements MyRecyclerViewAdapter.ItemCli
 
     @Override
     public void onItemClick(View view, int position) {
-        if (mInterstitialAd !=null) {
-            mInterstitialAd.show(requireActivity());
-            mInterstitialAd.setFullScreenContentCallback(new FullScreenContentCallback(){
-                @Override
-                public void onAdDismissedFullScreenContent() {
-                    Intent intent = new Intent(requireContext(), Level_Two_WebView.class);
-                    intent.putExtra("key",position);
-                    startActivity(intent);
-                    // Called when fullscreen content is dismissed.
-                }
-                @Override
-                public void onAdShowedFullScreenContent() {
-                    // Called when fullscreen content is shown.
-                    // Make sure to set your reference to null so you don't
-                    // show it a second time.
-                    mInterstitialAd = null;
-                }
-            });
-
-        }
-
-        else {
+        itemPosition = position;
+        if(Appodeal.isLoaded(Appodeal.INTERSTITIAL)){
+            Appodeal.show(requireActivity(), Appodeal.INTERSTITIAL);
+        }else {
             Intent intent = new Intent(requireContext(), Level_Two_WebView.class);
-            intent.putExtra("key",position);
+            intent.putExtra("key",itemPosition);
             startActivity(intent);
         }
 

@@ -6,6 +6,7 @@
     <string name="rate">Rate this App</string>
     <string name="privacy_policy">Privacy Policy</string>
     <string name="exit">Exit App</string>
+    <string name="apiKey">bc8a329b2581891279880795edf742313dc3876b375306ef</string>
 
     <string name="banner_under_webview">ca-app-pub-4137439985376631/9576350619</string>
     <string name="offfline_interstitials">ca-app-pub-4137439985376631/2591615182</string>

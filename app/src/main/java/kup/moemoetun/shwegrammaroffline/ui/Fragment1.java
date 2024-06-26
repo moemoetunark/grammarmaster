@@ -4,26 +4,22 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import com.google.android.gms.ads.AdRequest;
-import com.google.android.gms.ads.FullScreenContentCallback;
-import com.google.android.gms.ads.LoadAdError;
-import com.google.android.gms.ads.interstitial.InterstitialAd;
-import com.google.android.gms.ads.interstitial.InterstitialAdLoadCallback;
 import java.util.ArrayList;
-import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+import com.appodeal.ads.Appodeal;
+import com.appodeal.ads.InterstitialCallbacks;
+
 import kup.moemoetun.shwegrammaroffline.R;
 import kup.moemoetun.shwegrammaroffline.adapter.MyRecyclerViewAdapter;
 import kup.moemoetun.shwegrammaroffline.quiz.QuizMain;
 public class Fragment1 extends Fragment implements MyRecyclerViewAdapter.ItemClickListener {
-    private InterstitialAd mInterstitialAd;
     MyRecyclerViewAdapter adapter;
-    private AdRequest adRequest;
     ArrayList<String> animalNames = new ArrayList<>();
-
+    private int adShowCount = 0;
+    private String selectedItem;
 
     @Nullable
     @Override
@@ -35,6 +31,8 @@ public class Fragment1 extends Fragment implements MyRecyclerViewAdapter.ItemCli
     @Override
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+
+
 
 
         animalNames.add("အခန်း (၁) am/is/are ကိုသုံးပုံ");
@@ -114,22 +112,6 @@ public class Fragment1 extends Fragment implements MyRecyclerViewAdapter.ItemCli
         animalNames.add("somebody/anybody စသည်သုံးပုံ");
 
 
-        adRequest = new AdRequest.Builder().build();
-        InterstitialAd.load(requireContext(), getString(R.string.offfline_interstitials),
-                adRequest, new InterstitialAdLoadCallback() {
-                    @Override
-                    public void onAdLoaded(@NonNull InterstitialAd interstitialAd) {
-                        // The mInterstitialAd reference will be null until
-                        // an ad is loaded.
-                        mInterstitialAd = interstitialAd;
-                    }
-
-                    @Override
-                    public void onAdFailedToLoad(@NonNull LoadAdError loadAdError) {
-                        // Handle the error
-                    }
-                });
-
 
         RecyclerView recyclerView = view.findViewById(R.id.recyclerView_1);
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
@@ -137,38 +119,72 @@ public class Fragment1 extends Fragment implements MyRecyclerViewAdapter.ItemCli
         adapter.setClickListener(this);
         recyclerView.setAdapter(adapter);
 
+
+        Appodeal.setInterstitialCallbacks(new InterstitialCallbacks() {
+            @Override
+            public void onInterstitialLoaded(boolean isPrecache) {
+                // Called when interstitial is loaded
+            }
+            @Override
+            public void onInterstitialFailedToLoad() {
+                // Called when interstitial failed to load
+            }
+            @Override
+            public void onInterstitialShown() {
+                adShowCount++;
+
+                // Called when interstitial is shown
+            }
+            @Override
+            public void onInterstitialShowFailed() {
+                // Called when interstitial show failed
+            }
+            @Override
+            public void onInterstitialClicked() {
+                // Called when interstitial is clicked
+            }
+            @Override
+            public void onInterstitialClosed() {
+                if (adShowCount < 3) {
+                    // Show next ad if ad count is less than 3
+                    showInterstitialAd();
+                } else {
+                    // Start QuizMain activity once ad limit reached
+                    startQuizActivity(selectedItem); // Pass selected item here
+                }
+
+                // Called when interstitial is closed
+            }
+            @Override
+            public void onInterstitialExpired() {
+                // Called when interstitial is expired
+            }
+        });
+
+    }
+
+    private void showInterstitialAd() {
+        if (Appodeal.isLoaded(Appodeal.INTERSTITIAL)) {
+            Appodeal.show(requireActivity(), Appodeal.INTERSTITIAL);
+        }else {
+            startQuizActivity(selectedItem);
+        }
+    }
+
+    private void startQuizActivity(String selectedItem) {
+        Intent intent = new Intent(requireContext(), QuizMain.class);
+        intent.putExtra("selectedCategory", selectedItem);
+        startActivity(intent);
     }
 
     @Override
     public void onItemClick(View view, int position) {
-
-        if (mInterstitialAd !=null) {
-            mInterstitialAd.show(requireActivity());
-            mInterstitialAd.setFullScreenContentCallback(new FullScreenContentCallback(){
-                @Override
-                public void onAdDismissedFullScreenContent() {
-                    Intent intent = new Intent(requireContext(), QuizMain.class);
-                    String clickedItemName = animalNames.get(position);
-                    intent.putExtra("selectedCategory", clickedItemName);
-                    startActivity(intent);
-                    // Called when fullscreen content is dismissed.
-                }
-                @Override
-                public void onAdShowedFullScreenContent() {
-                    // Called when fullscreen content is shown.
-                    // Make sure to set your reference to null so you don't
-                    // show it a second time.
-                    mInterstitialAd = null;
-                }
-            });
-
+        selectedItem = animalNames.get(position);
+        // Show interstitial ad when an item is clicked
+        showInterstitialAd();
         }
 
-        else {
-            Intent intent = new Intent(requireContext(), QuizMain.class);
-            String clickedItemName = animalNames.get(position);
-            intent.putExtra("selectedCategory", clickedItemName);
-            startActivity(intent);
-        }
-    }
+
+
+
 }

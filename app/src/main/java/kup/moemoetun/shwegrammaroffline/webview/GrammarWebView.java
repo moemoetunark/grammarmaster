@@ -1,85 +1,21 @@
 package kup.moemoetun.shwegrammaroffline.webview;
-
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
 import kup.moemoetun.shwegrammaroffline.R;
-
-import android.content.Context;
-import android.graphics.Rect;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.MenuItem;
-import android.view.View;
-import android.view.ViewTreeObserver;
-import android.view.WindowMetrics;
 import android.webkit.WebView;
-import android.widget.FrameLayout;
-import android.widget.TextView;
 import android.widget.Toast;
 
-import com.google.android.gms.ads.AdRequest;
-import com.google.android.gms.ads.AdSize;
-import com.google.android.gms.ads.AdView;
-import com.google.android.gms.ads.FullScreenContentCallback;
-import com.google.android.gms.ads.LoadAdError;
-import com.google.android.gms.ads.MobileAds;
-import com.google.android.gms.ads.RequestConfiguration;
-import com.google.android.gms.ads.initialization.InitializationStatus;
-import com.google.android.gms.ads.initialization.OnInitializationCompleteListener;
-import com.google.android.gms.ads.interstitial.InterstitialAd;
-import com.google.android.gms.ads.interstitial.InterstitialAdLoadCallback;
-
-import java.util.Arrays;
-import java.util.List;
+import com.appodeal.ads.Appodeal;
 
 public class GrammarWebView extends AppCompatActivity {
     public WebView webView;
-    public InterstitialAd mInterstitialAd;
-
-    private static final String AD_UNIT_ID = "ca-app-pub-4137439985376631/4189931024";
-    private AdView adView;
-    private FrameLayout adContainerView;
-    private boolean initialLayoutComplete = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_grammar_web_view);
-        MobileAds.initialize(this, initializationStatus -> {
-        });
 
-        adContainerView = findViewById(R.id.ad_view_container);
-        adView = new AdView(this);
-        adContainerView.addView(adView);
-        // Since we're loading the banner based on the adContainerView size, we need
-        // to wait until this view is laid out before we can get the width.
-        adContainerView.getViewTreeObserver().addOnGlobalLayoutListener(
-                new ViewTreeObserver.OnGlobalLayoutListener() {
-                    @Override
-                    public void onGlobalLayout() {
-                        if (!initialLayoutComplete) {
-                            initialLayoutComplete = true;
-                            loadBanner();
-                        }
-                    }
-                });
-
-        AdRequest adRequest = new AdRequest.Builder().build();
-        InterstitialAd.load(this, getString(R.string.offline_onback),
-                adRequest, new InterstitialAdLoadCallback() {
-                    @Override
-                    public void onAdLoaded(@NonNull InterstitialAd interstitialAd) {
-                        // The mInterstitialAd reference will be null until
-                        // an ad is loaded.
-                        mInterstitialAd = interstitialAd;
-                    }
-
-                    @Override
-                    public void onAdFailedToLoad(@NonNull LoadAdError loadAdError) {
-                        // Handle the error
-                    }
-                });
         //Toolbar toolbar = findViewById(R.id.toolbar);/
         webView = (WebView)findViewById(R.id.webView);
         webView.getSettings().setJavaScriptEnabled(true);
@@ -238,6 +174,10 @@ public class GrammarWebView extends AppCompatActivity {
             webView.loadUrl("file:///android_asset/player/unit_78_somebody_anybody.htm");
         }
 
+        if(Appodeal.isLoaded(Appodeal.BANNER_BOTTOM)){
+            Appodeal.show(this, Appodeal.BANNER_BOTTOM); // Display banner at the bottom of the screen
+        }
+
 
     }
 
@@ -253,25 +193,6 @@ public class GrammarWebView extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
-
-        if (mInterstitialAd !=null) {
-            mInterstitialAd.show(this);
-            mInterstitialAd.setFullScreenContentCallback(new FullScreenContentCallback(){
-                @Override
-                public void onAdDismissedFullScreenContent() {
-                    onBackPressed();
-                    // Called when fullscreen content is dismissed.
-                }
-                @Override
-                public void onAdShowedFullScreenContent() {
-                    // Called when fullscreen content is shown.
-                    // Make sure to set your reference to null so you don't
-                    // show it a second time.
-                    mInterstitialAd = null;
-                }
-            });
-
-        }
         super.onBackPressed();
     }
 
@@ -285,43 +206,10 @@ public class GrammarWebView extends AppCompatActivity {
         super.onDestroy();
     }
 
-    private void loadBanner() {
-        adView.setAdUnitId(AD_UNIT_ID);
-
-        AdSize adSize = getAdSize();
-        adView.setAdSize(adSize);
-
-        // Create an ad request. Check your logcat output for the hashed device ID
-        // to get test ads on a physical device, e.g.,
-        // "Use AdRequest.Builder.addTestDevice("ABCDE0123") to get test ads on this
-        // device."
-        AdRequest adRequest = new AdRequest.Builder().build();
-
-        // Start loading the ad in the background.
-        adView.loadAd(adRequest);
+    @Override
+    public void onResume() {
+        super.onResume();
+        Appodeal.show(this, Appodeal.BANNER_BOTTOM);
     }
 
-    // Determine the screen width (less decorations) to use for the ad width.
-    private AdSize getAdSize() {
-        WindowMetrics windowMetrics = null;
-        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.R) {
-            windowMetrics = getWindowManager().getCurrentWindowMetrics();
-        }
-        Rect bounds = null;
-        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.R) {
-            bounds = windowMetrics.getBounds();
-        }
-
-        float adWidthPixels = adContainerView.getWidth();
-
-        // If the ad hasn't been laid out, default to the full screen width.
-        if (adWidthPixels == 0f) {
-            adWidthPixels = bounds.width();
-        }
-
-        float density = getResources().getDisplayMetrics().density;
-        int adWidth = (int) (adWidthPixels / density);
-
-        return AdSize.getCurrentOrientationAnchoredAdaptiveBannerAdSize(this, adWidth);
-    }
 }
