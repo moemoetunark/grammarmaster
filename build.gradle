@@ -1,0 +1,28 @@
+// 1. buildscript MUST be at the very top
+buildscript {
+    repositories {
+        google()       // This is where the plugin lives
+        mavenCentral()
+        maven { url 'https://jitpack.io' }
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:8.13.2'
+        classpath 'com.google.gms:google-services:4.4.2'
+        // We define the plugin here instead of the plugins block to fix the "not found" error
+        classpath "com.google.android.libraries.mapsplatform.secrets-gradle-plugin:secrets-gradle-plugin:2.0.1"
+    }
+}
+
+// 2. allprojects block
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+        maven { url 'https://jitpack.io' }
+    }
+}
+
+// 3. Clean task
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

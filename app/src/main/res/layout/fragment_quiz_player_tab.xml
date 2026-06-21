@@ -1,0 +1,153 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:progressBackgroundTint="@color/progressBarBackground"
+        android:progressTint="@color/progressBarIndicator"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:max="100"
+        android:progress="0" />
+
+    <!-- Question -->
+    <TextView
+        android:id="@+id/questionTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="5dp"
+        android:padding="15dp"
+        android:background="@drawable/text_item_background_2"
+        android:text="@string/question_goes_here"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <!-- Option Buttons -->
+    <LinearLayout
+        android:id="@+id/optionsContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="5dp"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <!-- Option 1 -->
+        <Button
+            android:id="@+id/option1Button"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:text="@string/option_a"
+            android:layout_gravity="center"
+            android:textSize="16sp"
+            android:background="@drawable/options_button_bg"
+            android:paddingRight="12dp"
+            android:paddingLeft="12dp"
+            android:paddingBottom="4dp"
+            android:paddingTop="4dp"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Option 2 -->
+        <Button
+            android:id="@+id/option2Button"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:text="@string/option_b"
+            android:textSize="16sp"
+            android:layout_gravity="center"
+            android:background="@drawable/options_button_bg"
+            android:paddingRight="12dp"
+            android:paddingLeft="12dp"
+            android:paddingBottom="4dp"
+            android:paddingTop="4dp"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Option 3 -->
+        <Button
+            android:id="@+id/option3Button"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:text="@string/option_c"
+            android:textSize="16sp"
+            android:layout_gravity="center"
+            android:background="@drawable/options_button_bg"
+            android:paddingRight="12dp"
+            android:paddingLeft="12dp"
+            android:paddingBottom="4dp"
+            android:paddingTop="4dp"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Option 4 -->
+        <Button
+            android:id="@+id/option4Button"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:text="@string/option_d"
+            android:textSize="16sp"
+            android:layout_gravity="center"
+            android:background="@drawable/options_button_bg"
+            android:paddingRight="12dp"
+            android:paddingLeft="12dp"
+            android:paddingBottom="4dp"
+            android:paddingTop="4dp"
+            android:layout_marginBottom="8dp" />
+
+    </LinearLayout>
+
+    <!-- Rest of the code -->
+
+    <!-- Button Container -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="10dp"
+        android:gravity="center">
+
+        <!-- Next Button -->
+        <Button
+            android:id="@+id/showNext"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/text_item_background_1"
+            android:padding="10dp"
+            android:text="@string/next"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:visibility="visible"
+            android:textColor="@color/black"
+            style="?android:attr/buttonBarButtonStyle" />
+
+        <!-- Submit Button -->
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/explanationTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginRight="10dp"
+        android:padding="15dp"
+        android:background="@drawable/text_item_background_2"
+        android:text="@string/explanations"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:visibility="visible" />
+
+</LinearLayout>

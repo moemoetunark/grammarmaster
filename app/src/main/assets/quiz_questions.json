@@ -1,0 +1,1297 @@
+[
+  {
+    "category": "အခန်း (၁) am/is/are ကိုသုံးပုံ",
+    "questionText": "She _____ a doctor.",
+    "options": ["am", "is", "are"],
+    "explanation": "She ဆိုတာအနည်းကိန်း pronoun ဖြစ်တဲ့အတွက် is ကိုသုံးရပါတယ်'",
+    "correctAnswer": "is"
+  },
+  {
+    "category": "အခန်း (၁) am/is/are ကိုသုံးပုံ",
+    "questionText": "They _____ my friends.",
+    "options": ["am", "is", "are"],
+    "explanation": "They ဆိုတာအများကိန်း pronoun ဖြစ်တဲ့အတွက် are ကိုသုံးရပါတယ်",
+    "correctAnswer": "are"
+  },
+  {
+    "category": "အခန်း (၁) am/is/are ကိုသုံးပုံ",
+    "questionText": "I _____ going to the store later.",
+    "options": ["am", "is", "are"],
+    "explanation": "I ကို present tense မှာအမြဲတမ်း am နဲ့သာသုံးရပါတယ်",
+    "correctAnswer": "am"
+  },
+  {
+    "category": "အခန်း (၁) am/is/are ကိုသုံးပုံ",
+    "questionText": "_____ they coming to the party?",
+    "options": ["Am", "Is", "Are"],
+    "explanation": "များကိန်း pronoun ဖြစ်တဲ့အတွက် are ကိုသုံးရပါတယ်",
+    "correctAnswer": "Are"
+  },
+  {
+    "category": "အခန်း (၁) am/is/are ကိုသုံးပုံ",
+    "questionText": "He _____ a good student.",
+    "options": ["am", "is", "are"],
+    "explanation": "He ဆိုတာအနည်းကိန်း pronoun ဖြစ်တဲ့အတွက် is ကိုသုံးရပါတယ်",
+    "correctAnswer": "is"
+  },
+  {
+    "category": "အခန်း (၁) am/is/are ကိုသုံးပုံ",
+    "questionText": "We _____ excited about the trip.",
+    "options": ["am", "is", "are"],
+    "explanation": "We ဆိုတာအများကိန်း pronoun ဖြစ်တဲ့အတွက် are ကိုသုံးရပါတယ်",
+    "correctAnswer": "are"
+  },
+  {
+    "category": "အခန်း (၁) am/is/are ကိုသုံးပုံ",
+    "questionText": "The cat and the dog _____ best friends.",
+    "options": ["am", "is", "are"],
+    "explanation": "Subject က The cat and the dog နှစ်ခု ဖြစ်တဲ့အတွက် အများကိန်းကြိယာ are ကိုသုံးရပါတယ်",
+    "correctAnswer": "are"
+  },
+  {
+    "category": "အခန်း (၁) am/is/are ကိုသုံးပုံ",
+    "questionText": "I _____ sorry for the mistake.",
+    "options": ["am", "is", "are"],
+    "explanation": "I ကို present tense မှာအမြဲတမ်း am နဲ့သာသုံးရပါတယ်",
+    "correctAnswer": "am"
+  },
+  {
+    "category": "အခန်း (၁) am/is/are ကိုသုံးပုံ",
+    "questionText": "John and Mary _____ excellent cooks.",
+    "options": ["am", "is", "are"],
+    "explanation": "Subject John နှင့်မေရီ နှစ်ယောက် ဖြစ်တဲ့အတွက် အများကိန်းကြိယာ are ကိုသုံးရပါတယ်",
+    "correctAnswer": "are"
+  },
+  {
+    "category": "အခန်း (၁) am/is/are ကိုသုံးပုံ",
+    "questionText": "My favorite color _____ blue.",
+    "options": ["am", "is", "are"],
+    "explanation": "My favorite color ဟာအနည်းကိန်း ဖြစ်တဲ့အတွက် is ကိုပဲသုံးရပါတယ်",
+    "correctAnswer": "is"
+  },
+  {
+    "category": "အခန်း (၁) am/is/are ကိုသုံးပုံ",
+    "questionText": "She _____ a talented singer.",
+    "options": ["am", "is", "are"],
+    "explanation": "The correct form is 'is.'",
+    "correctAnswer": "is"
+  },
+  {
+    "category": "အခန်း (၁) am/is/are ကိုသုံးပုံ",
+    "questionText": "The flowers in the garden _____ beautiful.",
+    "options": ["am", "is", "are"],
+    "explanation": "The correct form is 'are.'",
+    "correctAnswer": "are"
+  },
+  {
+    "category": "အခန်း (၁) am/is/are ကိုသုံးပုံ",
+    "questionText": "I _____ not feeling well today.",
+    "options": ["am", "is", "are"],
+    "explanation": "The correct form is 'am.'",
+    "correctAnswer": "am"
+  },
+  {
+    "category": "အခန်း (၁) am/is/are ကိုသုံးပုံ",
+    "questionText": "They _____ the winners of the competition.",
+    "options": ["am", "is", "are"],
+    "explanation": "The correct verb is 'are.'",
+    "correctAnswer": "are"
+  },
+  {
+    "category": "အခန်း (၁) am/is/are ကိုသုံးပုံ",
+    "questionText": "The book on the shelf _____ interesting.",
+    "options": ["am", "is", "are"],
+    "explanation": "The correct form is 'is.'",
+    "correctAnswer": "is"
+  },
+    {
+      "category": "အခန်း (၂) am/is/are သုံးပုံ ၂",
+      "questionText": "_____ they not coming to the party tonight?",
+      "options": ["Am", "Is", "Are"],
+      "explanation": "The correct word is 'Are.'",
+      "correctAnswer": "Are"
+    },
+    {
+      "category": "အခန်း (၂) am/is/are သုံးပုံ ၂",
+      "questionText": "_____ it not a sunny day outside?",
+      "options": ["Am", "Is", "Are"],
+      "explanation": "The correct word is 'Is.'",
+      "correctAnswer": "Is"
+    },
+    {
+      "category": "အခန်း (၂) am/is/are သုံးပုံ ၂",
+      "questionText": "The restaurant is closed. _____ it open on Sundays?",
+      "options": ["Am", "Is", "Are"],
+      "explanation": "The correct word is 'Is.'",
+      "correctAnswer": "Is"
+    },
+    {
+      "category": "အခန်း (၂) am/is/are သုံးပုံ ၂",
+      "questionText": "_____ they not happy with the results?",
+      "options": ["Am", "Is", "Are"],
+      "explanation": "The correct word is 'Are.'",
+      "correctAnswer": "Are"
+    },
+    {
+      "category": "အခန်း (၂) am/is/are သုံးပုံ ၂",
+      "questionText": "_____ it not necessary to complete the assignment by tomorrow?",
+      "options": ["Am", "Is", "Are"],
+      "explanation": "The correct word is 'Is.'",
+      "correctAnswer": "Is"
+    },
+    {
+      "category": "အခန်း (၂) am/is/are သုံးပုံ ၂",
+      "questionText": "The movie isn't playing tonight. _____ it showing tomorrow?",
+      "options": ["Am", "Is", "Are"],
+      "explanation": "The correct word is 'Is.'",
+      "correctAnswer": "Is"
+    },
+    {
+      "category": "အခန်း (၂) am/is/are သုံးပုံ ၂",
+      "questionText": "_____ they not ready for the presentation?",
+      "options": ["Am", "Is", "Are"],
+      "explanation": "The correct word is 'Are.'",
+      "correctAnswer": "Are"
+    },
+    {
+      "category": "အခန်း (၂) am/is/are သုံးပုံ ၂",
+      "questionText": "_____ it not important to exercise regularly?",
+      "options": ["Am", "Is", "Are"],
+      "explanation": "The correct word is 'Is.'",
+      "correctAnswer": "Is"
+    },
+    {
+      "category": "အခန်း (၂) am/is/are သုံးပုံ ၂",
+      "questionText": "The store isn't open now. _____ it closed for the day?",
+      "options": ["Am", "Is", "Are"],
+      "explanation": "The correct word is 'Is.'",
+      "correctAnswer": "Is"
+    },
+    {
+      "category": "အခန်း (၂) am/is/are သုံးပုံ ၂",
+      "questionText": "_____ they not ready for the big game tomorrow?",
+      "options": ["Am", "Is", "Are"],
+      "explanation": "The correct word is 'Are.'",
+      "correctAnswer": "Are"
+    },
+    {
+      "category": "အခန်း (၂) am/is/are သုံးပုံ ၂",
+      "questionText": "_____ it not your birthday today?",
+      "options": ["Am", "Is", "Are"],
+      "explanation": "The correct word is 'Is.'",
+      "correctAnswer": "Is"
+    },
+    {
+      "category": "အခန်း (၂) am/is/are သုံးပုံ ၂",
+      "questionText": "The report isn't finished. _____ it due tomorrow?",
+      "options": ["Am", "Is", "Are"],
+      "explanation": "The correct word is 'Is.'",
+      "correctAnswer": "Is"
+    },
+    {
+      "category": "အခန်း (၂) am/is/are သုံးပုံ ၂",
+      "questionText": "_____ they not surprised by the news?",
+      "options": ["Am", "Is", "Are"],
+      "explanation": "The correct word is 'Are.'",
+      "correctAnswer": "Are"
+    },
+    {
+      "category": "အခန်း (၂) am/is/are သုံးပုံ ၂",
+      "questionText": "_____ it not a good idea to start early?",
+      "options": ["Am", "Is", "Are"],
+      "explanation": "The correct word is 'Is.'",
+      "correctAnswer": "Is"
+    },
+    {
+      "category": "အခန်း (၂) am/is/are သုံးပုံ ၂",
+      "questionText": "The store isn't crowded. _____ it busy on weekends?",
+      "options": ["Am", "Is", "Are"],
+      "explanation": "The correct word is 'Is.'",
+      "correctAnswer": "Is"
+    },
+
+    {
+      "category": "Present Continuous -(I'm doing)-ပစ္စုပ္ပန်ဆက်လက်ကါလ",
+      "questionText": "She _____ TV right now.",
+      "options": ["is watching", "am watching", "are watching"],
+      "explanation": "ဒီဝါကျတွင် subject ဖြစ်တဲ့ 'She' အတွက် is ဖြင့်တွဲရပါတယ်။",
+      "correctAnswer": "is watching"
+    },
+    {
+      "category": "Present Continuous -(I'm doing)-ပစ္စုပ္ပန်ဆက်လက်ကါလ",
+      "questionText": "They _____ soccer at the moment.",
+      "options": ["are playing", "am playing", "is playing"],
+      "explanation": "ဒီဝါကျတွင် subject ကအများကိန်းဖြစ်တဲ့ 'They' အတွက် are ဖြင့်တွဲရပါတယ်။",
+      "correctAnswer": "are playing"
+    },
+    {
+      "category": "Present Continuous -(I'm doing)-ပစ္စုပ္ပန်ဆက်လက်ကါလ",
+      "questionText": "He _____ on his project today.",
+      "options": ["is working", "am working", "are working"],
+      "explanation": "ဒီဝါကျတွင် subject ဖြစ်တဲ့ 'He' အတွက် is ဖြင့်တွဲရပါတယ်။",
+      "correctAnswer": "is working"
+    },
+    {
+      "category": "Present Continuous -(I'm doing)-ပစ္စုပ္ပန်ဆက်လက်ကါလ",
+      "questionText": "You _____ for your exam right now.",
+      "options": ["are studying", "am studying", "is studying"],
+      "explanation": "ဒီဝါကျတွင် subject ကအများကိန်းဖြစ်တဲ့ 'You' အတွက် are ဖြင့်တွဲရပါတယ်။",
+      "correctAnswer": "are studying"
+    },
+    {
+      "category": "Present Continuous -(I'm doing)-ပစ္စုပ္ပန်ဆက်လက်ကါလ",
+      "questionText": "It _____ dark outside?",
+      "options": ["is getting", "am getting", "are getting"],
+      "explanation": "ဒီဝါကျတွင် subject ဖြစ်တဲ့ 'It' အတွက် is ဖြင့်တွဲရပါတယ်။",
+      "correctAnswer": "is getting"
+    },
+    {
+      "category": "Present Continuous -(I'm doing)-ပစ္စုပ္ပန်ဆက်လက်ကါလ",
+      "questionText": "We _____ to the party tonight.",
+      "options": ["are going", "am going", "is going"],
+      "explanation": "ဒီဝါကျတွင် subject ကအများကိန်းဖြစ်တဲ့ 'We' အတွက် are ဖြင့်တွဲရပါတယ်။",
+      "correctAnswer": "are going"
+    },
+    {
+      "category": "Present Continuous -(I'm doing)-ပစ္စုပ္ပန်ဆက်လက်ကါလ",
+      "questionText": "She _____ a cake for the celebration.",
+      "options": ["is baking", "am baking", "are baking"],
+      "explanation": "ဒီဝါကျတွင် subject ဖြစ်တဲ့ 'She' အတွက် is ဖြင့်တွဲရပါတယ်။",
+      "correctAnswer": "is baking"
+    },
+    {
+      "category": "Present Continuous -(I'm doing)-ပစ္စုပ္ပန်ဆက်လက်ကါလ",
+      "questionText": "They _____ to Paris next week.",
+      "options": ["are traveling", "am traveling", "is traveling"],
+      "explanation": "ဒီဝါကျတွင် subject ကအများကိန်းဖြစ်တဲ့ 'They' အတွက် are ဖြင့်တွဲရပါတယ်။",
+      "correctAnswer": "are traveling"
+    },
+    {
+      "category": "Present Continuous -(I'm doing)-ပစ္စုပ္ပန်ဆက်လက်ကါလ",
+      "questionText": "He _____ at the conference tomorrow.",
+      "options": ["is speaking", "am speaking", "are speaking"],
+      "explanation": "ဒီဝါကျတွင် subject ဖြစ်တဲ့ 'He' အတွက် is ဖြင့်တွဲရပါတယ်။",
+      "correctAnswer": "is speaking"
+    },
+    {
+      "category": "Present Continuous -(I'm doing)-ပစ္စုပ္ပန်ဆက်လက်ကါလ",
+      "questionText": "You _____ the piano these days.",
+      "options": ["are practicing", "am practicing", "is practicing"],
+      "explanation": "ဒီဝါကျတွင် subject ကအများကိန်းဖြစ်တဲ့ 'You' အတွက် are ဖြင့်တွဲရပါတယ်။",
+      "correctAnswer": "are practicing"
+    },
+    {
+      "category": "Present Continuous -(I'm doing)-ပစ္စုပ္ပန်ဆက်လက်ကါလ",
+      "questionText": "It _____ dark outside?",
+      "options": ["is getting", "am getting", "are getting"],
+      "explanation": "ဒီဝါကျတွင် subject ဖြစ်တဲ့ 'It' အတွက် is ဖြင့်တွဲရပါတယ်။",
+      "correctAnswer": "is getting"
+    },
+    {
+      "category": "Present Continuous -(I'm doing)-ပစ္စုပ္ပန်ဆက်လက်ကါလ",
+      "questionText": "We _____ for a walk in the park this evening.",
+      "options": ["are going", "am going", "is going"],
+      "explanation": "ဒီဝါကျတွင် subject ကအများကိန်းဖြစ်တဲ့ 'We' အတွက် are ဖြင့်တွဲရပါတယ်။",
+      "correctAnswer": "are going"
+    },
+    {
+      "category": "Present Continuous -(I'm doing)-ပစ္စုပ္ပန်ဆက်လက်ကါလ",
+      "questionText": "She _____ her assignment on time?",
+      "options": ["is finishing", "am finishing", "are finishing"],
+      "explanation": "ဒီဝါကျတွင် subject ဖြစ်တဲ့ 'She' အတွက် is ဖြင့်တွဲရပါတယ်။",
+      "correctAnswer": "is finishing"
+    },
+    {
+      "category": "Present Continuous -(I'm doing)-ပစ္စုပ္ပန်ဆက်လက်ကါလ",
+      "questionText": "They _____ their house these days.",
+      "options": ["are redecorating", "am redecorating", "is redecorating"],
+      "explanation": "ဒီဝါကျတွင် subject ကအများကိန်းဖြစ်တဲ့ 'They' အတွက် are ဖြင့်တွဲရပါတယ်။",
+      "correctAnswer": "are redecorating"
+    },
+    {
+      "category": "Present Continuous -(I'm doing)-ပစ္စုပ္ပန်ဆက်လက်ကါလ",
+      "questionText": "He _____ a break from work right now.",
+      "options": ["is taking", "am taking", "are taking"],
+      "explanation": "ဒီဝါကျတွင် subject ဖြစ်တဲ့ 'He' အတွက် is ဖြင့်တွဲရပါတယ်။",
+      "correctAnswer": "is taking"
+    },
+
+    {
+      "category": "Present Continuous-(Are you doing..?)-ပစ္စုပ္ပန်ဆက်လက်ကါလမေးခွန်း",
+      "questionText": "What _____ you doing right now?",
+      "options": ["are", "is", "am"],
+      "explanation": "In this question, the subject 'you' requires the verb 'are' in the present continuous tense.",
+      "correctAnswer": "are"
+    },
+    {
+      "category": "Present Continuous-(Are you doing..?)-ပစ္စုပ္ပန်ဆက်လက်ကါလမေးခွန်း",
+      "questionText": "Why _____ she crying?",
+      "options": ["are", "is", "am"],
+      "explanation": "In this question, the subject 'she' requires the verb 'is' in the present continuous tense.",
+      "correctAnswer": "is"
+    },
+    {
+      "category": "Present Continuous-(Are you doing..?)-ပစ္စုပ္ပန်ဆက်လက်ကါလမေးခွန်း",
+      "questionText": "_____ they playing football in the park?",
+      "options": ["Are", "Is", "Am"],
+      "explanation": "In this question, the subject 'they' requires the verb 'Are' in the present continuous tense.",
+      "correctAnswer": "Are"
+    },
+    {
+      "category": "Present Continuous-(Are you doing..?)-ပစ္စုပ္ပန်ဆက်လက်ကါလမေးခွန်း",
+      "questionText": "Where _____ he going after school?",
+      "options": ["are", "is", "am"],
+      "explanation": "In this question, the subject 'he' requires the verb 'is' in the present continuous tense.",
+      "correctAnswer": "is"
+    },
+    {
+      "category": "Present Continuous-(Are you doing..?)-ပစ္စုပ္ပန်ဆက်လက်ကါလမေးခွန်း",
+      "questionText": "_____ we meeting for lunch tomorrow?",
+      "options": ["Are", "Is", "Am"],
+      "explanation": "In this question, the subject 'we' requires the verb 'Are' in the present continuous tense.",
+      "correctAnswer": "Are"
+    },
+    {
+      "category": "Present Continuous-(Are you doing..?)-ပစ္စုပ္ပန်ဆက်လက်ကါလမေးခွန်း",
+      "questionText": "How _____ it going with your new job?",
+      "options": ["are", "is", "am"],
+      "explanation": "In this question, the subject 'it' requires the verb 'is' in the present continuous tense.",
+      "correctAnswer": "is"
+    },
+    {
+      "category": "Present Continuous-(Are you doing..?)-ပစ္စုပ္ပန်ဆက်လက်ကါလမေးခွန်း",
+      "questionText": "_____ she speaking at the conference next week?",
+      "options": ["Are", "Is", "Am"],
+      "explanation": "In this question, the subject 'she' requires the verb 'Is' in the present continuous tense.",
+      "correctAnswer": "Is"
+    },
+    {
+      "category": "Present Continuous-(Are you doing..?)-ပစ္စုပ္ပန်ဆက်လက်ကါလမေးခွန်း",
+      "questionText": "Why _____ you shouting at him?",
+      "options": ["are", "is", "am"],
+      "explanation": "In this question, the subject 'you' requires the verb 'are' in the present continuous tense.",
+      "correctAnswer": "are"
+    },
+    {
+      "category": "Present Continuous-(Are you doing..?)-ပစ္စုပ္ပန်ဆက်လက်ကါလမေးခွန်း",
+      "questionText": "_____ they renovating their house this month?",
+      "options": ["Are", "Is", "Am"],
+      "explanation": "In this question, the subject 'they' requires the verb 'Are' in the present continuous tense.",
+      "correctAnswer": "Are"
+    },
+    {
+      "category": "Present Continuous-(Are you doing..?)-ပစ္စုပ္ပန်ဆက်လက်ကါလမေးခွန်း",
+      "questionText": "What _____ I forgetting to do before leaving?",
+      "options": ["are", "is", "am"],
+      "explanation": "In this question, the subject 'I' requires the verb 'am' in the present continuous tense.",
+      "correctAnswer": "am"
+    },
+    {
+      "category": "Present Continuous-(Are you doing..?)-ပစ္စုပ္ပန်ဆက်လက်ကါလမေးခွန်း",
+      "questionText": "_____ he taking a vacation this summer?",
+      "options": ["Are", "Is", "Am"],
+      "explanation": "In this question, the subject 'he' requires the verb 'Is' in the present continuous tense.",
+      "correctAnswer": "Is"
+    },
+    {
+      "category": "Present Continuous-(Are you doing..?)-ပစ္စုပ္ပန်ဆက်လက်ကါလမေးခွန်း",
+      "questionText": "Why _____ they wearing those costumes?",
+      "options": ["are", "is", "am"],
+      "explanation": "In this question, the subject 'they' requires the verb 'are' in the present continuous tense.",
+      "correctAnswer": "are"
+    },
+    {
+      "category": "Present Continuous-(Are you doing..?)-ပစ္စုပ္ပန်ဆက်လက်ကါလမေးခွန်း",
+      "questionText": "_____ she taking extra classes to improve her skills?",
+      "options": ["Are", "Is", "Am"],
+      "explanation": "In this question, the subject 'she' requires the verb 'Is' in the present continuous tense.",
+      "correctAnswer": "Is"
+    },
+    {
+      "category": "Present Continuous-(Are you doing..?)-ပစ္စုပ္ပန်ဆက်လက်ကါလမေးခွန်း",
+      "questionText": "_____ you working on a new project?",
+      "options": ["Are", "Is", "Am"],
+      "explanation": "In this question, the subject 'you' requires the verb 'Are' in the present continuous tense.",
+      "correctAnswer": "Are"
+    },
+    {
+      "category": "Present Continuous-(Are you doing..?)-ပစ္စုပ္ပန်ဆက်လက်ကါလမေးခွန်း",
+      "questionText": "When _____ they arriving at the airport?",
+      "options": ["are", "is", "am"],
+      "explanation": "In this question, the subject 'they' requires the verb 'are' in the present continuous tense.",
+      "correctAnswer": "are"
+    },
+
+    {
+      "category": "Present Simple -(I do/she does)ရိုးရိုးပစ္စုပ္ပန်ကါလ",
+      "questionText": "She _____ (read) books every evening.",
+      "options": ["reads", "is reading", "read"],
+      "explanation": "In the present simple tense, 'she' requires the verb 'reads.'",
+      "correctAnswer": "reads"
+    },
+    {
+      "category": "Present Simple -(I do/she does)ရိုးရိုးပစ္စုပ္ပန်ကါလ",
+      "questionText": "I _____ (play) tennis on Sundays.",
+      "options": ["plays", "is playing", "play"],
+      "explanation": "In the present simple tense, 'I' requires the verb 'play.'",
+      "correctAnswer": "play"
+    },
+    {
+      "category": "Present Simple -(I do/she does)ရိုးရိုးပစ္စုပ္ပန်ကါလ",
+      "questionText": "They _____ (watch) TV in the evenings.",
+      "options": ["watch", "watches", "is watching"],
+      "explanation": "In the present simple tense, 'they' requires the verb 'watch.'",
+      "correctAnswer": "watch"
+    },
+    {
+      "category": "Present Simple -(I do/she does)ရိုးရိုးပစ္စုပ္ပန်ကါလ",
+      "questionText": "He _____ (go) to the gym twice a week.",
+      "options": ["goes", "go", "is going"],
+      "explanation": "In the present simple tense, 'he' requires the verb 'goes.'",
+      "correctAnswer": "goes"
+    },
+    {
+      "category": "Present Simple -(I do/she does)ရိုးရိုးပစ္စုပ္ပန်ကါလ",
+      "questionText": "She _____ (teach) English at the university.",
+      "options": ["teaches", "is teaching", "taught"],
+      "explanation": "In the present simple tense, 'she' requires the verb 'teaches.'",
+      "correctAnswer": "teaches"
+    },
+    {
+      "category": "Present Simple -(I do/she does)ရိုးရိုးပစ္စုပ္ပန်ကါလ",
+      "questionText": "They _____ (eat) breakfast at 7 AM every day.",
+      "options": ["eat", "eats", "are eating"],
+      "explanation": "In the present simple tense, 'they' requires the verb 'eat.'",
+      "correctAnswer": "eat"
+    },
+    {
+      "category": "Present Simple -(I do/she does)ရိုးရိုးပစ္စုပ္ပန်ကါလ",
+      "questionText": "He _____ (work) in a bank.",
+      "options": ["works", "is working", "worked"],
+      "explanation": "In the present simple tense, 'he' requires the verb 'works.'",
+      "correctAnswer": "works"
+    },
+    {
+      "category": "Present Simple -(I do/she does)ရိုးရိုးပစ္စုပ္ပန်ကါလ",
+      "questionText": "She _____ (live) in London.",
+      "options": ["lives", "is living", "lived"],
+      "explanation": "In the present simple tense, 'she' requires the verb 'lives.'",
+      "correctAnswer": "lives"
+    },
+    {
+      "category": "Present Simple -(I do/she does)ရိုးရိုးပစ္စုပ္ပန်ကါလ",
+      "questionText": "I _____ (read) the newspaper every morning.",
+      "options": ["read", "reads", "is reading"],
+      "explanation": "In the present simple tense, 'I' requires the verb 'read.'",
+      "correctAnswer": "read"
+    },
+    {
+      "category": "Present Simple -(I do/she does)ရိုးရိုးပစ္စုပ္ပန်ကါလ",
+      "questionText": "They _____ (visit) their grandparents on weekends.",
+      "options": ["visit", "visits", "are visiting"],
+      "explanation": "In the present simple tense, 'they' requires the verb 'visit.'",
+      "correctAnswer": "visit"
+    },
+    {
+      "category": "Present Simple -(I do/she does)ရိုးရိုးပစ္စုပ္ပန်ကါလ",
+      "questionText": "She _____ (have) a dog.",
+      "options": ["has", "is having", "had"],
+      "explanation": "In the present simple tense, 'she' requires the verb 'has.'",
+      "correctAnswer": "has"
+    },
+    {
+      "category": "Present Simple -(I do/she does)ရိုးရိုးပစ္စုပ္ပန်ကါလ",
+      "questionText": "We _____ (study) English every day.",
+      "options": ["study", "studies", "are studying"],
+      "explanation": "In the present simple tense, 'we' requires the verb 'study.'",
+      "correctAnswer": "study"
+    },
+    {
+      "category": "Present Simple -(I do/she does)ရိုးရိုးပစ္စုပ္ပန်ကါလ",
+      "questionText": "He _____ (drive) to work.",
+      "options": ["drives", "is driving", "drove"],
+      "explanation": "In the present simple tense, 'he' requires the verb 'drives.'",
+      "correctAnswer": "drives"
+    },
+    {
+      "category": "Present Simple -(I do/she does)ရိုးရိုးပစ္စုပ္ပန်ကါလ",
+      "questionText": "They _____ (play) soccer on Saturdays.",
+      "options": ["play", "plays", "are playing"],
+      "explanation": "In the present simple tense, 'they' requires the verb 'play.'",
+      "correctAnswer": "play"
+    },
+    {
+      "category": "Present Simple -(I do/she does)ရိုးရိုးပစ္စုပ္ပန်ကါလ",
+      "questionText": "She _____ (work) at a hospital.",
+      "options": ["works", "is working", "worked"],
+      "explanation": "In the present simple tense, 'she' requires the verb 'works.'",
+      "correctAnswer": "works"
+    },
+    {
+      "category": "Present Simple -(I do/she does)ရိုးရိုးပစ္စုပ္ပန်ကါလ",
+      "questionText": "He _____ (read) a book every night.",
+      "options": ["reads", "read", "is reading"],
+      "explanation": "In the present simple tense, 'he' requires the verb 'reads.'",
+      "correctAnswer": "reads"
+    },
+    {
+      "category": "Present Simple -(I do/she does)ရိုးရိုးပစ္စုပ္ပန်ကါလ",
+      "questionText": "They _____ (talk) on the phone every evening.",
+      "options": ["talk", "talks", "are talking"],
+      "explanation": "In the present simple tense, 'they' requires the verb 'talk.'",
+      "correctAnswer": "talk"
+    },
+    {
+      "category": "Present Simple -(I do/she does)ရိုးရိုးပစ္စုပ္ပန်ကါလ",
+      "questionText": "She _____ (like) ice cream.",
+      "options": ["likes", "is liking", "liked"],
+      "explanation": "In the present simple tense, 'she' requires the verb 'likes.'",
+      "correctAnswer": "likes"
+    },
+    {
+      "category": "Present Simple -(I do/she does)ရိုးရိုးပစ္စုပ္ပန်ကါလ",
+      "questionText": "I _____ (watch) movies on Fridays.",
+      "options": ["watch", "watches", "am watching"],
+      "explanation": "In the present simple tense, 'I' requires the verb 'watch.'",
+      "correctAnswer": "watch"
+    },
+    {
+      "category": "Present Simple -(I do/she does)ရိုးရိုးပစ္စုပ္ပန်ကါလ",
+      "questionText": "They _____ (take) the bus to school.",
+      "options": ["take", "takes", "are taking"],
+      "explanation": "In the present simple tense, 'they' requires the verb 'take.'",
+      "correctAnswer": "take"
+    },
+    {
+      "category": "Present Simple Negative-(I don't/she doesn't",
+      "questionText": "She _____ (not read) books every evening.",
+      "options": ["does not read", "not reads", "is not reading"],
+      "explanation": "In the present simple tense, 'she' requires 'does not read' to form the negative sentence.",
+      "correctAnswer": "does not read"
+    },
+    {
+      "category": "Present Simple Negative-(I don't/she doesn't",
+      "questionText": "I _____ (not play) tennis on Sundays.",
+      "options": ["do not play", "not plays", "am not playing"],
+      "explanation": "In the present simple tense, 'I' requires 'do not play' to form the negative sentence.",
+      "correctAnswer": "do not play"
+    },
+    {
+      "category": "Present Simple Negative-(I don't/she doesn't",
+      "questionText": "They _____ (not watch) TV in the evenings.",
+      "options": ["do not watch", "not watches", "are not watching"],
+      "explanation": "In the present simple tense, 'they' requires 'do not watch' to form the negative sentence.",
+      "correctAnswer": "do not watch"
+    },
+    {
+      "category": "Present Simple Negative-(I don't/she doesn't",
+      "questionText": "He _____ (not go) to the gym twice a week.",
+      "options": ["does not go", "not goes", "is not going"],
+      "explanation": "In the present simple tense, 'he' requires 'does not go' to form the negative sentence.",
+      "correctAnswer": "does not go"
+    },
+    {
+      "category": "Present Simple Negative-(I don't/she doesn't",
+      "questionText": "She _____ (not teach) English at the university.",
+      "options": ["does not teach", "not teaches", "is not teaching"],
+      "explanation": "In the present simple tense, 'she' requires 'does not teach' to form the negative sentence.",
+      "correctAnswer": "does not teach"
+    },
+    {
+      "category": "Present Simple Negative-(I don't/she doesn't",
+      "questionText": "They _____ (not eat) breakfast at 7 AM every day.",
+      "options": ["do not eat", "not eats", "are not eating"],
+      "explanation": "In the present simple tense, 'they' requires 'do not eat' to form the negative sentence.",
+      "correctAnswer": "do not eat"
+    },
+    {
+      "category": "Present Simple Negative-(I don't/she doesn't",
+      "questionText": "He _____ (not work) in a bank.",
+      "options": ["does not work", "not works", "is not working"],
+      "explanation": "In the present simple tense, 'he' requires 'does not work' to form the negative sentence.",
+      "correctAnswer": "does not work"
+    },
+    {
+      "category": "Present Simple Negative-(I don't/she doesn't",
+      "questionText": "She _____ (not live) in London.",
+      "options": ["does not live", "not lives", "is not living"],
+      "explanation": "In the present simple tense, 'she' requires 'does not live' to form the negative sentence.",
+      "correctAnswer": "does not live"
+    },
+    {
+      "category": "Present Simple Negative-(I don't/she doesn't",
+      "questionText": "I _____ (not read) the newspaper every morning.",
+      "options": ["do not read", "not reads", "am not reading"],
+      "explanation": "In the present simple tense, 'I' requires 'do not read' to form the negative sentence.",
+      "correctAnswer": "do not read"
+    },
+    {
+      "category": "Present Simple Negative-(I don't/she doesn't",
+      "questionText": "They _____ (not visit) their grandparents on weekends.",
+      "options": ["do not visit", "not visits", "are not visiting"],
+      "explanation": "In the present simple tense, 'they' requires 'do not visit' to form the negative sentence.",
+      "correctAnswer": "do not visit"
+    },
+    {
+      "category": "Present Simple Negative-(I don't/she doesn't",
+      "questionText": "She _____ (not have) a dog.",
+      "options": ["does not have", "not has", "is not having"],
+      "explanation": "In the present simple tense, 'she' requires 'does not have' to form the negative sentence.",
+      "correctAnswer": "does not have"
+    },
+    {
+      "category": "Present Simple Negative-(I don't/she doesn't",
+      "questionText": "We _____ (not study) English every day.",
+      "options": ["do not study", "not studies", "are not studying"],
+      "explanation": "In the present simple tense, 'we' requires 'do not study' to form the negative sentence.",
+      "correctAnswer": "do not study"
+    },
+    {
+      "category": "Present Simple Negative-(I don't/she doesn't",
+      "questionText": "He _____ (not drive) to work.",
+      "options": ["does not drive", "not drives", "is not driving"],
+      "explanation": "In the present simple tense, 'he' requires 'does not drive' to form the negative sentence.",
+      "correctAnswer": "does not drive"
+    },
+    {
+      "category": "Present Simple Negative-(I don't/she doesn't",
+      "questionText": "They _____ (not play) soccer on Saturdays.",
+      "options": ["do not play", "not plays", "are not playing"],
+      "explanation": "In the present simple tense, 'they' requires 'do not play' to form the negative sentence.",
+      "correctAnswer": "do not play"
+    },
+    {
+      "category": "Present Simple Negative-(I don't/she doesn't",
+      "questionText": "She _____ (not work) at a hospital.",
+      "options": ["does not work", "not works", "is not working"],
+      "explanation": "In the present simple tense, 'she' requires 'does not work' to form the negative sentence.",
+      "correctAnswer": "does not work"
+    },
+    {
+      "category": "Present Simple Negative-(I don't/she doesn't",
+      "questionText": "He _____ (not read) a book every night.",
+      "options": ["does not read", "not reads", "is not reading"],
+      "explanation": "In the present simple tense, 'he' requires 'does not read' to form the negative sentence.",
+      "correctAnswer": "does not read"
+    },
+    {
+      "category": "Present Simple Negative-(I don't/she doesn't",
+      "questionText": "They _____ (not talk) on the phone every evening.",
+      "options": ["do not talk", "not talks", "are not talking"],
+      "explanation": "In the present simple tense, 'they' requires 'do not talk' to form the negative sentence.",
+      "correctAnswer": "do not talk"
+    },
+    {
+      "category": "Present Simple Negative-(I don't/she doesn't",
+      "questionText": "She _____ (not like) ice cream.",
+      "options": ["does not like", "not likes", "is not liking"],
+      "explanation": "In the present simple tense, 'she' requires 'does not like' to form the negative sentence.",
+      "correctAnswer": "does not like"
+    },
+    {
+      "category": "Present Simple Negative-(I don't/she doesn't",
+      "questionText": "I _____ (not watch) movies on Fridays.",
+      "options": ["do not watch", "not watches", "am not watching"],
+      "explanation": "In the present simple tense, 'I' requires 'do not watch' to form the negative sentence.",
+      "correctAnswer": "do not watch"
+    },
+    {
+      "category": "Present Simple Negative-(I don't/she doesn't",
+      "questionText": "They _____ (not take) the bus to school.",
+      "options": ["do not take", "not takes", "are not taking"],
+      "explanation": "In the present simple tense, 'they' requires 'do not take' to form the negative sentence.",
+      "correctAnswer": "do not take"
+    },
+  
+    {
+      "category": "Present Simple Question- ရိုးရိုးပစ္စပ္ပန်ကါလမေးခွန်း",
+      "questionText": "_____ they live in New York?",
+      "options": ["Do", "Does", "Are"],
+      "explanation": "Use 'Do' to form a question in the present simple tense for 'they.'",
+      "correctAnswer": "Do"
+    },
+    {
+      "category": "Present Simple Question- ရိုးရိုးပစ္စပ္ပန်ကါလမေးခွန်း",
+      "questionText": "_____ she speak Spanish?",
+      "options": ["Do", "Does", "Is"],
+      "explanation": "Use 'Does' to form a question in the present simple tense for 'she.'",
+      "correctAnswer": "Does"
+    },
+    {
+      "category": "Present Simple Question- ရိုးရိုးပစ္စပ္ပန်ကါလမေးခွန်း",
+      "questionText": "_____ he work on weekends?",
+      "options": ["Do", "Does", "Is"],
+      "explanation": "Use 'Does' to form a question in the present simple tense for 'he.'",
+      "correctAnswer": "Does"
+    },
+    {
+      "category": "Present Simple Question- ရိုးရိုးပစ္စပ္ပန်ကါလမေးခွန်း",
+      "questionText": "_____ it rain often in this region?",
+      "options": ["Do", "Does", "Is"],
+      "explanation": "Use 'Does' to form a question in the present simple tense for 'it.'",
+      "correctAnswer": "Does"
+    },
+    {
+      "category": "Present Simple Question- ရိုးရိုးပစ္စပ္ပန်ကါလမေးခွန်း",
+      "questionText": "_____ we have any appointments today?",
+      "options": ["Do", "Does", "Are"],
+      "explanation": "Use 'Do' to form a question in the present simple tense for 'we.'",
+      "correctAnswer": "Do"
+    },
+    {
+      "category": "Present Simple Question- ရိုးရိုးပစ္စပ္ပန်ကါလမေးခွန်း",
+      "questionText": "_____ you enjoy reading books?",
+      "options": ["Do", "Does", "Are"],
+      "explanation": "Use 'Do' to form a question in the present simple tense for 'you.'",
+      "correctAnswer": "Do"
+    },
+    {
+      "category": "Present Simple Question- ရိုးရိုးပစ္စပ္ပန်ကါလမေးခွန်း",
+      "questionText": "_____ Mary like coffee?",
+      "options": ["Do", "Does", "Is"],
+      "explanation": "Use 'Does' to form a question in the present simple tense for 'Mary.'",
+      "correctAnswer": "Does"
+    },
+    {
+      "category": "Present Simple Question- ရိုးရိုးပစ္စပ္ပန်ကါလမေးခွန်း",
+      "questionText": "_____ they study French at school?",
+      "options": ["Do", "Does", "Are"],
+      "explanation": "Use 'Do' to form a question in the present simple tense for 'they.'",
+      "correctAnswer": "Do"
+    },
+    {
+      "category": "Present Simple Question- ရိုးရိုးပစ္စပ္ပန်ကါလမေးခွန်း",
+      "questionText": "_____ he watch TV in the evenings?",
+      "options": ["Do", "Does", "Is"],
+      "explanation": "Use 'Does' to form a question in the present simple tense for 'he.'",
+      "correctAnswer": "Does"
+    },
+    {
+      "category": "Present Simple Question- ရိုးရိုးပစ္စပ္ပန်ကါလမေးခွန်း",
+      "questionText": "_____ the birds sing in the morning?",
+      "options": ["Do", "Does", "Are"],
+      "explanation": "Use 'Do' to form a question in the present simple tense for 'the birds.'",
+      "correctAnswer": "Do"
+    },
+    {
+      "category": "Present Simple Question- ရိုးရိုးပစ္စပ္ပန်ကါလမေးခွန်း",
+      "questionText": "_____ she like chocolate ice cream?",
+      "options": ["Do", "Does", "Is"],
+      "explanation": "Use 'Does' to form a question in the present simple tense for 'she.'",
+      "correctAnswer": "Does"
+    },
+    {
+      "category": "Present Simple Question- ရိုးရိုးပစ္စပ္ပန်ကါလမေးခွန်း",
+      "questionText": "_____ they visit their grandparents regularly?",
+      "options": ["Do", "Does", "Are"],
+      "explanation": "Use 'Do' to form a question in the present simple tense for 'they.'",
+      "correctAnswer": "Do"
+    },
+    {
+      "category": "Present Simple Question- ရိုးရိုးပစ္စပ္ပန်ကါလမေးခွန်း",
+      "questionText": "_____ your friends speak French fluently?",
+      "options": ["Do", "Does", "Are"],
+      "explanation": "Use 'Do' to form a question in the present simple tense for 'your friends.'",
+      "correctAnswer": "Do"
+    },
+    {
+      "category": "Present Simple Question- ရိုးရိုးပစ္စပ္ပန်ကါလမေးခွန်း",
+      "questionText": "_____ the cat sleep in the living room?",
+      "options": ["Do", "Does", "Is"],
+      "explanation": "Use 'Does' to form a question in the present simple tense for 'the cat.'",
+      "correctAnswer": "Does"
+    },
+    {
+      "category": "Present Simple Question- ရိုးရိုးပစ္စပ္ပန်ကါလမေးခွန်း",
+      "questionText": "_____ he eat vegetables regularly?",
+      "options": ["Do", "Does", "Is"],
+      "explanation": "Use 'Does' to form a question in the present simple tense for 'he.'",
+      "correctAnswer": "Does"
+    },
+    {
+      "category": "Present Simple Question- ရိုးရိုးပစ္စပ္ပန်ကါလမေးခွန်း",
+      "questionText": "_____ your parents live in the same city?",
+      "options": ["Do", "Does", "Are"],
+      "explanation": "Use 'Do' to form a question in the present simple tense for 'your parents.'",
+      "correctAnswer": "Do"
+    },
+    {
+      "category": "Present Simple Question- ရိုးရိုးပစ္စပ္ပန်ကါလမေးခွန်း",
+      "questionText": "_____ the students have a break between classes?",
+      "options": ["Do", "Does", "Are"],
+      "explanation": "Use 'Do' to form a question in the present simple tense for 'the students.'",
+      "correctAnswer": "Do"
+    },
+    {
+      "category": "Present Simple Question- ရိုးရိုးပစ္စပ္ပန်ကါလမေးခွန်း",
+      "questionText": "_____ she play the piano well?",
+      "options": ["Do", "Does", "Is"],
+      "explanation": "Use 'Does' to form a question in the present simple tense for 'she.'",
+      "correctAnswer": "Does"
+    },
+    {
+      "category": "Present Simple Question- ရိုးရိုးပစ္စပ္ပန်ကါလမေးခွန်း",
+      "questionText": "_____ you enjoy hiking in the mountains?",
+      "options": ["Do", "Does", "Are"],
+      "explanation": "Use 'Do' to form a question in the present simple tense for 'you.'",
+      "correctAnswer": "Do"
+    },
+    {
+      "category": "Present Simple Question- ရိုးရိုးပစ္စပ္ပန်ကါလမေးခွန်း",
+      "questionText": "_____ the dog bark loudly at night?",
+      "options": ["Do", "Does", "Is"],
+      "explanation": "Use 'Does' to form a question in the present simple tense for 'the dog.'",
+      "correctAnswer": "Does"
+    },
+
+    {
+      "category": "Present Simple and Continuous",
+      "questionText": "_____ they usually go to the gym in the evenings?",
+      "options": ["Do", "Are", "Is"],
+      "explanation": "Use 'Do' to form a present simple question for 'they,' and the verb 'go' is in the base form.",
+      "correctAnswer": "Do"
+    },
+    {
+      "category": "Present Simple and Continuous",
+      "questionText": "Look! They (play) football in the park right now.",
+      "options": ["Do", "are playing", "Is"],
+      "explanation": "The verb 'play' is in the present continuous tense, indicating an action happening now.",
+      "correctAnswer": "are playing"
+    },
+    {
+      "category": "Present Simple and Continuous",
+      "questionText": "_____ she teach English at the university?",
+      "options": ["Do", "Does", "Is"],
+      "explanation": "Use 'Does' to form a present simple question for 'she,' and the verb 'teach' is in the base form.",
+      "correctAnswer": "Does"
+    },
+    {
+      "category": "Present Simple and Continuous",
+      "questionText": "I can't talk right now; I (work) on a project.",
+      "options": ["Do", "am working", "Is"],
+      "explanation": "The verb 'work' is in the present continuous tense, indicating an action happening now.",
+      "correctAnswer": "am working"
+    },
+    {
+      "category": "Present Simple and Continuous",
+      "questionText": "_____ you study for your exams this week?",
+      "options": ["Do", "Are", "Is"],
+      "explanation": "Use 'Do' to form a present simple question for 'you,' and the verb 'study' is in the base form.",
+      "correctAnswer": "Do"
+    },
+    {
+      "category": "Present Simple and Continuous",
+      "questionText": "She usually (read) books in the evenings, but tonight she (watch) TV.",
+      "options": ["reads, is watching", "Is, watches", "Do, is watching"],
+      "explanation": "The first part of the sentence is in present simple, and the second part is in present continuous.",
+      "correctAnswer": "reads, is watching"
+    },
+    {
+      "category": "Present Simple and Continuous",
+      "questionText": "_____ he live in London, or is he just visiting?",
+      "options": ["Do", "Does", "Is"],
+      "explanation": "Use 'Does' to form a present simple question for 'he,' and the verb 'live' is in the base form.",
+      "correctAnswer": "Does"
+    },
+    {
+      "category": "Present Simple and Continuous",
+      "questionText": "We (not, have) dinner at home tonight because we (go) to a restaurant.",
+      "options": ["don't have, are going", "doesn't have, is going", "are having, go"],
+      "explanation": "The first part of the sentence is in present simple negative, and the second part is in present continuous.",
+      "correctAnswer": "don't have, are going"
+    },
+    {
+      "category": "Present Simple and Continuous",
+      "questionText": "_____ they (visit) their grandparents regularly, or is this a special occasion?",
+      "options": ["Do", "Does", "Are"],
+      "explanation": "Use 'Do' to form a present simple question for 'they,' and the verb 'visit' is in the base form.",
+      "correctAnswer": "Do"
+    },
+    {
+      "category": "Present Simple and Continuous",
+      "questionText": "He usually (drive) to work, but today he (take) the bus.",
+      "options": ["drives, is taking", "drives, takes", "drive, is taking"],
+      "explanation": "The first part of the sentence is in present simple, and the second part is in present continuous.",
+      "correctAnswer": "drives, is taking"
+    },
+    {
+      "category": "Present Simple and Continuous",
+      "questionText": "_____ you enjoy hiking in the mountains, or do you prefer the beach?",
+      "options": ["Do", "Does", "Are"],
+      "explanation": "Use 'Do' to form a present simple question for 'you,' and the verb 'enjoy' is in the base form.",
+      "correctAnswer": "Do"
+    },
+    {
+      "category": "Present Simple and Continuous",
+      "questionText": "_____ she like chocolate ice cream, or does she prefer vanilla?",
+      "options": ["Does", "Do", "Is"],
+      "explanation": "Use 'Does' to form a present simple question for 'she,' and the verb 'like' is in the base form.",
+      "correctAnswer": "Does"
+    },
+    {
+      "category": "Present Simple and Continuous",
+      "questionText": "I (not, watch) TV right now; I (read) a book.",
+      "options": ["don't watch, am reading", "doesn't watch, am reading", "aren't watching, read"],
+      "explanation": "The first part of the sentence is in present simple negative, and the second part is in present continuous.",
+      "correctAnswer": "don't watch, am reading"
+    },
+    {
+      "category": "Present Simple and Continuous",
+      "questionText": "_____ they (talk) on the phone right now?",
+      "options": ["Are...talking", "is ...talking", "isn't talking"],
+      "explanation": "Use 'Do' to form a present simple question for 'they,' and the verb 'talk' is in the base form.",
+      "correctAnswer": "Are...talking"
+    },
+    {
+      "category": "Present Simple and Continuous",
+      "questionText": "He (not, work) today because he (take) a sick day.",
+      "options": ["isn't working, is taking", "doesn't work, takes", "is not working, take"],
+      "explanation": "The first part of the sentence is in present simple negative, and the second part is in present continuous.",
+      "correctAnswer": "isn't working, is taking"
+    },
+    {
+      "category": "Present Simple and Continuous",
+      "questionText": "_____ she (play) the piano?",
+      "options": ["Does", "Do", "Is"],
+      "explanation": "Use 'Does' to form a present simple question for 'she,' and the verb 'play' is in the base form.",
+      "correctAnswer": "Does"
+    },
+
+    {
+      "category": "Present Simple and Continuous",
+      "questionText": "The children (not, watch) TV right now; they (play) outside.",
+      "options": ["aren't watching, are playing", "isn't watching, is playing", "don't watch, play"],
+      "explanation": "The first part of the sentence is in present simple negative, and the second part is in present continuous.",
+      "correctAnswer": "aren't watching, are playing"
+    },
+
+    {
+      "category": "Have got/has got တို့ကို အသုံးပြုပုံစံများ",
+      "questionText": "She ....a guitar.",
+      "options": ["has got", "have got"],
+      "explanation": "Subject ကအနည်းကိန်းဖြစ်တဲ့ has ကိုသုံးပါတယ်။",
+      "correctAnswer": "has got"
+    },
+    {
+      "category": "Have got/has got တို့ကို အသုံးပြုပုံစံများ",
+      "questionText": "They .... three dogs.",
+      "options": ["has got", "have got"],
+      "explanation": "Subject ကအများကိန်းဖြစ်တဲ့အတွက် have ကိုသုံးရပါတယ်",
+      "correctAnswer": "have got"
+    },
+    {
+      "category": "Have got/has got တို့ကို အသုံးပြုပုံစံများ",
+      "questionText": "Peter .... a new bicycle.",
+      "options": ["has got", "have got"],
+      "explanation": "Subject ကအနည်းကိန်းဖြစ်တဲ့ has ကိုသုံးပါတယ်။",
+      "correctAnswer": "has got"
+    },
+    {
+      "category": "Have got/has got တို့ကို အသုံးပြုပုံစံများ",
+      "questionText": "My parents .... a lovely house.",
+      "options": ["has got", "have got"],
+      "explanation": "Subject ကအများကိန်းဖြစ်တဲ့အတွက် have ကိုသုံးရပါတယ်",
+      "correctAnswer": "have got"
+    },
+    {
+      "category": "Have got/has got တို့ကို အသုံးပြုပုံစံများ",
+      "questionText": "The cat .... green eyes.",
+      "options": ["has got", "have got"],
+      "explanation": "Subject ကအနည်းကိန်းဖြစ်တဲ့ has ကိုသုံးပါတယ်။",
+      "correctAnswer": "has got"
+    },
+    {
+      "category": "Have got/has got တို့ကို အသုံးပြုပုံစံများ",
+      "questionText": "They .... two cars and a motorcycle.",
+      "options": ["has got", "have got"],
+      "explanation": "Subject ကအများကိန်းဖြစ်တဲ့အတွက် have ကိုသုံးရပါတယ်",
+      "correctAnswer": "have got"
+    },
+    {
+      "category": "Have got/has got တို့ကို အသုံးပြုပုံစံများ",
+      "questionText": "She .... a beautiful voice.",
+      "options": ["has got", "have got"],
+      "explanation": "Subject ကအနည်းကိန်းဖြစ်တဲ့ has ကိုသုံးပါတယ်။",
+      "correctAnswer": "has got"
+    },
+    {
+      "category": "Have got/has got တို့ကို အသုံးပြုပုံစံများ",
+      "questionText": "The students .... a lot of homework to do.",
+      "options": ["has got", "have got"],
+      "explanation": "Subject ကအများကိန်းဖြစ်တဲ့အတွက် have ကိုသုံးရပါတယ်",
+      "correctAnswer": "have got"
+    },
+    {
+      "category": "Have got/has got တို့ကို အသုံးပြုပုံစံများ",
+      "questionText": "Tom .... a new laptop.",
+      "options": ["has got", "have got"
+      ],
+      "explanation": "Subject ကအနည်းကိန်းဖြစ်တဲ့အတွက် has ကိုသုံးပါတယ်။",
+      "correctAnswer": "has got"
+    },
+  {
+    "category": "Was,Were-ရှိခဲ့သည်၊ဖြစ်ခဲ့သည်",
+    "questionText": "He .... tired after the long journey.",
+    "options": ["was", "were", ""],
+    "explanation": "Subject က singular ဖြစ်သည့်အတွက် was ကိုသုံးပါတယ်။",
+    "correctAnswer": "was"
+  },
+  {
+    "category": "Was,Were-ရှိခဲ့သည်၊ဖြစ်ခဲ့သည်",
+    "questionText": "They .... happy with the result.",
+    "options": ["was", "were", ""],
+    "explanation": "Subject ကအများကိန်းတာသည့်အတွက် were ကိုသုံးရပါတယ်",
+    "correctAnswer": "were"
+  },
+  {
+    "category": "Was,Were-ရှိခဲ့သည်၊ဖြစ်ခဲ့သည်",
+    "questionText": "She .... at the cinema last night.",
+    "options": ["was", "were", ""],
+    "explanation": "Subject က singular ဖြစ်သည့်အတွက် was ကိုသုံးပါတယ်။",
+    "correctAnswer": "was"
+  },
+  {
+    "category": "Was,Were-ရှိခဲ့သည်၊ဖြစ်ခဲ့သည်",
+    "questionText": "We .... late for the meeting.",
+    "options": ["was", "were", ""],
+    "explanation": "Subject က plural ဖြစ်သည့်အတွက် were ကိုသုံးပါတယ်",
+    "correctAnswer": "were"
+  },
+  {
+    "category": "Was,Were-ရှိခဲ့သည်၊ဖြစ်ခဲ့သည်",
+    "questionText": "The children .... excited to go to the zoo.",
+    "options": ["was", "were", ""],
+    "explanation": "Subject က plural ဖြစ်သည့်အတွက် were ကိုသုံးပါတယ်",
+    "correctAnswer": "were"
+  },
+  {
+    "category": "Was,Were-ရှိခဲ့သည်၊ဖြစ်ခဲ့သည်",
+    "questionText": "The book .... on the table.",
+    "options": ["was", "were", ""],
+    "explanation": "Subject က singular ဖြစ်သည့်အတွက် was ကိုသုံးပါတယ်။",
+    "correctAnswer": "was"
+  },
+  {
+    "category": "Was,Were-ရှိခဲ့သည်၊ဖြစ်ခဲ့သည်",
+    "questionText": "The flowers .... beautiful in the garden.",
+    "options": ["was", "were", ""],
+    "explanation": "Subject က plural ဖြစ်သည့်အတွက် were ကိုသုံးပါတယ်",
+    "correctAnswer": "were"
+  },
+  {
+    "category": "Was,Were-ရှိခဲ့သည်၊ဖြစ်ခဲ့သည်",
+    "questionText": "I .... surprised by his sudden arrival.",
+    "options": ["was", "were", ""],
+    "explanation": "Subject က singular ဖြစ်သည့်အတွက် was ကိုသုံးပါတယ်။",
+    "correctAnswer": "was"
+  },
+  {
+    "category": "Was,Were-ရှိခဲ့သည်၊ဖြစ်ခဲ့သည်",
+    "questionText": "The team .... excited after winning the match.",
+    "options": ["was", "were", ""],
+    "explanation": "Subject က singular ဖြစ်သည့်အတွက် was ကိုသုံးပါတယ်။",
+    "correctAnswer": "was"
+  },
+  {
+    "category": "Was,Were-ရှိခဲ့သည်၊ဖြစ်ခဲ့သည်",
+    "questionText": "The birds .... chirping in the morning.",
+    "options": [
+      "was", "were"],
+    "explanation": "Subject က plural ဖြစ်တဲ့အတွက် were ကိုသုံးရပါတယ်။",
+    "correctAnswer": "were"
+  },
+  {
+    "category": "Past Simple (I did) - ရိုးရိုးအတိတ်ကါလ",
+    "questionText": "He .... his homework last night.",
+    "options": ["did", "does", ""],
+    "explanation": "Correct answer: did. 'Did' is the past tense of 'do' and is used to indicate an action that occurred in the past.",
+    "correctAnswer": "did"
+  },
+  {
+    "category": "Past Simple (I did) - ရိုးရိုးအတိတ်ကါလ",
+    "questionText": "They .... to the party yesterday.",
+    "options": ["go", "went", ""],
+    "explanation": "Correct answer: went. 'Went' is the past tense of 'go' and is used to indicate movement or travel that occurred in the past.",
+    "correctAnswer": "went"
+  },
+  {
+    "category": "Past Simple (I did) - ရိုးရိုးအတိတ်ကါလ",
+    "questionText": "She .... her breakfast early this morning.",
+    "options": ["eat", "ate", ""],
+    "explanation": "Correct answer: ate. 'Ate' is the past tense of 'eat' and is used to indicate consuming food in the past.",
+    "correctAnswer": "ate"
+  },
+  {
+    "category": "Past Simple (I did) - ရိုးရိုးအတိတ်ကါလ",
+    "questionText": "We .... to the beach last summer.",
+    "options": ["go", "went", ""],
+    "explanation": "Correct answer: went. 'Went' is the past tense of 'go' and is used to indicate movement or travel that occurred in the past.",
+    "correctAnswer": "went"
+  },
+  {
+    "category": "Past Simple (I did) - ရိုးရိုးအတိတ်ကါလ",
+    "questionText": "He .... his car yesterday.",
+    "options": ["wash", "washed", ""],
+    "explanation": "Correct answer: washed. 'Washed' is the past tense of 'wash' and is used to indicate cleaning something in the past.",
+    "correctAnswer": "washed"
+  },
+  {
+    "category": "Past Simple (I did) - ရိုးရိုးအတိတ်ကါလ",
+    "questionText": "She .... her homework last night.",
+    "options": ["did", "does", ""],
+    "explanation": "Correct answer: did. 'Did' is the past tense of 'do' and is used to indicate an action that occurred in the past.",
+    "correctAnswer": "did"
+  },
+  {
+    "category": "Past Simple (I did) - ရိုးရိုးအတိတ်ကါလ",
+    "questionText": "They .... a movie last weekend.",
+    "options": ["watch", "watched", ""],
+    "explanation": "Correct answer: watched. 'Watched' is the past tense of 'watch' and is used to indicate viewing something in the past.",
+    "correctAnswer": "watched"
+  },
+  {
+    "category": "Past Simple (I did) - ရိုးရိုးအတိတ်ကါလ",
+    "questionText": "We .... a delicious dinner yesterday.",
+    "options": ["have", "had", ""],
+    "explanation": "Correct answer: had. 'Had' is the past tense of 'have' and is used to indicate possession or consumption in the past.",
+    "correctAnswer": "had"
+  },
+  {
+    "category": "Past Simple (I did) - ရိုးရိုးအတိတ်ကါလ",
+    "questionText": "He .... his keys at home yesterday.",
+    "options": ["leave", "left", ""],
+    "explanation": "Correct answer: left. 'Left' is the past tense of 'leave' and is used to indicate departing from a location in the past.",
+    "correctAnswer": "left"
+  },
+  {
+    "category": "Past Simple (I did) - ရိုးရိုးအတိတ်ကါလ",
+    "questionText": "She .... to the gym last evening.",
+    "options": ["go", "went", ""],
+    "explanation": "Correct answer: went. 'Went' is the past tense of 'go' and is used to indicate movement or travel that occurred in the past.",
+    "correctAnswer": "went"
+  },
+  {
+    "category": "Past Simple (I did) - ရိုးရိုးအတိတ်ကါလ",
+    "questionText": "They .... their new house last year.",
+    "options": ["buy", "bought", ""],
+    "explanation": "Correct answer: bought. 'Bought' is the past tense of 'buy' and is used to indicate purchasing something in the past.",
+    "correctAnswer": "bought"
+  },
+  {
+    "category": "Past Simple (I did) - ရိုးရိုးအတိတ်ကါလ",
+    "questionText": "We .... a fantastic vacation last month.",
+    "options": ["have", "had", ""],
+    "explanation": "Correct answer: had. 'Had' is the past tense of 'have' and is used to indicate possession or consumption in the past.",
+    "correctAnswer": "had"
+  },
+  {
+    "category": "Past Simple (I did) - ရိုးရိုးအတိတ်ကါလ",
+    "questionText": "He .... a great speech at the conference.",
+    "options": [
+      "give",
+      "gave",
+      ""
+    ],
+    "explanation": "Correct answer: gave. 'Gave' is the past tense of 'give' and is used to indicate",
+    "correctAnswer": "gave"
+  },
+  {
+    "category": "past Simple မေးခွန်း (Did you do...?",
+    "questionText": ".... she finish her homework yesterday?",
+    "options": ["Did", "Does", ""],
+    "explanation": "Correct answer: Did. In interrogative sentences in the past simple tense, 'did' is used before the subject to form the question.",
+    "correctAnswer": "Did"
+  },
+  {
+    "category": "past Simple မေးခွန်း (Did you do...?",
+    "questionText": ".... they go to the cinema last night?",
+    "options": ["Did", "Does", ""],
+    "explanation": "Correct answer: Did. In interrogative sentences in the past simple tense, 'did' is used before the subject to form the question.",
+    "correctAnswer": "Did"
+  },
+  {
+    "category": "past Simple မေးခွန်း (Did you do...?",
+    "questionText": ".... you visit your friend yesterday?",
+    "options": ["Did", "Does", ""],
+    "explanation": "Correct answer: Did. In interrogative sentences in the past simple tense, 'did' is used before the subject to form the question.",
+    "correctAnswer": "Did"
+  },
+  {
+    "category": "past Simple မေးခွန်း (Did you do...?",
+    "questionText": ".... she enjoy the party last weekend?",
+    "options": ["Did", "Does", ""],
+    "explanation": "Correct answer: Did. In interrogative sentences in the past simple tense, 'did' is used before the subject to form the question.",
+    "correctAnswer": "Did"
+  },
+  {
+    "category": "past Simple မေးခွန်း (Did you do...?",
+    "questionText": ".... he fix the computer last week?",
+    "options": ["Did", "Does", ""],
+    "explanation": "Correct answer: Did. In interrogative sentences in the past simple tense, 'did' is used before the subject to form the question.",
+    "correctAnswer": "Did"
+  },
+  {
+    "category": "past Simple မေးခွန်း (Did you do...?",
+    "questionText": ".... they watch the movie yesterday?",
+    "options": ["Did", "Does", ""],
+    "explanation": "Correct answer: Did. In interrogative sentences in the past simple tense, 'did' is used before the subject to form the question.",
+    "correctAnswer": "Did"
+  },
+  {
+    "category": "past Simple မေးခွန်း (Did you do...?",
+    "questionText": ".... she finish her project last month?",
+    "options": ["Did", "Does", ""],
+    "explanation": "Correct answer: Did. In interrogative sentences in the past simple tense, 'did' is used before the subject to form the question.",
+    "correctAnswer": "Did"
+  },
+  {
+    "category": "past Simple မေးခွန်း (Did you do...?",
+    "questionText": ".... you play basketball yesterday?",
+    "options": ["Did", "Does", ""],
+    "explanation": "Correct answer: Did. In interrogative sentences in the past simple tense, 'did' is used before the subject to form the question.",
+    "correctAnswer": "Did"
+  },
+  {
+    "category": "past Simple မေးခွန်း (Did you do...?",
+    "questionText": ".... they visit their grandparents last Sunday?",
+    "options": ["Did", "Does", ""],
+    "explanation": "Correct answer: Did. In interrogative sentences in the past simple tense, 'did' is used before the subject to form the question.",
+    "correctAnswer": "Did"
+  },
+  {
+    "category": "past Simple မေးခွန်း (Did you do...?",
+    "questionText": ".... he read the book yesterday?",
+    "options": ["Did", "Does", ""],
+    "explanation": "Correct answer: Did. In interrogative sentences in the past simple tense, 'did' is used before the subject to form the question.",
+    "correctAnswer": "Did"
+  },
+  {
+    "category": "past Simple မေးခွန်း (Did you do...?",
+    "questionText": ".... she write an email last night?",
+    "options": ["Did", "Does", ""],
+    "explanation": "Correct answer: Did. In interrogative sentences in the past simple tense, 'did' is used before the subject to form the question.",
+    "correctAnswer": "Did"
+  },
+  {
+    "category": "past Simple မေးခွန်း (Did you do...?",
+    "questionText": ".... you finish your work yesterday?",
+    "options": ["Did", "Does", ""],
+    "explanation": "Correct answer: Did. In interrogative sentences in the past simple tense, 'did' is used before the subject to form the question.",
+    "correctAnswer": "Did"
+  },
+  {
+    "category": "past Simple မေးခွန်း (Did you do...?",
+    "questionText": ".... they visit the museum last weekend?",
+    "options": ["Did", "Does", ""],
+    "explanation": "Correct answer: Did. In interrogative sentences in the past simple tense, 'did' is used before the subject to form the question.",
+    "correctAnswer": "Did"
+  },
+  {
+    "category": "past Simple မေးခွန်း (Did you do...?",
+    "questionText": ".... she cook dinner yesterday?",
+    "options": ["Did", "Does", ""],
+    "explanation": "Correct answer: Did. In interrogative sentences in the past simple tense, 'did' is used before the subject to form the question.",
+    "correctAnswer": "Did"
+  }
+
+]

@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>8 Parts of Speech - English & Burmese</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Padauk:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #4f46e5;
+            --secondary: #6366f1;
+            --accent: #f59e0b;
+        }
+        body {
+            font-family: 'Inter', 'Padauk', sans-serif;
+            scroll-behavior: smooth;
+            background-color: #f8fafc;
+        }
+        .burmese-text {
+            font-family: 'Padauk', serif;
+            line-height: 1.8;
+        }
+        .glass-morphism {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        .nav-link {
+            transition: all 0.3s ease;
+        }
+        .nav-link:hover {
+            color: var(--primary);
+            transform: translateX(5px);
+        }
+        .card-shadow {
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+        }
+        .section-animate {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.6s ease-out;
+        }
+        .section-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="text-slate-800">
+
+    <!-- Navigation Sidebar (Hidden on Mobile, Visible on Desktop) -->
+    <aside id="sidebar" class="fixed left-0 top-0 h-screen w-64 bg-white border-r border-slate-200 z-50 transform -translate-x-full lg:translate-x-0 transition-transform duration-300 ease-in-out card-shadow lg:block">
+        <div class="p-6">
+            <h2 class="text-2xl font-bold text-indigo-600 mb-8">Grammar Hub</h2>
+            <nav class="space-y-1">
+                <a href="#home" class="nav-link block px-4 py-2 rounded-lg hover:bg-indigo-50 font-medium">Home / အစပျိုး</a>
+                <div class="pt-4 pb-2 px-4 text-xs font-semibold text-slate-400 uppercase tracking-wider">Parts of Speech</div>
+                <a href="#noun" class="nav-link block px-4 py-2 rounded-lg hover:bg-indigo-50">1. Noun / နာမ်</a>
+                <a href="#pronoun" class="nav-link block px-4 py-2 rounded-lg hover:bg-indigo-50">2. Pronoun / နာမ်စား</a>
+                <a href="#verb" class="nav-link block px-4 py-2 rounded-lg hover:bg-indigo-50">3. Verb / ကြိယာ</a>
+                <a href="#adjective" class="nav-link block px-4 py-2 rounded-lg hover:bg-indigo-50">4. Adjective / နာမဝိသေသန</a>
+                <a href="#adverb" class="nav-link block px-4 py-2 rounded-lg hover:bg-indigo-50">5. Adverb / ကြိယာဝိသေသန</a>
+                <a href="#preposition" class="nav-link block px-4 py-2 rounded-lg hover:bg-indigo-50">6. Preposition / ဝိဘတ်</a>
+                <a href="#conjunction" class="nav-link block px-4 py-2 rounded-lg hover:bg-indigo-50">7. Conjunction / သမ္ဗန္ဓ</a>
+                <a href="#interjection" class="nav-link block px-4 py-2 rounded-lg hover:bg-indigo-50">8. Interjection / အာမေဍိတ်</a>
+            </nav>
+        </div>
+    </aside>
+
+    <!-- Mobile Header -->
+    <header class="lg:hidden fixed top-0 left-0 right-0 h-16 bg-white border-b border-slate-200 z-40 flex items-center justify-between px-6 glass-morphism">
+        <h1 class="text-lg font-bold text-indigo-600">Grammar Hub</h1>
+        <button id="menuBtn" class="p-2 rounded-md hover:bg-slate-100 focus:outline-none">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+            </svg>
+        </button>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="lg:ml-64 min-h-screen p-6 lg:p-12">
+        
+        <!-- Hero Section -->
+        <section id="home" class="mb-20 pt-16 lg:pt-0 section-animate">
+            <div class="max-w-4xl">
+                <span class="inline-block px-3 py-1 bg-indigo-100 text-indigo-700 rounded-full text-sm font-semibold mb-4 tracking-wide">English Learning Resource</span>
+                <h1 class="text-4xl lg:text-6xl font-extrabold text-slate-900 mb-6 leading-tight">
+                    The Eight Parts of Speech<br>
+                    <span class="text-indigo-600 burmese-text">အင်္ဂလိပ်သဒ္ဒါ အခြေခံ ၈ မျိုး</span>
+                </h1>
+                <p class="text-lg text-slate-600 leading-relaxed mb-8 burmese-text">
+                    အင်္ဂလိပ်စာ လေ့လာရာတွင် အခြေခံအကျဆုံးဖြစ်သော ဝါစင်္ဂ (၈) မျိုးကို မြန်မာဘာသာဖြင့် အလွယ်တကူ လေ့လာနိုင်ရန် ပြုစုထားပါသည်။
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="#noun" class="px-6 py-3 bg-indigo-600 text-white rounded-xl font-semibold shadow-lg shadow-indigo-200 hover:bg-indigo-700 transition-colors">Start Learning / စတင်ရန်</a>
+                </div>
+            </div>
+        </section>
+
+        
+        <!-- 1. Noun -->
+        <section id="noun" class="mb-24 scroll-mt-24 section-animate">
+            <div class="bg-white rounded-3xl p-8 lg:p-12 card-shadow flex flex-col md:flex-row items-center gap-12 border-l-8 border-indigo-500">
+                <div class="md:w-1/2">
+                    <div class="w-16 h-16 bg-indigo-100 text-indigo-600 rounded-2xl flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg>
+                    </div>
+                    <h2 class="text-3xl font-bold mb-2">1. Noun</h2>
+                    <h3 class="text-xl text-indigo-600 font-semibold mb-4 burmese-text">နာမ် (အမည်)</h3>
+                    <p class="text-slate-600 mb-6 burmese-text">
+                        လူ၊ တိရစ္ဆာန်၊ နေရာ၊ အရာဝတ္ထု သို့မဟုတ် စိတ်ကူးစိတ်သန်းများကို အမည်ပေးရာတွင် အသုံးပြုသည်။
+                    </p>
+                    <div class="bg-slate-50 p-6 rounded-2xl">
+                        <h4 class="font-bold mb-3 text-slate-900 uppercase text-xs tracking-widest">Examples / ဥပမာများ</h4>
+                        <ul class="space-y-2">
+                            <li><span class="font-semibold text-indigo-600">Mg Mg</span> (Person) - မောင်မောင်</li>
+                            <li><span class="font-semibold text-indigo-600">Cat</span> (Animal) - ကြောင်</li>
+                            <li><span class="font-semibold text-indigo-600">Yangon</span> (Place) - ရန်ကုန်</li>
+                            <li><span class="font-semibold text-indigo-600">Love</span> (Idea) - အချစ်</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="md:w-1/2 flex justify-center">
+                    <!-- SVG Graphics for Noun -->
+                    <svg width="240" height="240" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="50" y="80" width="100" height="80" rx="4" fill="#E0E7FF" stroke="#4F46E5" stroke-width="4"/>
+                        <circle cx="100" cy="50" r="30" fill="#E0E7FF" stroke="#4F46E5" stroke-width="4"/>
+                        <rect x="70" y="100" width="60" height="10" rx="2" fill="#4F46E5"/>
+                        <path d="M100 80V160" stroke="#4F46E5" stroke-width="4"/>
+                    </svg>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. Pronoun -->
+        <section id="pronoun" class="mb-24 scroll-mt-24 section-animate">
+            <div class="bg-white rounded-3xl p-8 lg:p-12 card-shadow flex flex-col md:flex-row-reverse items-center gap-12 border-l-8 border-emerald-500">
+                <div class="md:w-1/2">
+                    <div class="w-16 h-16 bg-emerald-100 text-emerald-600 rounded-2xl flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path></svg>
+                    </div>
+                    <h2 class="text-3xl font-bold mb-2">2. Pronoun</h2>
+                    <h3 class="text-xl text-emerald-600 font-semibold mb-4 burmese-text">နာမ်စား (နာမ်အစားသုံး)</h3>
+                    <p class="text-slate-600 mb-6 burmese-text">
+                        နာမ်တစ်ခုကို ထပ်ခါထပ်ခါ မသုံးလိုသောအခါ ၎င်း၏ အစားထိုး အသုံးပြုသော စကားလုံးများ ဖြစ်သည်။
+                    </p>
+                    <div class="bg-slate-50 p-6 rounded-2xl">
+                        <h4 class="font-bold mb-3 text-slate-900 uppercase text-xs tracking-widest">Examples / ဥပမာများ</h4>
+                        <div class="grid grid-cols-2 gap-2">
+                            <span class="px-3 py-1 bg-white border border-emerald-100 rounded text-center">I (ကျွန်ုပ်)</span>
+                            <span class="px-3 py-1 bg-white border border-emerald-100 rounded text-center">You (မင်း)</span>
+                            <span class="px-3 py-1 bg-white border border-emerald-100 rounded text-center">We (ငါတို့)</span>
+                            <span class="px-3 py-1 bg-white border border-emerald-100 rounded text-center">They (သူတို့)</span>
+                            <span class="px-3 py-1 bg-white border border-emerald-100 rounded text-center">He (သူ)</span>
+                            <span class="px-3 py-1 bg-white border border-emerald-100 rounded text-center">She (သူမ)</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-1/2 flex justify-center">
+                    <svg width="240" height="240" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="60" cy="80" r="30" fill="#D1FAE5" stroke="#10B981" stroke-width="4"/>
+                        <path d="M120 100L160 100" stroke="#10B981" stroke-width="4" stroke-linecap="round" stroke-dasharray="8 8"/>
+                        <path d="M165 100L155 90M165 100L155 110" stroke="#10B981" stroke-width="4" stroke-linecap="round"/>
+                        <rect x="140" y="50" width="40" height="40" rx="20" fill="#D1FAE5" stroke="#10B981" stroke-width="2"/>
+                    </svg>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Verb -->
+        <section id="verb" class="mb-24 scroll-mt-24 section-animate">
+            <div class="bg-white rounded-3xl p-8 lg:p-12 card-shadow flex flex-col md:flex-row items-center gap-12 border-l-8 border-rose-500">
+                <div class="md:w-1/2">
+                    <div class="w-16 h-16 bg-rose-100 text-rose-600 rounded-2xl flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                    </div>
+                    <h2 class="text-3xl font-bold mb-2">3. Verb</h2>
+                    <h3 class="text-xl text-rose-600 font-semibold mb-4 burmese-text">ကြိယာ (လုပ်ဆောင်ချက်)</h3>
+                    <p class="text-slate-600 mb-6 burmese-text">
+                        လုပ်ဆောင်မှုများ သို့မဟုတ် တည်ရှိမှု အခြေအနေများကို ဖော်ပြရန် အသုံးပြုသည်။ စာကြောင်းတစ်ခု၏ အသက်ဖြစ်သည်။
+                    </p>
+                    <div class="bg-slate-50 p-6 rounded-2xl">
+                        <h4 class="font-bold mb-3 text-slate-900 uppercase text-xs tracking-widest">Examples / ဥပမာများ</h4>
+                        <div class="space-y-3">
+                            <div class="flex items-center gap-2">
+                                <span class="w-2 h-2 rounded-full bg-rose-400"></span>
+                                <span><span class="font-bold">Run</span> (ပြေးသည်)</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <span class="w-2 h-2 rounded-full bg-rose-400"></span>
+                                <span><span class="font-bold">Eat</span> (စားသည်)</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <span class="w-2 h-2 rounded-full bg-rose-400"></span>
+                                <span><span class="font-bold">Is / Am / Are</span> (ဖြစ်သည်/ရှိသည်)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-1/2 flex justify-center">
+                    <svg width="240" height="240" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="100" cy="100" r="50" stroke="#F43F5E" stroke-width="4" stroke-dasharray="10 5"/>
+                        <path d="M100 70V130M70 100H130" stroke="#F43F5E" stroke-width="6" stroke-linecap="round"/>
+                        <path d="M130 70L160 40M40 160L70 130" stroke="#F43F5E" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Adjective -->
+        <section id="adjective" class="mb-24 scroll-mt-24 section-animate">
+            <div class="bg-white rounded-3xl p-8 lg:p-12 card-shadow flex flex-col md:flex-row-reverse items-center gap-12 border-l-8 border-amber-500">
+                <div class="md:w-1/2">
+                    <div class="w-16 h-16 bg-amber-100 text-amber-600 rounded-2xl flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.172-1.172a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"></path></svg>
+                    </div>
+                    <h2 class="text-3xl font-bold mb-2">4. Adjective</h2>
+                    <h3 class="text-xl text-amber-600 font-semibold mb-4 burmese-text">နာမဝိသေသန (ဂုဏ်ပုဒ်)</h3>
+                    <p class="text-slate-600 mb-6 burmese-text">
+                        နာမ် (Noun) သို့မဟုတ် နာမ်စား (Pronoun) များကို အထူးပြုရန်၊ အရည်အသွေးဖော်ပြရန် သုံးသည်။
+                    </p>
+                    <div class="bg-slate-50 p-6 rounded-2xl">
+                        <h4 class="font-bold mb-3 text-slate-900 uppercase text-xs tracking-widest">Examples / ဥပမာများ</h4>
+                        <p class="italic text-slate-500 mb-4">Focuses on size, color, quality...</p>
+                        <ul class="grid grid-cols-2 gap-y-2">
+                            <li>✨ <span class="font-bold">Beautiful</span> (လှသော)</li>
+                            <li>✨ <span class="font-bold">Big</span> (ကြီးသော)</li>
+                            <li>✨ <span class="font-bold">Red</span> (နီသော)</li>
+                            <li>✨ <span class="font-bold">Smart</span> (တော်သော)</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="md:w-1/2 flex justify-center">
+                    <svg width="240" height="240" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M100 40L120 80H165L130 110L145 155L100 130L55 155L70 110L35 80H80L100 40Z" fill="#FEF3C7" stroke="#D97706" stroke-width="4"/>
+                        <circle cx="100" cy="100" r="10" fill="#D97706"/>
+                    </svg>
+                </div>
+            </div>
+        </section>
+
+        
+        <!-- 5. Adverb -->
+        <section id="adverb" class="mb-24 scroll-mt-24 section-animate">
+            <div class="bg-white rounded-3xl p-8 lg:p-12 card-shadow border-l-8 border-violet-500">
+                <div class="grid md:grid-cols-2 gap-12">
+                    <div>
+                        <div class="w-16 h-16 bg-violet-100 text-violet-600 rounded-2xl flex items-center justify-center mb-6">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        </div>
+                        <h2 class="text-3xl font-bold mb-2">5. Adverb</h2>
+                        <h3 class="text-xl text-violet-600 font-semibold mb-4 burmese-text">ကြိယာဝိသေသန (လုပ်ဆောင်ပုံ)</h3>
+                        <p class="text-slate-600 mb-6 burmese-text">
+                            ကြိယာ၊ နာမဝိသေသန သို့မဟုတ် အခြားသော ကြိယာဝိသေသနများကို အထူးပြုသည်။ မည်ကဲ့သို့၊ မည်သည့်အချိန်၊ မည်သည့်နေရာတွင် ဖြစ်ပျက်ကြောင်း ဖော်ပြသည်။
+                        </p>
+                    </div>
+                    <div class="bg-violet-50 p-6 rounded-2xl flex flex-col justify-center">
+                        <h4 class="font-bold mb-4 text-violet-900 uppercase text-xs tracking-widest">How? When? Where?</h4>
+                        <div class="space-y-4">
+                            <div class="p-3 bg-white rounded-xl shadow-sm border-l-4 border-violet-400">
+                                <span class="font-bold text-violet-600">Quickly</span> - လျင်မြန်စွာ (How)
+                            </div>
+                            <div class="p-3 bg-white rounded-xl shadow-sm border-l-4 border-violet-400">
+                                <span class="font-bold text-violet-600">Yesterday</span> - မနေ့က (When)
+                            </div>
+                            <div class="p-3 bg-white rounded-xl shadow-sm border-l-4 border-violet-400">
+                                <span class="font-bold text-violet-600">Everywhere</span> - နေရာတိုင်းမှာ (Where)
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. Preposition -->
+        <section id="preposition" class="mb-24 scroll-mt-24 section-animate">
+            <div class="bg-white rounded-3xl p-8 lg:p-12 card-shadow flex flex-col md:flex-row items-center gap-12 border-l-8 border-cyan-500">
+                <div class="md:w-1/2">
+                    <div class="w-16 h-16 bg-cyan-100 text-cyan-600 rounded-2xl flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                    </div>
+                    <h2 class="text-3xl font-bold mb-2">6. Preposition</h2>
+                    <h3 class="text-xl text-cyan-600 font-semibold mb-4 burmese-text">ဝိဘတ် (နေရာ/အချိန်ပြ)</h3>
+                    <p class="text-slate-600 mb-6 burmese-text">
+                        နာမ် သို့မဟုတ် နာမ်စားများကို အခြားစကားလုံးများနှင့် ဆက်သွယ်ပေးရန်၊ နေရာ၊ အချိန် သို့မဟုတ် လားရာများကို ပြသရန် သုံးသည်။
+                    </p>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="px-4 py-2 bg-cyan-50 text-cyan-700 rounded-full border border-cyan-100 font-medium italic">In / At / On</span>
+                        <span class="px-4 py-2 bg-cyan-50 text-cyan-700 rounded-full border border-cyan-100 font-medium italic">Under</span>
+                        <span class="px-4 py-2 bg-cyan-50 text-cyan-700 rounded-full border border-cyan-100 font-medium italic">Between</span>
+                        <span class="px-4 py-2 bg-cyan-50 text-cyan-700 rounded-full border border-cyan-100 font-medium italic">After</span>
+                    </div>
+                </div>
+                <div class="md:w-1/2 flex justify-center">
+                    <svg width="240" height="240" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="60" y="100" width="80" height="60" rx="4" fill="#CFFAFE" stroke="#0891B2" stroke-width="4"/>
+                        <circle cx="100" cy="80" r="20" fill="#0891B2"/>
+                        <path d="M100 80L100 130" stroke="white" stroke-width="4"/>
+                    </svg>
+                </div>
+            </div>
+        </section>
+
+        <!-- 7. Conjunction -->
+        <section id="conjunction" class="mb-24 scroll-mt-24 section-animate">
+            <div class="bg-white rounded-3xl p-8 lg:p-12 card-shadow border-l-8 border-orange-500">
+                <div class="flex flex-col md:flex-row items-center gap-12">
+                    <div class="md:w-1/2">
+                        <div class="w-16 h-16 bg-orange-100 text-orange-600 rounded-2xl flex items-center justify-center mb-6">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.826a4 4 0 015.656 0l4 4a4 4 0 01-5.656 5.656l-1.1-1.1"></path></svg>
+                        </div>
+                        <h2 class="text-3xl font-bold mb-2">7. Conjunction</h2>
+                        <h3 class="text-xl text-orange-600 font-semibold mb-4 burmese-text">သမ္ဗန္ဓ (စကားစပ်)</h3>
+                        <p class="text-slate-600 mb-6 burmese-text">
+                            စကားလုံးများ၊ စကားစုများ သို့မဟုတ် ဝါကျများကို တစ်ခုနှင့်တစ်ခု ဆက်စပ်ပေးရန် အသုံးပြုသည်။ (တံတားသဖွယ်)
+                        </p>
+                    </div>
+                    <div class="md:w-1/2">
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="bg-orange-50 p-4 rounded-xl text-center border-b-4 border-orange-300">
+                                <span class="block text-2xl font-black text-orange-600">AND</span>
+                                <span class="text-sm burmese-text">နှင့်</span>
+                            </div>
+                            <div class="bg-orange-50 p-4 rounded-xl text-center border-b-4 border-orange-300">
+                                <span class="block text-2xl font-black text-orange-600">BUT</span>
+                                <span class="text-sm burmese-text">ဒါပေမယ့်</span>
+                            </div>
+                            <div class="bg-orange-50 p-4 rounded-xl text-center border-b-4 border-orange-300">
+                                <span class="block text-2xl font-black text-orange-600">OR</span>
+                                <span class="text-sm burmese-text">သို့မဟုတ်</span>
+                            </div>
+                            <div class="bg-orange-50 p-4 rounded-xl text-center border-b-4 border-orange-300">
+                                <span class="block text-2xl font-black text-orange-600">SO</span>
+                                <span class="text-sm burmese-text">ထို့ကြောင့်</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 8. Interjection -->
+        <section id="interjection" class="mb-24 scroll-mt-24 section-animate">
+            <div class="bg-white rounded-3xl p-8 lg:p-12 card-shadow flex flex-col md:flex-row items-center gap-12 border-l-8 border-fuchsia-500">
+                <div class="md:w-1/2">
+                    <div class="w-16 h-16 bg-fuchsia-100 text-fuchsia-600 rounded-2xl flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    </div>
+                    <h2 class="text-3xl font-bold mb-2">8. Interjection</h2>
+                    <h3 class="text-xl text-fuchsia-600 font-semibold mb-4 burmese-text">အာမေဍိတ် (စိတ်လှုပ်ရှားမှုပြ)</h3>
+                    <p class="text-slate-600 mb-6 burmese-text">
+                        ပြင်းထန်သော စိတ်လှုပ်ရှားမှု သို့မဟုတ် အံ့အားသင့်မှုကို ဖော်ပြသော စကားလုံးများ ဖြစ်သည်။ များသောအားဖြင့် (!) သင်္ကေတဖြင့် ဆုံးတတ်သည်။
+                    </p>
+                    <div class="flex flex-wrap gap-4">
+                        <div class="px-4 py-2 bg-fuchsia-600 text-white rounded-lg transform rotate-2 font-bold shadow-md">Wow!</div>
+                        <div class="px-4 py-2 bg-fuchsia-600 text-white rounded-lg transform -rotate-3 font-bold shadow-md">Ouch!</div>
+                        <div class="px-4 py-2 bg-fuchsia-600 text-white rounded-lg transform rotate-1 font-bold shadow-md">Hurray!</div>
+                        <div class="px-4 py-2 bg-fuchsia-600 text-white rounded-lg transform -rotate-1 font-bold shadow-md">Oh!</div>
+                    </div>
+                </div>
+                <div class="md:w-1/2 flex justify-center">
+                    <svg width="240" height="240" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M100 40V120" stroke="#D946EF" stroke-width="12" stroke-linecap="round"/>
+                        <circle cx="100" cy="155" r="10" fill="#D946EF"/>
+                        <path d="M130 50L160 30M40 30L70 50" stroke="#D946EF" stroke-width="4" stroke-linecap="round"/>
+                    </svg>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="mt-20 py-12 border-t border-slate-200 text-center">
+            <p class="text-slate-400 text-sm">
+                &copy; 2024 English Grammar Guide - Myanmar Edition.<br>
+                Crafted for elegant learning experiences.
+            </p>
+        </footer>
+
+    </main>
+
+    <script>
+        // Sidebar Toggle for Mobile
+        const menuBtn = document.getElementById('menuBtn');
+        const sidebar = document.getElementById('sidebar');
+        let isOpen = false;
+
+        menuBtn.addEventListener('click', () => {
+            isOpen = !isOpen;
+            if (isOpen) {
+                sidebar.classList.remove('-translate-x-full');
+            } else {
+                sidebar.classList.add('-translate-x-full');
+            }
+        });
+
+        // Close sidebar when a link is clicked on mobile
+        const navLinks = document.querySelectorAll('.nav-link');
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                if (window.innerWidth < 1024) {
+                    sidebar.classList.add('-translate-x-full');
+                    isOpen = false;
+                }
+            });
+        });
+
+        // Scroll Reveal Animation
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('section-visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.section-animate').forEach(section => {
+            observer.observe(section);
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>

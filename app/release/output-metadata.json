@@ -1,0 +1,20 @@
+{
+  "version": 3,
+  "artifactType": {
+    "type": "APK",
+    "kind": "Directory"
+  },
+  "applicationId": "kup.moemoetun.shwegrammaroffline",
+  "variantName": "release",
+  "elements": [
+    {
+      "type": "SINGLE",
+      "filters": [],
+      "attributes": [],
+      "versionCode": 40,
+      "versionName": "0.40",
+      "outputFile": "app-release.apk"
+    }
+  ],
+  "elementType": "File"
+}

@@ -1,0 +1,1690 @@
+﻿<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Audio player HTML5</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+  <!-- Options -->
+<p>
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns:m="http://schemas.microsoft.com/office/2004/12/omml"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 15">
+<meta name=Originator content="Microsoft Word 15">
+<link rel=File-List href="am_is-are_1_files/filelist.xml">
+<link rel=Preview href="am_is-are_1_files/preview.wmf">
+<link rel=Edit-Time-Data href="am_is-are_1_files/editdata.mso">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>moemoetun</o:Author>
+  <o:Template>Normal</o:Template>
+  <o:LastAuthor>moemoetun</o:LastAuthor>
+  <o:Revision>2</o:Revision>
+  <o:TotalTime>79</o:TotalTime>
+  <o:Created>2017-06-10T07:32:00Z</o:Created>
+  <o:LastSaved>2017-06-10T07:32:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>347</o:Words>
+  <o:Characters>1978</o:Characters>
+  <o:Lines>16</o:Lines>
+  <o:Paragraphs>4</o:Paragraphs>
+  <o:CharactersWithSpaces>2321</o:CharactersWithSpaces>
+  <o:Version>15.00</o:Version>
+ </o:DocumentProperties>
+ <o:OfficeDocumentSettings>
+  <o:AllowPNG/>
+ </o:OfficeDocumentSettings>
+</xml><![endif]-->
+<link rel=themeData href="am_is-are_1_files/themedata.thmx">
+<link rel=colorSchemeMapping href="am_is-are_1_files/colorschememapping.xml">
+<!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:SpellingState>Clean</w:SpellingState>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:TrackMoves>false</w:TrackMoves>
+  <w:TrackFormatting/>
+  <w:PunctuationKerning/>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:DoNotPromoteQF/>
+  <w:LidThemeOther>EN-US</w:LidThemeOther>
+  <w:LidThemeAsian>X-NONE</w:LidThemeAsian>
+  <w:LidThemeComplexScript>X-NONE</w:LidThemeComplexScript>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+   <w:DontGrowAutofit/>
+   <w:SplitPgBreakAndParaMark/>
+   <w:EnableOpenTypeKerning/>
+   <w:DontFlipMirrorIndents/>
+   <w:OverrideTableStyleHps/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+  <m:mathPr>
+   <m:mathFont m:val="Cambria Math"/>
+   <m:brkBin m:val="before"/>
+   <m:brkBinSub m:val="&#45;-"/>
+   <m:smallFrac m:val="off"/>
+   <m:dispDef/>
+   <m:lMargin m:val="0"/>
+   <m:rMargin m:val="0"/>
+   <m:defJc m:val="centerGroup"/>
+   <m:wrapIndent m:val="1440"/>
+   <m:intLim m:val="subSup"/>
+   <m:naryLim m:val="undOvr"/>
+  </m:mathPr></w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" DefUnhideWhenUsed="false"
+  DefSemiHidden="false" DefQFormat="false" DefPriority="99"
+  LatentStyleCount="371">
+  <w:LsdException Locked="false" Priority="0" QFormat="true" Name="Normal"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 1"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 2"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 3"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 4"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 5"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 6"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 7"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 8"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 9"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 6"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 7"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 8"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 9"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 1"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 2"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 3"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 4"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 5"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 6"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 7"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 8"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 9"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Normal Indent"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="footnote text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="annotation text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="header"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="footer"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index heading"/>
+  <w:LsdException Locked="false" Priority="35" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="caption"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="table of figures"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="envelope address"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="envelope return"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="footnote reference"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="annotation reference"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="line number"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="page number"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="endnote reference"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="endnote text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="table of authorities"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="macro"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="toa heading"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number 5"/>
+  <w:LsdException Locked="false" Priority="10" QFormat="true" Name="Title"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Closing"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Signature"/>
+  <w:LsdException Locked="false" Priority="1" SemiHidden="true"
+   UnhideWhenUsed="true" Name="Default Paragraph Font"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text Indent"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Message Header"/>
+  <w:LsdException Locked="false" Priority="11" QFormat="true" Name="Subtitle"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Salutation"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Date"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text First Indent"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text First Indent 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Note Heading"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text Indent 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text Indent 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Block Text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Hyperlink"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="FollowedHyperlink"/>
+  <w:LsdException Locked="false" Priority="22" QFormat="true" Name="Strong"/>
+  <w:LsdException Locked="false" Priority="20" QFormat="true" Name="Emphasis"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Document Map"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Plain Text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="E-mail Signature"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Top of Form"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Bottom of Form"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Normal (Web)"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Acronym"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Address"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Cite"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Code"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Definition"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Keyboard"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Preformatted"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Sample"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Typewriter"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Variable"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Normal Table"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="annotation subject"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="No List"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Outline List 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Outline List 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Outline List 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Simple 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Simple 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Simple 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Classic 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Classic 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Classic 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Classic 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Colorful 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Colorful 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Colorful 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 6"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 7"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 8"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 6"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 7"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 8"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table 3D effects 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table 3D effects 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table 3D effects 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Contemporary"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Elegant"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Professional"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Subtle 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Subtle 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Web 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Web 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Web 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Balloon Text"/>
+  <w:LsdException Locked="false" Priority="39" Name="Table Grid"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Theme"/>
+  <w:LsdException Locked="false" SemiHidden="true" Name="Placeholder Text"/>
+  <w:LsdException Locked="false" Priority="1" QFormat="true" Name="No Spacing"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 1"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" Name="Revision"/>
+  <w:LsdException Locked="false" Priority="34" QFormat="true"
+   Name="List Paragraph"/>
+  <w:LsdException Locked="false" Priority="29" QFormat="true" Name="Quote"/>
+  <w:LsdException Locked="false" Priority="30" QFormat="true"
+   Name="Intense Quote"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 1"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 1"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 2"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 2"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 2"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 3"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 3"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 3"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 4"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 4"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 4"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 5"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 5"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 5"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 6"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 6"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 6"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="19" QFormat="true"
+   Name="Subtle Emphasis"/>
+  <w:LsdException Locked="false" Priority="21" QFormat="true"
+   Name="Intense Emphasis"/>
+  <w:LsdException Locked="false" Priority="31" QFormat="true"
+   Name="Subtle Reference"/>
+  <w:LsdException Locked="false" Priority="32" QFormat="true"
+   Name="Intense Reference"/>
+  <w:LsdException Locked="false" Priority="33" QFormat="true" Name="Book Title"/>
+  <w:LsdException Locked="false" Priority="37" SemiHidden="true"
+   UnhideWhenUsed="true" Name="Bibliography"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="TOC Heading"/>
+  <w:LsdException Locked="false" Priority="41" Name="Plain Table 1"/>
+  <w:LsdException Locked="false" Priority="42" Name="Plain Table 2"/>
+  <w:LsdException Locked="false" Priority="43" Name="Plain Table 3"/>
+  <w:LsdException Locked="false" Priority="44" Name="Plain Table 4"/>
+  <w:LsdException Locked="false" Priority="45" Name="Plain Table 5"/>
+  <w:LsdException Locked="false" Priority="40" Name="Grid Table Light"/>
+  <w:LsdException Locked="false" Priority="46" Name="Grid Table 1 Light"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark"/>
+  <w:LsdException Locked="false" Priority="51" Name="Grid Table 6 Colorful"/>
+  <w:LsdException Locked="false" Priority="52" Name="Grid Table 7 Colorful"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 1"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 1"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 1"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 1"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 1"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 2"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 2"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 2"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 2"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 2"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 3"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 3"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 3"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 3"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 3"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 4"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 4"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 4"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 4"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 4"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 5"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 5"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 5"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 5"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 5"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 6"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 6"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 6"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 6"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 6"/>
+  <w:LsdException Locked="false" Priority="46" Name="List Table 1 Light"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark"/>
+  <w:LsdException Locked="false" Priority="51" Name="List Table 6 Colorful"/>
+  <w:LsdException Locked="false" Priority="52" Name="List Table 7 Colorful"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 1"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 1"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 1"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 1"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 1"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 2"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 2"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 2"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 2"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 2"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 3"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 3"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 3"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 3"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 3"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 4"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 4"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 4"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 4"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 4"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 5"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 5"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 5"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 5"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 5"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 6"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 6"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 6"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 6"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 6"/>
+ </w:LatentStyles>
+</xml><![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;
+	mso-font-charset:2;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:0 268435456 0 0 -2147483648 0;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;
+	mso-font-charset:1;
+	mso-generic-font-family:roman;
+	mso-font-format:other;
+	mso-font-pitch:variable;
+	mso-font-signature:0 0 0 0 0 0;}
+@font-face
+	{font-family:Zawgyi-One;
+	   src: url(file:///android_asset/font/zawgyi.woff);
+	panose-1:2 11 6 4 3 5 4 4 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:1627400839 -2147483648 8 0 66047 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:8.0pt;
+	margin-left:0in;
+	line-height:105%;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	font-family:"Zawgyi-One",sans-serif;
+	mso-ascii-font-family:Zawgyi-One;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:Zawgyi-One;
+	mso-fareast-theme-font:minor-latin;
+	mso-hansi-font-family:Zawgyi-One;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{mso-style-priority:34;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:8.0pt;
+	margin-left:.5in;
+	mso-add-space:auto;
+	line-height:105%;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	font-family:"Zawgyi-One",sans-serif;
+	mso-ascii-font-family:Zawgyi-One;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:Zawgyi-One;
+	mso-fareast-theme-font:minor-latin;
+	mso-hansi-font-family:Zawgyi-One;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+p.MsoListParagraphCxSpFirst, li.MsoListParagraphCxSpFirst, div.MsoListParagraphCxSpFirst
+	{mso-style-priority:34;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-type:export-only;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	mso-add-space:auto;
+	line-height:105%;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	font-family:"Zawgyi-One",sans-serif;
+	mso-ascii-font-family:Zawgyi-One;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:Zawgyi-One;
+	mso-fareast-theme-font:minor-latin;
+	mso-hansi-font-family:Zawgyi-One;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+p.MsoListParagraphCxSpMiddle, li.MsoListParagraphCxSpMiddle, div.MsoListParagraphCxSpMiddle
+	{mso-style-priority:34;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-type:export-only;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	mso-add-space:auto;
+	line-height:105%;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	font-family:"Zawgyi-One",sans-serif;
+	mso-ascii-font-family:Zawgyi-One;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:Zawgyi-One;
+	mso-fareast-theme-font:minor-latin;
+	mso-hansi-font-family:Zawgyi-One;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+p.MsoListParagraphCxSpLast, li.MsoListParagraphCxSpLast, div.MsoListParagraphCxSpLast
+	{mso-style-priority:34;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-type:export-only;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:8.0pt;
+	margin-left:.5in;
+	mso-add-space:auto;
+	line-height:105%;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	font-family:"Zawgyi-One",sans-serif;
+	mso-ascii-font-family:Zawgyi-One;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:Zawgyi-One;
+	mso-fareast-theme-font:minor-latin;
+	mso-hansi-font-family:Zawgyi-One;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+span.SpellE
+	{mso-style-name:"";
+	mso-spl-e:yes;}
+span.GramE
+	{mso-style-name:"";
+	mso-gram-e:yes;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	mso-default-props:yes;
+	font-size:10.0pt;
+	mso-ansi-font-size:10.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Zawgyi-One",sans-serif;
+	mso-ascii-font-family:Zawgyi-One;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:Zawgyi-One;
+	mso-fareast-theme-font:minor-latin;
+	mso-hansi-font-family:Zawgyi-One;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ @list l0
+	{mso-list-id:1261718365;
+	mso-list-type:hybrid;
+	mso-list-template-ids:1902415996 2063993340 67698713 67698715 67698703 67698713 67698715 67698703 67698713 67698715;}
+@list l0:level1
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-weight:normal;}
+@list l0:level2
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level3
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	text-indent:-9.0pt;}
+@list l0:level4
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level5
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level6
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	text-indent:-9.0pt;}
+@list l0:level7
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level8
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level9
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	text-indent:-9.0pt;}
+@list l1
+	{mso-list-id:1642684863;
+	mso-list-type:hybrid;
+	mso-list-template-ids:822017634 67698689 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l1:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l1:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:"Courier New";}
+@list l1:level3
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Wingdings;}
+@list l1:level4
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l1:level5
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:"Courier New";}
+@list l1:level6
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Wingdings;}
+@list l1:level7
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l1:level8
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:"Courier New";}
+@list l1:level9
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Wingdings;}
+@list l2
+	{mso-list-id:2027631421;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-428711866 67698703 67698713 67698715 67698703 67698713 67698715 67698703 67698713 67698715;}
+@list l2:level1
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l2:level2
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l2:level3
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	text-indent:-9.0pt;}
+@list l2:level4
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l2:level5
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l2:level6
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	text-indent:-9.0pt;}
+@list l2:level7
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l2:level8
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l2:level9
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	text-indent:-9.0pt;}
+ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Zawgyi-One",sans-serif;
+	mso-ascii-font-family:Zawgyi-One;
+	mso-ascii-theme-font:minor-latin;
+	mso-hansi-font-family:Zawgyi-One;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+table.MsoTableGrid
+	{mso-style-name:"Table Grid";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-priority:39;
+	mso-style-unhide:no;
+	border:solid windowtext 1.0pt;
+	mso-border-alt:solid windowtext .5pt;
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-border-insideh:.5pt solid windowtext;
+	mso-border-insidev:.5pt solid windowtext;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	font-family:"Zawgyi-One",sans-serif;
+	mso-ascii-font-family:Zawgyi-One;
+	mso-ascii-theme-font:minor-latin;
+	mso-hansi-font-family:Zawgyi-One;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="1027"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body bgcolor=white lang=EN-US style='tab-interval:.5in'>
+
+<div class=WordSection1>
+
+<p class=MsoNormal style='line-height:150%'><span class=GramE>am</span>, is,
+are<span style='mso-spacerun:yes'>  </span>= verb to be <span class=SpellE>&#4117;&#4101;</span>&#4197;&#4147;<span
+class=SpellE>&#4117;&#4216;&#4116;</span>&#4153;&#4222;<span class=SpellE>&#4096;&#4142;&#4122;&#4140;</span></p>
+
+<p class=MsoNormal style='line-height:150%'>-------------------------------------------------</p>
+
+<p class=MsoNormal style='line-height:150%'><span class=GramE>am</span>,
+is<span style='mso-spacerun:yes'>  </span>&#4239;&#4157;&#4100;&#4153;&#4151;
+are &#4222;<span class=SpellE>&#4096;&#4141;&#4122;&#4140;&#4126;&#4106;</span>&#4153;
+verb to be - <span class=SpellE>&#4123;&#4157;&#4141;&#4126;&#4106;</span>&#4153;&#4170;&#4155;<span
+class=SpellE>&#4118;&#4101;&#4153;&#4126;&#4106;&#4153;&#4125;&#4139;&#4096;&#4154;&#4112;&#4141;&#4143;</span>&#4245;&#4175;
+<span class=SpellE>&#4117;&#4101;</span>&#4197;&#4147;<span class=SpellE>&#4117;&#4216;&#4116;</span>&#4153;&#4222;<span
+class=SpellE>&#4096;&#4141;&#4122;&#4140;&#4121;&#4154;&#4140;&#4152;&#4155;&#4118;&#4101;</span>&#4153;&#4222;<span
+class=SpellE>&#4096;&#4126;&#4106;</span>&#4153;&#4170; <span class=SpellE>&#4113;&#4141;&#4143;&#4222;&#4096;&#4141;&#4122;&#4140;&#4121;&#4154;&#4140;&#4152;&#4096;&#4141;&#4143;</span>
+subject <span class=SpellE>&#4145;&#4097;</span>&#4186; <span class=SpellE>&#4096;&#4112;&#4209;&#4140;&#4152;&#4117;&#4143;&#4114;&#4153;&#4121;&#4154;&#4140;&#4152;</span>&#4239;&#4157;&#4100;&#4153;&#4151;<span
+class=SpellE>&#4112;&#4156;&#4146;&#4101;&#4117;&#4153;&#4117;&#4150;&#4143;&#4112;&#4141;&#4143;&#4245;&#4096;&#4141;&#4143;&#4145;&#4126;&#4097;&#4154;&#4140;&#4102;&#4116;&#4153;&#4152;&#4101;&#4101;&#4153;&#4145;&#4124;&#4151;&#4124;&#4140;&#4222;&#4096;&#4123;&#4145;&#4129;&#4140;&#4100;</span>&#4153;&#4171;</p>
+
+<p class=MsoNormal style='line-height:150%'><span class=SpellE>&#4117;&#4113;&#4102;&#4150;&#4143;&#4152;&#4129;&#4145;&#4116;&#4155;&#4118;&#4100;</span>&#4153;&#4151;
+&#4164;&#4100;&#4153;&#4152; &#4222;<span class=SpellE>&#4096;&#4141;&#4122;&#4140;&#4126;&#4150;&#4143;&#4152;&#4096;&#4141;&#4143;</span>
+<span class=SpellE>&#4116;&#4140;&#4121;&#4153;&#4101;&#4140;&#4152;&#4117;&#4143;&#4114;&#4153;&#4121;&#4154;&#4140;&#4152;&#4116;&#4146;&#4245;&#4112;&#4156;&#4146;&#4101;&#4117;&#4153;&#4117;&#4150;&#4143;&#4096;&#4141;&#4143;&#4145;&#4124;&#4151;&#4124;&#4140;&#4222;&#4096;&#4121;&#4122;</span>&#4153;….
+</p>
+
+<p class=MsoNormal style='line-height:150%'><span class=SpellE><b
+style='mso-bidi-font-weight:normal'>&#4116;&#4140;&#4121;&#4153;&#4101;&#4140;&#4152;</b></span><b
+style='mso-bidi-font-weight:normal'> <span class=SpellE>&#4096;&#4112;&#4209;&#4140;&#4152;&#4117;&#4143;&#4114;&#4153;&#4121;&#4154;&#4140;&#4152;&#4155;&#4118;&#4100;</span>&#4153;&#4151;
+<span class=SpellE>&#4117;&#4101;</span>&#4197;&#4147;<span class=SpellE>&#4117;&#4216;&#4116;&#4153;&#4129;&#4127;&#4143;&#4112;&#4153;&#4125;&#4139;&#4096;</span>&#4154;
+<span class=SpellE>&#4112;&#4106;&#4153;&#4145;&#4102;&#4140;&#4096;&#4153;&#4117;&#4150;&#4143;&#4103;&#4122;&#4140;&#4152;</span>…<o:p></o:p></b></p>
+
+<p class=MsoNormal style='line-height:150%'><!--[if gte vml 1]><v:shapetype
+ id="_x0000_t202" coordsize="21600,21600" o:spt="202" path="m,l,21600r21600,l21600,xe">
+ <v:stroke joinstyle="miter"/>
+ <v:path gradientshapeok="t" o:connecttype="rect"/>
+</v:shapetype><v:shape id="Text_x0020_Box_x0020_1" o:spid="_x0000_s1026"
+ type="#_x0000_t202" style='position:absolute;margin-left:10.5pt;margin-top:9.75pt;
+ width:203.25pt;height:201.75pt;z-index:251659264;visibility:visible;
+ mso-wrap-style:square;mso-width-percent:0;mso-height-percent:0;
+ mso-wrap-distance-left:9pt;mso-wrap-distance-top:0;mso-wrap-distance-right:9pt;
+ mso-wrap-distance-bottom:0;mso-position-horizontal:absolute;
+ mso-position-horizontal-relative:text;mso-position-vertical:absolute;
+ mso-position-vertical-relative:text;mso-width-percent:0;mso-height-percent:0;
+ mso-width-relative:margin;mso-height-relative:margin;v-text-anchor:top'
+ o:gfxdata="UEsDBBQABgAIAAAAIQC2gziS/gAAAOEBAAATAAAAW0NvbnRlbnRfVHlwZXNdLnhtbJSRQU7DMBBF
+90jcwfIWJU67QAgl6YK0S0CoHGBkTxKLZGx5TGhvj5O2G0SRWNoz/78nu9wcxkFMGNg6quQqL6RA
+0s5Y6ir5vt9lD1JwBDIwOMJKHpHlpr69KfdHjyxSmriSfYz+USnWPY7AufNIadK6MEJMx9ApD/oD
+OlTrorhX2lFEilmcO2RdNtjC5xDF9pCuTyYBB5bi6bQ4syoJ3g9WQ0ymaiLzg5KdCXlKLjvcW893
+SUOqXwnz5DrgnHtJTxOsQfEKIT7DmDSUCaxw7Rqn8787ZsmRM9e2VmPeBN4uqYvTtW7jvijg9N/y
+JsXecLq0q+WD6m8AAAD//wMAUEsDBBQABgAIAAAAIQA4/SH/1gAAAJQBAAALAAAAX3JlbHMvLnJl
+bHOkkMFqwzAMhu+DvYPRfXGawxijTi+j0GvpHsDYimMaW0Yy2fr2M4PBMnrbUb/Q94l/f/hMi1qR
+JVI2sOt6UJgd+ZiDgffL8ekFlFSbvV0oo4EbChzGx4f9GRdb25HMsYhqlCwG5lrLq9biZkxWOiqY
+22YiTra2kYMu1l1tQD30/bPm3wwYN0x18gb45AdQl1tp5j/sFB2T0FQ7R0nTNEV3j6o9feQzro1i
+OWA14Fm+Q8a1a8+Bvu/d/dMb2JY5uiPbhG/ktn4cqGU/er3pcvwCAAD//wMAUEsDBBQABgAIAAAA
+IQD8jDEhqwIAAPgFAAAOAAAAZHJzL2Uyb0RvYy54bWysVN1P2zAQf5+0/8Hy+0gbUWAVKepATJM6
+QIOJZ9exaYTt82y3SffXc7bTtGIITdNekvPd774/zi86rchGON+Aqej4aESJMBzqxjxV9OfD9acz
+SnxgpmYKjKjoVnh6Mfv44by1U1HCClQtHEEjxk9bW9FVCHZaFJ6vhGb+CKwwKJTgNAv4dE9F7ViL
+1rUqytHopGjB1dYBF94j9yoL6SzZl1LwcCulF4GoimJsIX1d+i7jt5ids+mTY3bV8D4M9g9RaNYY
+dDqYumKBkbVr/jClG+7AgwxHHHQBUjZcpBwwm/HoVTb3K2ZFygWL4+1QJv//zPKbzZ0jTY29o8Qw
+jS16EF0gX6Aj41id1vopgu4twkKH7IiMmXq7AP7sEVIcYLKCR3TEdNLp+Mc8CSpiA7ZD0aMXjsxy
+cjYuTyeUcJSVk5OyLCfRcbFXt86HrwI0iURFHXY1hcA2Cx8ydAdJkYFq6utGqfSIkyQulSMbhjPA
+OBcm5AzUWn+HOvNxlkb9NCAbZyazz3ZsjCbNZLSUYvOHTpT5O79ln9iBMhqO2qmGuWyxmj5slYg2
+lfkhJPZnX/a388lVSOioJjH7QbHM/XpPscdHVZG2ZlDum/2e8qCRPIMJg7JuDLi3vNfPabgweZnx
+uwrkvGMJQrfsMKtILqHe4vg5yOvrLb9ucBIWzIc75nBfcbDwBoVb/EgFbUWhpyhZgfv9Fj/icY1Q
+SkmL+19R/2vNnKBEfTO4YJ/Hx8fxYKTH8eS0xIc7lCwPJWatLwHHC5cIo0tkxAe1I6UD/Yinah69
+oogZjr4rGnbkZchXCU8dF/N5AuGJsCwszL3lu62Lc/7QPTJn+2UIuEc3sLsUbPpqJzI2NsbAfB1A
+Nmlh9lXtC4/nJY11fwrj/Tp8J9T+YM9eAAAA//8DAFBLAwQUAAYACAAAACEAkBUNuNsAAAAJAQAA
+DwAAAGRycy9kb3ducmV2LnhtbEyPzW6DMBCE75X6DtZW6q0x0N9QTIQq9ZJTQ/sABm+BBq+RbQh5
++25O7W12ZzX7TbFb7SgW9GFwpCDdJCCQWmcG6hR8fb7fvYAIUZPRoyNUcMYAu/L6qtC5cSc64FLH
+TnAIhVwr6GOccilD26PVYeMmJPa+nbc68ug7abw+cbgdZZYkT9LqgfhDryd867E91rNVUKc/h49m
+v5XnKvOrt4uu5uNeqdubtXoFEXGNf8dwwWd0KJmpcTOZIEYFWcpVIu+3jyDYf8ieWTQXcZ+ALAv5
+v0H5CwAA//8DAFBLAQItABQABgAIAAAAIQC2gziS/gAAAOEBAAATAAAAAAAAAAAAAAAAAAAAAABb
+Q29udGVudF9UeXBlc10ueG1sUEsBAi0AFAAGAAgAAAAhADj9If/WAAAAlAEAAAsAAAAAAAAAAAAA
+AAAALwEAAF9yZWxzLy5yZWxzUEsBAi0AFAAGAAgAAAAhAPyMMSGrAgAA+AUAAA4AAAAAAAAAAAAA
+AAAALgIAAGRycy9lMm9Eb2MueG1sUEsBAi0AFAAGAAgAAAAhAJAVDbjbAAAACQEAAA8AAAAAAAAA
+AAAAAAAABQUAAGRycy9kb3ducmV2LnhtbFBLBQYAAAAABAAEAPMAAAANBgAAAAA=
+" fillcolor="#deeaf6 [660]" strokecolor="#ed7d31 [3205]" strokeweight=".5pt">
+ <v:path arrowok="t"/>
+ <v:textbox>
+  <![if !mso]>
+  <table cellpadding=0 cellspacing=0 width="100%">
+   <tr>
+    <td><![endif]>
+    <div>
+    <p class=MsoNormal style='background:#FFD966;mso-background-themecolor:
+    accent4;mso-background-themetint:153'>I<span
+    style='mso-spacerun:yes'>         </span>am<span
+    style='mso-spacerun:yes'>        </span>(I’m) </p>
+    <p class=MsoNormal style='background:#ED7D31;mso-background-themecolor:
+    accent2'>He<span style='mso-spacerun:yes'>                   </span>(he’s)</p>
+    <p class=MsoNormal style='background:#ED7D31;mso-background-themecolor:
+    accent2'>She<span style='mso-spacerun:yes'>      </span>is<span
+    style='mso-spacerun:yes'>          </span>(she’s)</p>
+    <p class=MsoNormal style='background:#ED7D31;mso-background-themecolor:
+    accent2'>It<span style='mso-spacerun:yes'>            </span><span
+    style='mso-spacerun:yes'>        </span>(It’s)</p>
+    <p class=MsoNormal style='background:#8EAADB;mso-background-themecolor:
+    accent5;mso-background-themetint:153'>We<span
+    style='mso-spacerun:yes'>                  </span>(We’re)</p>
+    <p class=MsoNormal style='background:#8EAADB;mso-background-themecolor:
+    accent5;mso-background-themetint:153'>You<span
+    style='mso-spacerun:yes'>     </span>are<span
+    style='mso-spacerun:yes'>        </span>(You’re)</p>
+    <p class=MsoNormal style='background:#8EAADB;mso-background-themecolor:
+    accent5;mso-background-themetint:153'>They<span
+    style='mso-spacerun:yes'>                </span>(They’re)</p>
+    <p class=MsoNormal style='background:#8EAADB;mso-background-themecolor:
+    accent5;mso-background-themetint:153'><o:p>&nbsp;</o:p></p>
+    <p class=MsoNormal><o:p>&nbsp;</o:p></p>
+    </div>
+    <![if !mso]></td>
+   </tr>
+  </table>
+  <![endif]></v:textbox>
+</v:shape><![endif]--><![if !vml]><span style='mso-ignore:vglayout'>
+
+<table cellpadding=0 cellspacing=0 align=left>
+ <tr>
+  <td width=13 height=12></td>
+ </tr>
+ <tr>
+  <td></td>
+  <td><img width=277 height=275 src="am_is-are_1_files/image001.png"
+  alt="Text Box: I         am        (I’m) &#13;&#10;He                   (he’s)&#13;&#10;She      is          (she’s)&#13;&#10;It                    (It’s)&#13;&#10;We                  (We’re)&#13;&#10;You     are        (You’re)&#13;&#10;They                (They’re)&#13;&#10;&#13;&#10;&#13;&#10;"
+  v:shapes="Text_x0020_Box_x0020_1"></td>
+ </tr>
+</table>
+
+</span><![endif]><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='line-height:150%'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='line-height:150%'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='line-height:150%'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='line-height:150%'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='line-height:150%'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='line-height:150%'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='line-height:150%'><o:p>&nbsp;</o:p></p>
+
+<br style='mso-ignore:vglayout' clear=ALL>
+
+<p class=MsoNormal style='line-height:150%'><span class=SpellE><b
+style='mso-bidi-font-weight:normal'>&#4103;&#4122;&#4140;&#4152;&#4096;&#4156;&#4096;</b></span><b
+style='mso-bidi-font-weight:normal'>&#4153; <span class=SpellE>&#4123;&#4157;&#4100;&#4153;&#4152;&#4124;&#4100;&#4153;&#4152;&#4097;&#4154;&#4096;</span>&#4153;<o:p></o:p></b></p>
+
+<p class=MsoNormal style='line-height:150%'><span class=SpellE>&#4129;&#4113;&#4096;&#4153;&#4117;&#4139;&#4103;&#4122;&#4140;&#4152;&#4096;&#4141;&#4143;&#4222;&#4096;&#4106;</span>&#4153;&#4151;<span
+class=SpellE>&#4121;&#4122;&#4153;&#4102;&#4141;&#4143;&#4124;</span>&#4157;&#4154;&#4100;&#4153;…..
+<span class=SpellE>&#4117;&#4101;</span>&#4197;&#4147;<span class=SpellE>&#4117;&#4216;&#4116;&#4153;&#4123;&#4141;&#4143;&#4152;&#4123;&#4141;&#4143;&#4152;&#4129;&#4127;&#4143;&#4112;</span>&#4153;
+<span class=SpellE>&#4125;&#4139;&#4096;&#4154;&#4112;&#4106;&#4153;&#4145;&#4102;&#4140;&#4096;&#4153;&#4112;&#4146;&#4151;&#4129;&#4097;</span>&#4139;….</p>
+
+<p class=MsoNormal style='line-height:150%'>I <span class=SpellE>&#4096;&#4141;&#4143;</span>
+<span class=SpellE>&#4129;&#4155;&#4121;&#4146;&#4112;&#4121;&#4153;&#4152;</span>
+am <span class=SpellE>&#4102;&#4141;&#4143;&#4112;&#4146;</span>&#4151; &#4222;<span
+class=SpellE>&#4096;&#4141;&#4122;&#4140;&#4116;&#4146;&#4245;&#4112;&#4156;&#4146;&#4123;&#4121;&#4122;</span>&#4153;<span
+class=GramE>..</span></p>
+
+<p class=MsoNormal style='line-height:150%'>He, She, It <span class=SpellE>&#4102;&#4141;&#4143;&#4112;&#4146;</span>&#4151;
+<span class=SpellE>&#4129;&#4116;&#4106;&#4153;&#4152;&#4116;&#4140;&#4121;&#4153;&#4101;&#4140;&#4152;&#4096;&#4112;&#4209;&#4140;&#4152;&#4117;&#4143;&#4114;&#4153;&#4121;&#4154;&#4140;&#4152;&#4096;&#4141;&#4143;</span>
+is <span class=SpellE>&#4102;&#4141;&#4143;&#4112;&#4146;&#4151;&#4129;&#4116;&#4106;&#4153;&#4152;&#4222;&#4096;&#4141;&#4122;&#4140;&#4155;&#4118;&#4100;</span>&#4153;&#4151;<span
+class=SpellE>&#4112;&#4156;&#4146;&#4123;&#4121;&#4122;</span>&#4153;<span
+class=GramE>..</span></p>
+
+<p class=MsoNormal style='line-height:150%'>We, You, <span class=GramE>They</span>
+<span class=SpellE>&#4102;&#4141;&#4143;&#4112;&#4146;</span>&#4151; <span
+class=SpellE>&#4129;&#4121;&#4154;&#4140;&#4152;&#4096;&#4141;&#4116;&#4153;&#4152;&#4116;&#4140;&#4121;&#4153;&#4101;&#4140;&#4152;&#4117;&#4143;&#4114;&#4153;&#4121;&#4154;&#4140;&#4152;&#4096;&#4141;&#4143;</span>
+are <span class=SpellE>&#4102;&#4141;&#4143;&#4112;&#4146;</span>&#4151;&#4222;<span
+class=SpellE>&#4096;&#4141;&#4122;&#4140;&#4116;&#4146;&#4245;&#4112;&#4156;&#4146;&#4101;&#4117;&#4153;&#4123;&#4121;&#4122;&#4153;&#4102;&#4141;&#4143;&#4112;&#4140;</span>…<span
+class=SpellE>&#4116;&#4140;&#4152;&#4124;&#4106;&#4153;&#4145;&#4101;&#4117;&#4139;&#4112;&#4122;</span>&#4153;…</p>
+
+<p class=MsoNormal style='line-height:150%'>-------------------------------------</p>
+
+<p class=MsoNormal style='line-height:150%'><span class=SpellE><b
+style='mso-bidi-font-weight:normal'>&#4117;&#4101;</b></span><b
+style='mso-bidi-font-weight:normal'>&#4197;&#4147;<span class=SpellE>&#4117;&#4216;&#4116;</span>&#4153;
+<span class=SpellE>&#4121;&#4127;&#4143;&#4112;&#4153;&#4125;&#4139;&#4096;</span>&#4154;
+<span class=SpellE>&#4112;&#4106;&#4153;&#4145;&#4102;&#4140;&#4096;&#4153;&#4117;&#4150;&#4143;&#4103;&#4122;&#4140;&#4152;</span><o:p></o:p></b></p>
+
+<table class=MsoTableGrid border=1 cellspacing=0 cellpadding=0
+ style='background:#FFF2CC;mso-background-themecolor:accent4;mso-background-themetint:
+ 51;border-collapse:collapse;border:none;mso-border-alt:solid windowtext .5pt;
+ mso-yfti-tbllook:1184;mso-padding-alt:0in 5.4pt 0in 5.4pt'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+  <td width=65 valign=top style='width:49.1pt;border:solid windowtext 1.0pt;
+  mso-border-alt:solid windowtext .5pt;background:#FFC000;mso-background-themecolor:
+  accent4;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  150%'><b style='mso-bidi-font-weight:normal'>I<o:p></o:p></b></p>
+  </td>
+  <td width=78 valign=top style='width:58.5pt;border:solid windowtext 1.0pt;
+  border-left:none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+  solid windowtext .5pt;background:#FFC000;mso-background-themecolor:accent4;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  150%'><b style='mso-bidi-font-weight:normal'>am not<o:p></o:p></b></p>
+  </td>
+  <td width=108 valign=top style='width:81.0pt;border:solid windowtext 1.0pt;
+  border-left:none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+  solid windowtext .5pt;background:#FFC000;mso-background-themecolor:accent4;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  150%'><b style='mso-bidi-font-weight:normal'>I’m not<o:p></o:p></b></p>
+  </td>
+  <td width=108 valign=top style='width:81.0pt;border:solid windowtext 1.0pt;
+  border-left:none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+  solid windowtext .5pt;background:#FFC000;mso-background-themecolor:accent4;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  150%'><b style='mso-bidi-font-weight:normal'><o:p>&nbsp;</o:p></b></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1'>
+  <td width=65 valign=top style='width:49.1pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  150%'><b style='mso-bidi-font-weight:normal'>He<o:p></o:p></b></p>
+  </td>
+  <td width=78 valign=top style='width:58.5pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  150%'><b style='mso-bidi-font-weight:normal'><o:p>&nbsp;</o:p></b></p>
+  </td>
+  <td width=108 valign=top style='width:81.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  150%'><b style='mso-bidi-font-weight:normal'>He’s not<o:p></o:p></b></p>
+  </td>
+  <td width=108 valign=top style='width:81.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  150%'><b style='mso-bidi-font-weight:normal'>He isn’t<o:p></o:p></b></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:2'>
+  <td width=65 valign=top style='width:49.1pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  150%'><b style='mso-bidi-font-weight:normal'>She<o:p></o:p></b></p>
+  </td>
+  <td width=78 valign=top style='width:58.5pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  150%'><b style='mso-bidi-font-weight:normal'>is not<o:p></o:p></b></p>
+  </td>
+  <td width=108 valign=top style='width:81.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  150%'><b style='mso-bidi-font-weight:normal'>She’s not<o:p></o:p></b></p>
+  </td>
+  <td width=108 valign=top style='width:81.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  150%'><b style='mso-bidi-font-weight:normal'>She isn’t<o:p></o:p></b></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:3'>
+  <td width=65 valign=top style='width:49.1pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  150%'><b style='mso-bidi-font-weight:normal'>It<o:p></o:p></b></p>
+  </td>
+  <td width=78 valign=top style='width:58.5pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  150%'><b style='mso-bidi-font-weight:normal'><o:p>&nbsp;</o:p></b></p>
+  </td>
+  <td width=108 valign=top style='width:81.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  150%'><b style='mso-bidi-font-weight:normal'>It’s not<o:p></o:p></b></p>
+  </td>
+  <td width=108 valign=top style='width:81.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  150%'><b style='mso-bidi-font-weight:normal'>It isn’t<o:p></o:p></b></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:4'>
+  <td width=65 valign=top style='width:49.1pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  background:#DEEAF6;mso-background-themecolor:accent1;mso-background-themetint:
+  51;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  150%'><b style='mso-bidi-font-weight:normal'>We<o:p></o:p></b></p>
+  </td>
+  <td width=78 valign=top style='width:58.5pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;background:#DEEAF6;mso-background-themecolor:
+  accent1;mso-background-themetint:51;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  150%'><b style='mso-bidi-font-weight:normal'><o:p>&nbsp;</o:p></b></p>
+  </td>
+  <td width=108 valign=top style='width:81.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;background:#DEEAF6;mso-background-themecolor:
+  accent1;mso-background-themetint:51;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  150%'><b style='mso-bidi-font-weight:normal'>We’re not<o:p></o:p></b></p>
+  </td>
+  <td width=108 valign=top style='width:81.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;background:#DEEAF6;mso-background-themecolor:
+  accent1;mso-background-themetint:51;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  150%'><b style='mso-bidi-font-weight:normal'>We aren’t<o:p></o:p></b></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:5'>
+  <td width=65 valign=top style='width:49.1pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  background:#DEEAF6;mso-background-themecolor:accent1;mso-background-themetint:
+  51;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  150%'><b style='mso-bidi-font-weight:normal'>You<o:p></o:p></b></p>
+  </td>
+  <td width=78 valign=top style='width:58.5pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;background:#DEEAF6;mso-background-themecolor:
+  accent1;mso-background-themetint:51;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  150%'><b style='mso-bidi-font-weight:normal'>are not<o:p></o:p></b></p>
+  </td>
+  <td width=108 valign=top style='width:81.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;background:#DEEAF6;mso-background-themecolor:
+  accent1;mso-background-themetint:51;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  150%'><b style='mso-bidi-font-weight:normal'>You’re not<o:p></o:p></b></p>
+  </td>
+  <td width=108 valign=top style='width:81.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;background:#DEEAF6;mso-background-themecolor:
+  accent1;mso-background-themetint:51;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  150%'><b style='mso-bidi-font-weight:normal'>You aren’t<o:p></o:p></b></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:6;mso-yfti-lastrow:yes'>
+  <td width=65 valign=top style='width:49.1pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  background:#DEEAF6;mso-background-themecolor:accent1;mso-background-themetint:
+  51;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  150%'><b style='mso-bidi-font-weight:normal'>They<o:p></o:p></b></p>
+  </td>
+  <td width=78 valign=top style='width:58.5pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;background:#DEEAF6;mso-background-themecolor:
+  accent1;mso-background-themetint:51;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  150%'><b style='mso-bidi-font-weight:normal'><o:p>&nbsp;</o:p></b></p>
+  </td>
+  <td width=108 valign=top style='width:81.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;background:#DEEAF6;mso-background-themecolor:
+  accent1;mso-background-themetint:51;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  150%'><b style='mso-bidi-font-weight:normal'>They’re not<o:p></o:p></b></p>
+  </td>
+  <td width=108 valign=top style='width:81.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;background:#DEEAF6;mso-background-themecolor:
+  accent1;mso-background-themetint:51;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  150%'><b style='mso-bidi-font-weight:normal'>They aren’t<o:p></o:p></b></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='line-height:150%'><b style='mso-bidi-font-weight:
+normal'><o:p>&nbsp;</o:p></b></p>
+
+<p class=MsoNormal style='line-height:150%'><span class=SpellE><b
+style='mso-bidi-font-weight:normal'>&#4129;&#4127;&#4143;&#4112;&#4153;&#4125;&#4139;&#4096;</b></span><b
+style='mso-bidi-font-weight:normal'>&#4154; <span class=SpellE>&#4116;&#4121;&#4144;&#4116;&#4140;&#4121;&#4154;&#4140;&#4152;</span><o:p></o:p></b></p>
+
+<p class=MsoNormal style='line-height:150%'><span class=GramE><b
+style='mso-bidi-font-weight:normal'>Section<span style='mso-spacerun:yes'> 
+</span>B</b></span><b style='mso-bidi-font-weight:normal'><o:p></o:p></b></p>
+
+<p class=MsoListParagraphCxSpFirst style='text-indent:-.25in;line-height:150%;
+mso-list:l2 level1 lfo2'><![if !supportLists]><span style='mso-bidi-font-family:
+Zawgyi-One;mso-bidi-theme-font:minor-latin'><span style='mso-list:Ignore'>1.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span></span><![endif]>I
+am cold. Can you close the window, please? &#4096;&#4221;&#4156;<span
+class=SpellE>&#4116;&#4153;&#4145;&#4116;&#4140;&#4153;&#4145;&#4129;&#4152;&#4145;&#4116;&#4112;&#4122;</span>&#4153;…<span
+class=SpellE>&#4145;&#4096;&#4154;&#4152;&#4103;&#4144;&#4152;&#4155;&#4117;&#4147;&#4124;&#4141;&#4143;</span>&#4245;&#4155;<span
+class=SpellE>&#4117;&#4112;&#4100;&#4153;&#4152;&#4145;&#4117;&#4139;&#4096;&#4153;&#4096;&#4141;&#4143;&#4117;&#4141;&#4112;&#4153;&#4145;&#4117;&#4152;&#4239;&#4141;&#4143;&#4100;&#4153;&#4121;&#4124;&#4140;&#4152;</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in;line-height:150%;
+mso-list:l2 level1 lfo2'><![if !supportLists]><span style='mso-bidi-font-family:
+Zawgyi-One;mso-bidi-theme-font:minor-latin'><span style='mso-list:Ignore'>2.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span></span><![endif]>I’m
+32 years old. My sister is 29. &#4096;&#4221;&#4156;<span class=SpellE>&#4116;&#4153;&#4145;&#4116;&#4140;&#4153;&#4129;&#4126;&#4096;&#4153;&#4096;</span>
+&#4163;&#4162;&#4239;&#4157;&#4101;&#4153;&#4170; &#4096;&#4221;&#4156;<span
+class=SpellE>&#4116;&#4153;&#4145;&#4116;&#4140;</span>&#4153;&#4151;<span
+class=SpellE>&#4123;&#4146;&#4245;&#4106;&#4142;&#4121;&#4129;&#4126;&#4096;&#4153;&#4096;</span>
+&#4162;&#4169;&#4239;&#4157;&#4101;&#4153;&#4155;<span class=SpellE>&#4118;&#4101;&#4153;&#4117;&#4139;&#4112;&#4122;</span>&#4153;</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in;line-height:150%;
+mso-list:l2 level1 lfo2'><![if !supportLists]><span style='mso-bidi-font-family:
+Zawgyi-One;mso-bidi-theme-font:minor-latin'><span style='mso-list:Ignore'>3.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span></span><![endif]>My
+brother is very tall. He’s a policeman. &#4100;&#4139;&#4151;<span
+class=SpellE>&#4123;&#4146;&#4245;&#4106;&#4142;&#4129;&#4123;&#4121;&#4153;&#4152;&#4129;&#4123;&#4117;&#4153;&#4123;&#4157;&#4106;&#4153;&#4112;&#4122;</span>&#4153;&#4170;<span
+class=SpellE>&#4126;&#4144;&#4096;&#4123;&#4146;&#4133;&#4140;&#4152;&#4112;&#4101;&#4153;&#4145;&#4122;&#4140;&#4096;</span>&#4153;&#4155;<span
+class=SpellE>&#4118;&#4101;&#4153;&#4112;&#4122;</span>&#4153;</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in;line-height:150%;
+mso-list:l2 level1 lfo2'><![if !supportLists]><span style='mso-bidi-font-family:
+Zawgyi-One;mso-bidi-theme-font:minor-latin'><span style='mso-list:Ignore'>4.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span></span><![endif]>John
+is afraid of dogs. &#4098;&#4221;&#4156;<span class=SpellE>&#4116;&#4153;&#4127;&#4140;&#4145;&#4097;&#4156;&#4152;&#4145;&#4112;&#4156;&#4096;&#4141;&#4143;&#4145;&#4222;&#4096;&#4140;&#4096;&#4153;&#4112;&#4122;</span>&#4153;</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in;line-height:150%;
+mso-list:l2 level1 lfo2'><![if !supportLists]><span style='mso-bidi-font-family:
+Zawgyi-One;mso-bidi-theme-font:minor-latin'><span style='mso-list:Ignore'>5.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span></span><![endif]>It’s
+ten o’clock. You’re late again. <span class=SpellE>&#4102;&#4122;&#4153;&#4116;&#4140;&#4123;&#4142;&#4113;&#4141;&#4143;&#4152;&#4155;&#4117;&#4142;</span>&#4171;
+<span class=SpellE>&#4116;&#4100;&#4153;&#4113;&#4117;</span>&#4153;&#4155;<span
+class=SpellE>&#4117;&#4142;&#4152;&#4145;&#4116;&#4140;&#4096;&#4153;&#4096;</span>&#4154;&#4155;<span
+class=SpellE>&#4117;&#4116;</span>&#4153;&#4155;<span class=SpellE>&#4117;&#4142;</span>&#4171;</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in;line-height:150%;
+mso-list:l2 level1 lfo2'><![if !supportLists]><span style='mso-bidi-font-family:
+Zawgyi-One;mso-bidi-theme-font:minor-latin'><span style='mso-list:Ignore'>6.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span></span><![endif]>Ann
+and I are good friends. <span class=SpellE>&#4129;&#4116;&#4153;&#4116;&#4146;&#4245;&#4096;</span>&#4221;&#4156;<span
+class=SpellE>&#4116;&#4153;&#4145;&#4116;&#4140;&#4153;&#4096;</span> <span
+class=SpellE>&#4126;&#4144;&#4100;&#4122;&#4153;&#4097;&#4154;&#4100;&#4153;&#4152;&#4145;&#4096;&#4139;&#4100;&#4153;&#4152;&#4145;&#4112;</span>&#4156;&#4155;<span
+class=SpellE>&#4118;&#4101;</span>&#4153;&#4222;<span class=SpellE>&#4096;&#4112;&#4122;</span>&#4153;</p>
+
+<p class=MsoListParagraphCxSpLast style='text-indent:-.25in;line-height:150%;
+mso-list:l2 level1 lfo2'><![if !supportLists]><span style='mso-bidi-font-family:
+Zawgyi-One;mso-bidi-theme-font:minor-latin'><span style='mso-list:Ignore'>7.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span></span><![endif]>Your
+keys are on the table. <span class=SpellE>&#4116;&#4100;</span>&#4153;&#4151;<span
+class=SpellE>&#4123;&#4146;&#4245;&#4145;&#4126;&#4140;</span>&#4151; <span
+class=SpellE>&#4101;&#4140;&#4152;&#4117;&#4156;&#4146;&#4145;&#4117;&#4186;&#4121;&#4157;&#4140;&#4123;&#4157;&#4141;&#4112;&#4122;</span>&#4153;</p>
+
+<p class=MsoNormal style='line-height:150%'><span class=SpellE><b
+style='mso-bidi-font-weight:normal'>&#4121;&#4127;&#4143;&#4112;&#4153;&#4125;&#4139;&#4096;</b></span><b
+style='mso-bidi-font-weight:normal'>&#4154; <span class=SpellE>&#4116;&#4121;&#4144;&#4116;&#4140;&#4121;&#4154;&#4140;&#4152;</span><o:p></o:p></b></p>
+
+<p class=MsoListParagraphCxSpFirst style='text-indent:-.25in;line-height:150%;
+mso-list:l0 level1 lfo4'><![if !supportLists]><span style='mso-bidi-font-family:
+Zawgyi-One;mso-bidi-theme-font:minor-latin'><span style='mso-list:Ignore'>1.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span></span><![endif]>I’m
+tired but I’m not hungry. &#4096;&#4221;&#4156;<span class=SpellE>&#4116;&#4153;&#4145;&#4116;&#4140;&#4153;&#4145;&#4121;&#4140;&#4117;&#4116;&#4153;&#4152;&#4112;&#4122;</span>&#4153;..<span
+class=SpellE>&#4114;&#4139;&#4145;&#4117;&#4121;&#4146;</span>&#4151; <span
+class=SpellE>&#4119;&#4141;&#4143;&#4096;&#4153;&#4121;&#4102;&#4140;&#4120;&#4144;&#4152;</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in;line-height:150%;
+mso-list:l0 level1 lfo4'><![if !supportLists]><span style='mso-bidi-font-family:
+Zawgyi-One;mso-bidi-theme-font:minor-latin'><span style='mso-list:Ignore'>2.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span></span><![endif]>Tom
+isn’t interested in politics. He’s interested in music. <span class=SpellE>&#4112;&#4156;&#4121;&#4153;&#4127;&#4140;&#4239;&#4141;&#4143;&#4100;&#4153;&#4100;&#4150;&#4145;&#4123;&#4152;&#4101;&#4141;&#4112;&#4153;&#4121;&#4125;&#4100;&#4153;&#4101;&#4140;&#4152;&#4120;&#4144;</span>…<span
+class=SpellE>&#4126;&#4144;&#4096;&#4098;&#4142;&#4112;&#4096;&#4141;&#4143;&#4101;&#4141;&#4112;&#4153;&#4125;&#4100;&#4153;&#4101;&#4140;&#4152;&#4112;&#4122;</span>&#4153;&#4171;</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in;line-height:150%;
+mso-list:l0 level1 lfo4'><![if !supportLists]><span style='mso-bidi-font-family:
+Zawgyi-One;mso-bidi-theme-font:minor-latin'><span style='mso-list:Ignore'>3.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span></span><![endif]>Jane
+isn’t at home at the moment. She’s at work. <span class=SpellE>&#4098;&#4154;&#4141;&#4121;&#4153;&#4152;&#4129;&#4097;&#4143;&#4129;&#4141;&#4121;&#4153;&#4121;&#4157;&#4140;&#4121;&#4123;&#4157;&#4141;&#4120;&#4144;&#4152;</span>…<span
+class=SpellE>&#4126;&#4144;&#4121;&#4129;&#4124;&#4143;&#4117;&#4153;&#4121;&#4157;&#4140;</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in;line-height:150%;
+mso-list:l0 level1 lfo4'><![if !supportLists]><span style='mso-bidi-font-family:
+Zawgyi-One;mso-bidi-theme-font:minor-latin'><span style='mso-list:Ignore'>4.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span></span><![endif]>Those
+people aren’t English. They are Australian. <span class=SpellE>&#4113;&#4141;&#4143;&#4124;&#4144;&#4145;&#4112;</span>&#4156;
+<span class=SpellE>&#4129;&#4098;&#4196;&#4124;&#4141;&#4117;&#4153;&#4121;&#4127;&#4143;&#4112;&#4153;&#4120;&#4144;&#4152;</span>..<span
+class=SpellE>&#4126;&#4144;&#4112;&#4141;&#4143;&#4245;&#4096;</span> &#4222;<span
+class=SpellE>&#4126;&#4101;&#4142;&#4145;&#4112;</span>&#4156;&#4171;</p>
+
+<p class=MsoListParagraphCxSpLast style='text-indent:-.25in;line-height:150%;
+mso-list:l0 level1 lfo4'><![if !supportLists]><span style='mso-bidi-font-family:
+Zawgyi-One;mso-bidi-theme-font:minor-latin'><span style='mso-list:Ignore'>5.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span></span><![endif]>It’s
+sunny today but it isn’t warm. <span class=SpellE>&#4114;&#4142;&#4145;&#4116;&#4245;&#4145;&#4116;&#4126;&#4140;&#4112;&#4122;</span>&#4153;..<span
+class=SpellE>&#4114;&#4139;&#4145;&#4117;&#4121;&#4146;</span>&#4151; <span
+class=SpellE>&#4121;&#4145;</span>&#4239;&#4156;<span class=SpellE>&#4152;&#4120;&#4144;&#4152;</span></p>
+
+<p class=MsoNormal style='line-height:150%'>--------------------</p>
+
+<p class=MsoNormal style='line-height:150%'>Section C</p>
+
+<p class=MsoNormal style='line-height:150%'>That’s = that is,<span
+style='mso-spacerun:yes'>   </span>There’s = there is,<span
+style='mso-spacerun:yes'>   </span>Here’s = here is</p>
+
+<p class=MsoListParagraphCxSpFirst style='text-indent:-.25in;line-height:150%;
+mso-list:l1 level1 lfo6'><![if !supportLists]><span style='font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol'><span
+style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>Thank you. That’s very kind of you. <span
+class=SpellE>&#4145;&#4096;&#4154;&#4152;&#4103;&#4144;&#4152;&#4112;&#4100;&#4153;&#4117;&#4139;&#4112;&#4122;</span>&#4153;&#4170;<span
+class=SpellE>&#4114;&#4139;&#4096;&#4097;&#4100;&#4153;&#4119;&#4154;&#4140;&#4152;&#4123;&#4146;&#4222;&#4096;&#4100;&#4153;&#4116;&#4140;&#4112;&#4112;&#4153;&#4121;&#4232;&#4117;&#4139;&#4117;&#4146;</span>&#4171;</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in;line-height:150%;
+mso-list:l1 level1 lfo6'><![if !supportLists]><span style='font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol'><span
+style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>Look! &#4222;<span class=SpellE>&#4096;&#4106;</span>&#4153;&#4151;<span
+class=SpellE>&#4124;&#4141;&#4143;&#4096;</span>&#4153;&#4170; <span
+class=GramE>There’s</span> Chris. <span class=SpellE>&#4127;&#4141;&#4143;&#4121;&#4157;&#4140;</span>
+<span class=SpellE>&#4097;&#4123;&#4101;</span>&#4153;&#4171;</p>
+
+<p class=MsoListParagraphCxSpLast style='text-indent:-.25in;line-height:150%;
+mso-list:l1 level1 lfo6'><![if !supportLists]><span style='font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol'><span
+style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>Here’s your key. <span class=SpellE>&#4145;&#4123;&#4140;&#4151;&#4114;&#4142;&#4121;&#4157;&#4140;&#4116;&#4100;</span>&#4153;&#4151;<span
+class=SpellE>&#4145;&#4126;&#4140;</span>&#4151;&#4170; Thank you. <span
+class=SpellE>&#4145;&#4096;&#4154;&#4152;&#4103;&#4144;&#4152;&#4112;&#4100;&#4153;&#4117;&#4139;&#4112;&#4122;</span>&#4153;&#4171;</p>
+
+</div>
+
+</body>
+
+</html>
+
+</p>
+<br>
+<br>
+<br>
+<br>
+<br>
+<!-- Audio player -->
+<div class="ap" id="ap">
+  <div class="ap__inner">
+      <div class="ap__item ap__item--playback">
+        <button class="ap__controls ap__controls--prev">
+          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#333" width="24" height="24" viewBox="0 0 24 24">
+            <path d="M9.516 12l8.484-6v12zM6 6h2.016v12h-2.016v-12z"></path>
+          </svg>
+        </button>
+        <button class="ap__controls ap__controls--toggle">
+          <svg class="icon-play" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#333" width="36" height="36" viewBox="0 0 36 36" data-play="M 12,26 18.5,22 18.5,14 12,10 z M 18.5,22 25,18 25,18 18.5,14 z" data-pause="M 12,26 16.33,26 16.33,10 12,10 z M 20.66,26 25,26 25,10 20.66,10 z">
+            <path d="M 12,26 18.5,22 18.5,14 12,10 z M 18.5,22 25,18 25,18 18.5,14 z"></path>
+          </svg>
+        </button>
+        <button class="ap__controls ap__controls--next">
+          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#333" width="24" height="24" viewBox="0 0 24 24">
+            <path d="M15.984 6h2.016v12h-2.016v-12zM6 18v-12l8.484 6z"></path>
+          </svg>
+        </button>
+      </div>
+      <div class="ap__item ap__item--track">
+        <div class="track">
+          <div class="track__title">Queue is empty</div>
+          <div class="track__time">
+            <span class="track__time--current">--</span>
+            <span> / </span>
+            <span class="track__time--duration">--</span>
+          </div>
+
+          <div class="progress-container">
+            <div class="progress">
+              <div class="progress__bar"></div>
+              <div class="progress__preload"></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="ap__item ap__item--settings">
+        <div class="ap__controls volume-container">
+          <button class="volume-btn">
+            <svg class="icon-volume-on" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#333" width="24" height="24" viewBox="0 0 24 24">
+              <path d="M14.016 3.234q3.047 0.656 5.016 3.117t1.969 5.648-1.969 5.648-5.016 3.117v-2.063q2.203-0.656 3.586-2.484t1.383-4.219-1.383-4.219-3.586-2.484v-2.063zM16.5 12q0 2.813-2.484 4.031v-8.063q2.484 1.219 2.484 4.031zM3 9h3.984l5.016-5.016v16.031l-5.016-5.016h-3.984v-6z"></path>
+            </svg>
+            <svg class="icon-volume-off" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#333" width="24" height="24" viewBox="0 0 24 24">
+              <path d="M12 3.984v4.219l-2.109-2.109zM4.266 3l16.734 16.734-1.266 1.266-2.063-2.063q-1.734 1.359-3.656 1.828v-2.063q1.172-0.328 2.25-1.172l-4.266-4.266v6.75l-5.016-5.016h-3.984v-6h4.734l-4.734-4.734zM18.984 12q0-2.391-1.383-4.219t-3.586-2.484v-2.063q3.047 0.656 5.016 3.117t1.969 5.648q0 2.25-1.031 4.172l-1.5-1.547q0.516-1.266 0.516-2.625zM16.5 12q0 0.422-0.047 0.609l-2.438-2.438v-2.203q2.484 1.219 2.484 4.031z"></path>
+            </svg>
+          </button>
+          <div class="volume">
+            <div class="volume__track">
+              <div class="volume__bar"></div>
+            </div>
+          </div>
+        </div>
+        <button class="ap__controls ap__controls--repeat">
+          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#333" width="24" height="24" viewBox="0 0 24 24">
+            <path d="M17.016 17.016v-4.031h1.969v6h-12v3l-3.984-3.984 3.984-3.984v3h10.031zM6.984 6.984v4.031h-1.969v-6h12v-3l3.984 3.984-3.984 3.984v-3h-10.031z"></path>
+          </svg>
+        </button>
+        <button class="ap__controls ap__controls--playlist">
+          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#333" width="24" height="24" viewBox="0 0 24 24">
+            <path d="M17.016 12.984l4.969 3-4.969 3v-6zM2.016 15v-2.016h12.984v2.016h-12.984zM18.984 5.016v1.969h-16.969v-1.969h16.969zM18.984 9v2.016h-16.969v-2.016h16.969z"></path>
+          </svg>
+        </button>
+      </div>
+  </div>
+</div>
+  
+    <script src="js/unit_1.js"></script>
+
+</body>
+</html>
